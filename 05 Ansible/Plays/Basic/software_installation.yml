@@ -1,0 +1,73 @@
+---
+- name: Enable internet service
+  hosts: all
+  become: yes
+  vars:
+          repo_url: https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm -y
+  tasks:
+          - name: install epel repo
+            yum_repository:
+                    name: EPEL REPO
+                    description: EPEL YUM REPO 8
+                    baseurl: https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm -y
+                    state: present
+
+          - name: install required packages
+            dnf:
+                    name:
+                            - firewalld
+                            - python3
+                            - nodejs
+                            - git
+                            - vim
+                            - wget
+                            - httpd
+                            - nginx
+                    state: latest
+
+          - name: Deploy Nginx config file MASTER NODE
+            delegate_to: localhost
+            become: yes
+            copy:
+                    src: /home/devops/nginx_MASTER.conf
+                    dest: /etc/nginx/conf.d/
+
+          - name: Deploy Nginx config file to QA SERVER
+            delegate_to: 3.7.147.243
+            become: yes
+            copy:
+                    src: /home/devops/nginx_QA.conf
+                    dest: /etc/nginx/conf.d/
+
+          - name: Deploy Nginx config file to PROD SERVER
+            delegate_to: 15.206.38.203
+            become: yes
+            copy:
+                    src: /home/devops/nginx_PROD.conf
+                    dest: /etc/nginx/conf.d/
+
+
+          - name: start Nginx server
+            service:
+                    name: nginx
+                    enabled: true
+                    state: started
+
+- name: firewall configuration
+  hosts: all
+  remote_user: root
+  become: true
+  become_user: root
+  become_method: sudo
+  tasks:
+          - name: web access firewall
+            firewalld:
+                    zone: public
+                    port: 8080/tcp
+                    permanent: yes
+                    state: enabled
+
+          - name: Reload firewalld
+            service:
+                    name: firewalld
+                    state: restarted

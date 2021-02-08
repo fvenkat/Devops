@@ -1,0 +1,28 @@
+[Unit]
+Description=Apache Tomcat 9 9 9 9 9 9 9 9 9 Web Application Container
+Wants=network.target
+After=network.target
+
+[Service]
+Type=forking
+
+Environment=JAVA_HOME=/usr/lib/jvm/java-11-openjdk-11.0.7.10-1.el8_1.x86_64
+
+Environment=CATALINA_PID=/opt/tomcat/apache-tomcat-9.0.37/temp/tomcat.pid
+Environment=CATALINA_HOME=/opt/tomcat/apache-tomcat-9.0.37
+Environment=CATALINA_BASE=/opt/tomcat/apache-tomcat-9.0.37
+Environment='CATALINA_OPTS=-Xms512M -Xmx1G -Djava.net.preferIPv4Stack=true'
+Environment='JAVA_OPTS=-Djava.awt.headless=true'
+
+ExecStart=/opt/tomcat/apache-tomcat-9.0.37/bin/startup.sh
+ExecStop=/opt/tomcat/apache-tomcat-9.0.37/bin/shutdown.sh
+SuccessExitStatus=143
+
+User=tomcat
+Group=tomcat
+UMask=0007
+RestartSec=10
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

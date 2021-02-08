@@ -1,0 +1,47 @@
+---
+AWSTemplateFormatVersion: "2010-09-09"
+Description: REDHAT EC2
+
+Parameters:
+        SSHKey:
+                Type: AWS::EC2::KeyPair::KeyName
+                Description: Name of an existing ssh keypair
+
+Resources:
+        MyInstance:
+                Type: AWS::EC2::Instance
+                Properties:
+                        InstanceType: t2.micro
+                        ImageId: ami-052c08d70def0ac62 # REDHAT LINUX Mumbai region
+                        KeyName: !Ref SSHKey
+                        SecurityGroups:
+                                - !Ref SSHSecurityGroup
+                        UserData:
+                                Fn::Base64: |
+                                        #!/bin/bash -xe
+                                        dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm -y
+                                        dnf install -y httpd
+                                        systemctl start httpd
+                                        systemctl enable httpd
+                                        echo "Hello!! welcome to Accelerate!!!" > /var/www/html/index.html
+
+        #Security group
+        SSHSecurityGroup:
+                Type: AWS::EC2::SecurityGroup
+                Properties:
+                        GroupDescription: Enable ssh port
+                        SecurityGroupIngress:
+                        - CidrIp: 0.0.0.0/0
+                          FromPort: 22
+                          IpProtocol: tcp
+                          ToPort: 22
+                        - CidrIp: 0.0.0.0/0
+                          FromPort: 80
+                          IpProtocol: tcp
+                          ToPort: 80
+                        - CidrIp: 0.0.0.0/0
+                          FromPort: 8080
+                          IpProtocol: tcp
+                          ToPort: 8080
+
+

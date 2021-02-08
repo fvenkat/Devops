@@ -1,0 +1,7 @@
+#!/bin/python3
+print("Strings should be quoted using single or double or triple")
+print(5 * 7)
+print()
+print("Machine Learning", "Artificial Intelligence", (5 + 8))
+print("A", "B", "5/5")
+

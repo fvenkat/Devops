@@ -1,0 +1,21 @@
+---
+- name: user creation
+  hosts: all,localhost
+  remote_user: root
+  gather_facts: false
+  vars:
+    passwd: devops
+    usr: devops
+  tasks:
+          - name: user creation
+            user:
+                    name: "{{ usr }}"
+                    state: present
+                    groups: wheel
+                    password: "{{ passwd | password_hash('sha512') }}"
+                    update_password: on_create
+
+          - name: sudo configuration
+            copy:
+                    content: "{{ usr }} ALL=(ALL)  NOPASSWD: ALL"
+                    dest: "/etc/sudoers.d/{{ usr }}"

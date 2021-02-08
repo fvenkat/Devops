@@ -1,0 +1,10 @@
+---
+- name: delete devops user
+  hosts: QA_SERVER, PROD_SERVER
+  remote_user: root
+  tasks:
+          - name: delete devops user from qa and prod server
+            user:
+                    name: devops
+                    state: absent
+                    remove: yes

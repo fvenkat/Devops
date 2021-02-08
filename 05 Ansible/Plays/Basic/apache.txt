@@ -1,0 +1,19 @@
+---
+- name: install and start apache
+  hosts: all
+  tasks:
+          - name: install httpd
+            yum:
+                    name: httpd
+                    state: present
+
+          - name: copy index.html file
+            copy:
+                    src: /home/devops/playbook-basic/index.html
+                    dest: /var/www/html/idex.html
+
+          - name: restart httpd
+            service:
+                    name: httpd
+                    state: started
+                    enabled: true

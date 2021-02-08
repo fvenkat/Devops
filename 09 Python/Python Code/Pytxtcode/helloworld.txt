@@ -1,0 +1,5 @@
+#!/bin/python3
+print("Hello, World")
+print('Hello Venkatesh!! Welcome to Python!!')
+print("""Machine learning 'or' Artificial Intelligence""")
+exit

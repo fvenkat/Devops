@@ -1,0 +1,61 @@
+---
+- name: Enable internet service
+  hosts: 3.7.147.243
+  become: yes
+  vars:
+          repo_url: https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm -y
+  tasks:
+          - name: install epel repo
+            yum_repository:
+                    name: EPEL REPO
+                    description: EPEL YUM REPO 8
+                    baseurl: https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm -y
+                    state: present
+
+          - name: install required packages
+            dnf:
+                    name:
+                            - firewalld
+                            - python3
+                            - nodejs
+                            - git
+                            - vim
+                            - wget
+                            - httpd
+                            - nginx
+                    state: latest
+
+          - name: enable and start the firewall
+            service:
+                    name: firewalld
+                    enabled: true
+                    state: started
+
+          - name: firewall permits http access
+            firewalld:
+                    service: http
+                    permanent: true
+                    state: enabled
+                    immediate: yes
+
+          - name: start httpd
+            service:
+                    name: httpd
+                    state: stopped
+                    enabled: false
+
+          - name: start nginx server
+            service:
+                    name: nginx
+                    enabled: true
+                    state: started
+
+- name: second play to connect webserver
+  hosts: localhost
+  become:
+  tasks:
+          - name: connect internet wenser
+            uri:
+                    url: http://3.7.147.243/
+                    status_code: 200
+

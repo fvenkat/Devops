@@ -1,0 +1,32 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Deny",
+            "Action": [
+                "codecommit:GitPush",
+                "codecommit:DeleteBranch",
+                "codecommit:PutFile",
+                "codecommit:MergeBranchesByFastForward",
+                "codecommit:MergeBranchesBySquash",
+                "codecommit:MergeBranchesByThreeWay",
+                "codecommit:MergePullRequestByFastForward",
+                "codecommit:MergePullRequestBySquash",
+                "codecommit:MergePullRequestByThreeWay"
+            ],
+            "Resource": "arn:aws:codecommit:us-east-2:111111111111:MyDemoRepo",
+#"Resource": "arn:aws:codecommit:*:*:*",...........represent deny of any repo in any region
+            "Condition": {
+                "StringEqualsIfExists": {
+                    "codecommit:References": [
+                        "refs/heads/master", 
+                        "refs/heads/prod"
+                     ]
+                },
+                "Null": {
+                    "codecommit:References": false
+                }
+            }
+        }
+    ]
+}

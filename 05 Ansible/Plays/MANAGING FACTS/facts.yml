@@ -1,0 +1,15 @@
+---      
+- name: the facts
+  hosts: localhost
+  tasks: 
+    - name: Print all facts
+      debug:
+        var: ansible_facts.fqdn   #no quotation since it already declared as var it means it takes as varaible
+         
+    - name: print
+      debug:
+        var: ansible_facts.interfaces
+         
+    - name: print
+      debug:
+        msg: print the value of "{{ ansible_facts.interfaces }}"     #customized msg can be done thr msg and varaible passed in quotation

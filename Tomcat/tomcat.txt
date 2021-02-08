@@ -1,0 +1,118 @@
+Run Jenkins on a servlet container (Apache Tomcat)
+
+
+Step 1 : Install EPEL repo & update repo
+•	$ sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+•	$ sudo dnf update -y
+Step 2 : Install Open JDK [JAVA]
+•	$ sudo dnf install java-11-openjdk-devel -y
+•	$ java –version
+•	$ javac --version
+SET ENV Variable [JAVA_HOME]
+•	$sudo vim /etc/profile
+
+#JAVA PATH
+export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-11.0.7.10-1.el8_1.x86_64"
+export PATH=$JAVA_HOME/bin:$PATH
+
+•	Verification >> 	source /etc/profile    
+echo $JAVA_HOME
+java –version
+javac -verison
+Step 3 : Install Tomcat on Redhat 8
+
+•	useradd  -m –d /opt/tomcat –U –s /bin/false tomcat
+•	cd /opt/tomcat
+•	wget https://downloads.apache.org/tomcat/tomcat-9/v9.0.37/bin/apache-tomcat-9.0.37-fulldocs.tar.gz
+•	tar -zxvf apache-tomcat-9.0.37.tar.gz
+•	chown -R tomcat:tomcat apache-tomcat-9.0.37
+•	cd apache-tomcat-9.0.37
+SET TOMCAT_HOME
+•	sudo vim /etc/profile
+#TOMCAT PATH
+export TOMCAT_HOME="/opt/tomcat/apache-tomcat-9.0.37"
+export PATH=$TOMCAT_HOME/bin:$PATH
+•	source /etc/profile
+•	echo $TOMCAT_HOME
+
+Set Startup & Shutdown Script
+sudo ln –s /opt/tomcat/apache-tomcat-9.0.37/bin/startup.sh /usr/local/bin/tomcatup
+sudo ln –s /opt/tomcat/apache-tomcat-9.0.37/bin/shutdown.sh /usr/local/bin/tomcatdown
+
+$ tomcatup 
+Make sure you give necessary permsion to startup & shutdown script & logs
+
+
+
+TOMCAT Configuration
+Port management [Default 8080] Below steps needed if port cange is req
+•	vim /usr/lib/tomcat/apache-tomcat-9.0.31/conf/server.xml
+<Connector port="8090" protocol="HTTP/1.1"
+•	Restart tomcat
+
+Access Manager App## edit context.xml##
+
+•	vim /opt/tomcat/apache-tomcat-9.0.37/webapps/manager/META-INF/context.xml
+##coment this line
+<!-- <Valve className="org.apache.catalina.valves.RemoteAddrValve"
+allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /> -->
+
+•	vim /opt/tomcat/apache-tomcat-9.0.37/webapps/host-manager/META-INF/context.xml
+
+##coment this line
+
+  <!--  <Valve className="org.apache.catalina.valves.RemoteAddrValve"
+         allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /> --> ##
+
+TO CREATE USERS WITH ROLES###EDIT tomcat-users.xml###
+
+•	vim /opt/tomcat/apache-tomcat-9.0.37/conf/tomcat-users.xml
+•	Place between 
+<tomat-user  
+----------------------------------
+----------------
+</tomcat-users>
+
+<role rolename="manager-gui"/>
+<role rolename="manager-script"/>
+<role rolename="manager-jmx"/>
+<role rolename="manager-status"/>
+<user username="admin" password="admin" roles="manager-gui, manager-script, manager-jmx, manager-status"/>
+<user username="deployer" password="deployer" roles="manager-script"/>
+<user username="tomcat" password="tomcat" roles="manager-gui"/>
+
+
+##generate encrpted pwd###
+
+
+here is a file named digest.sh within the bin directory as follows, that can be used to mask passwords:-
+
+$TOMCAT_HOME/bin/digest.sh
+The following steps were taken to encrypt the password:-
+
+Encrypt using $TOMCAT_HOME/bin/digest.sh as follows1:-
+Raw
+[krathod@dhcp223-150 bin]$ ./digest.sh -a SHA1 password
+ password:5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8
+
+
+The $TOMCAT_HOME/conf/tomcat-users.xml should have the following:-
+Raw
+<role rolename="TomcatAdmin"/>
+<user username="jboss" password="5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8" roles="TomcatAdmin"/>
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+

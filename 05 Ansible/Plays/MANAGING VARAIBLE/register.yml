@@ -1,0 +1,16 @@
+---      
+- name: Capturing output of the commands into a temp variable using REGISTER
+  hosts: all
+  vars:  
+    package: httpd
+  tasks: 
+    - name: install httpd
+      yum:
+        name: "{{ package }}"
+        state: present
+      register: install_result
+         
+    - name: display the output
+      debug:
+        var: install_result
+~                                    

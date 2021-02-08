@@ -1,0 +1,35 @@
+---
+- hosts: all,localhost
+  remote_user: root
+  gather_facts: false
+  vars:
+    passwd: redhat
+    usr: ansible
+  tasks:
+    - user:
+       name: "{{ usr }}"
+       state: present
+       groups: wheel
+       password: "{{ passwd | password_hash('sha512') }}"
+       update_password: on_create
+
+    - copy:
+        content: "{{ usr }} ALL=(ALL)  NOPASSWD: ALL"
+        dest: "/etc/sudoers.d/{{ usr }}"
+
+    - openssh_keypair:
+        path: /tmp/id_rsa
+      delegate_to: localhost
+      run_once: true
+
+    - authorized_key:
+        user: "{{ usr }}"
+        state: present
+        key: "{{ lookup('file', '/tmp/id_rsa.pub') }}"
+
+    - copy:
+        src: /tmp/id_rsa
+        dest: "/home/{{ usr }}/.ssh/id_rsa"
+        owner: "{{ usr }}"
+        group: "{{ usr }}"
+        mode: 0600

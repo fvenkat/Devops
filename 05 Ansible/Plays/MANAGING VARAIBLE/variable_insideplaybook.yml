@@ -1,0 +1,50 @@
+---
+- name: Varaibles inside the playbook
+  hosts: all
+  vars:
+      web_pkg: httpd
+      firewall_pkg: firewalld
+      python_pkg: python3-PyMySQL
+      web_service: httpd
+      firewall_service: firewalld
+      rule: http
+  tasks:
+    - name: Required packages are installed and up to date
+      yum:
+        name:
+          - "{{ web_pkg }}"
+          - "{{ firewall_pkg }}"
+          - "{{ python_pkg }}"
+        state: present
+ 
+    - name: The {{ firewall_pkg }} service sarted and enable
+      service:
+        name: "{{ firewall_pkg }}"
+        state: started
+        enabled: true
+ 
+    - name: Enable port for {{ rule }} ok
+      firewalld:
+        service: "{{ rule }}"
+        state: enabled
+        permanent: true
+        immediate: true
+ 
+    - name: Deploy content to {{ web_pkg }}
+      copy:
+        content: "welcome to Ansible !!!"
+        dest: "/var/www/html/index.html"
+ 
+    - name: "{{ web_pkg }} service restart"
+      service:
+        name: "{{web_service}}"
+        state: started
+        enabled: true
+ 
+- name: verify the Apache service
+  hosts: serverc
+  tasks:
+    - name: ensure webserver reachable
+      uri:
+        url: http://serverc.lab.example.com
+        status_code: 200

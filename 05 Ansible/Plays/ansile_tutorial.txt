@@ -1,0 +1,43 @@
+Classroom n/w 
+student n/w  whr Iam going to work
+
+#rht-vmctl –help
+#rht-vmctl start all
+workstation jump server
+servera
+serverb
+serverc
+serverd
+server
+
+2 user on every machine ==> root & student
+student pwd: student
+root pwd ==> redhat
+
+ssh student@server
+
+Architecture
+
+control node[ansible][python][linux]------------managed node1
+						managed node2
+						managed node3
+
+meta module
+
+ansible-doc -l | grep aws
+ansible-doc yum
+yum intsall 
+
+env | grep 
+vim /etc/sudoers.d/ashish
+ashish all =all
+
+ashish ---> 9103636336 
+
+
+anydesk
+redhat123
+421350185
+
+
+CHAPTER 6

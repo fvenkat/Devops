@@ -1,0 +1,22 @@
+#!/bin/python3
+newline = "Chistiano Ronaldo is the best in football\nsachin is the best in the world\nvirat is the run machine"
+print(newline)
+
+tab = "Ronaldo\tSachin\tVirat"
+print(tab)
+
+backslash = input("Is Virat is right \"choice\" \"??\": ")
+print(backslash)
+
+triple = """Its a bold decision and its "perfect" """
+print(triple)
+
+tripple = """ABCD \
+123 \
+EFGH \\
+456789"""
+print(tripple)
+
+doubleslash = "c:\\user\\path\\destination"
+print(doubleslash)
+print("c:\\")

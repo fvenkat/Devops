@@ -1,0 +1,14 @@
+servera
+
+[DEV_SERVER]
+serverb
+ 
+[QA_SERVER]
+serverc
+ 
+[PROD_SERVER]
+serverd
+ 
+[MERGE:children]
+DEV_SERVER
+QA_SERVER

@@ -1,0 +1,62 @@
+JENKINS INSTALLATION in REDHAT LINUX  [EC2]
+
+1) launch ec2
+2) Install Java & set path
+
+INSTALL OPEN JDK
+
+EPEL REPO installation
+
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+
+Repo Update
+
+sudo dnf install -y
+
+JAVA Installation
+#sudo yum install java-11-openjdk-devel
+#java -version
+
+SET GLOBAL ENV PATH
+
+1) find openjdk installation path
+/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.252.b09-3.el8_2.x86_64
+
+/usr/lib/jvm/java-11-openjdk-11.0.7.10-1.el8_1.x86_64
+
+2) global path settings
+
+#sudo vim /etc/profile
+
+#JAVA PATH
+
+export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-11.0.7.10-1.el8_1.x86_64"
+export PATH=$JAVA_HOME/bin:$PATH
+
+#source /etc/profile   refresh immidiately
+#echo $JAVA_HOME
+
+INSTALL JENKINS
+
+#sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo
+#sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
+#sudo yum -y install jenkins
+
+#sudo systemctl start jenkins
+#sudo systemctl enable jenkins
+
+Allow port 8080/tcp on the firewall.
+
+sudo firewall-cmd --add-port=8080/tcp --permanent
+sudo firewall-cmd --reload
+sudo firewall-cmd --list-all
+
+To get Admin pwd
+#sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+
+Whenever new commit happens jenkins piple shloud break the pipleine
+Mmultiple java verison has to enabled in the single pipleine for sin
+
+
+

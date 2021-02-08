@@ -1,0 +1,41 @@
+---
+- name: REACTJS DEPLOYMENT IN NGINX WEB-SERVER
+  hosts: all
+  remote_user: devops
+  become: yes
+  vars:
+          repo_url: https://github.com/navindian/VodafonePhotoGallery.git
+          dest_dir: /home/devops/REACTJS/
+          src_dir: /home/devops/REACTJS/build
+  tasks:
+          - name: cloning react app from github repository
+            git:
+                    repo: "{{repo_url}}"
+                    dest: "{{dest_dir}}"
+
+          - name: Change the ownership of the directory
+            file:
+                    path: "{{dest_dir}}"
+                    owner: "devops"
+
+          - name: npm installation
+            shell:
+                    "npm install"
+            args:
+                    chdir: "{{dest_dir}}"
+
+          - name: building the app
+            shell:
+                    "npm run build"
+            args:
+                    chdir: "{{dest_dir}}"
+
+          - name: Deploy Reactjs application to nginx webserver
+            copy:
+                    src: "{{src_dir}}"
+                    dest: "/usr/share/nginx/"
+
+          - name: Restart nginx service
+            service:
+                    name: nginx
+                    state: restarted

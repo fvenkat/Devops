@@ -1,0 +1,8 @@
+---  
+package:
+      - httpd
+      - git
+      - firewalld
+web_service: httpd
+firewall_service: firewalld
+rule: http

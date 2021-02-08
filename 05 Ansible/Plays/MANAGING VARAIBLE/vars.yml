@@ -1,0 +1,7 @@
+---  
+web_pkg: httpd
+firewall_pkg: firewalld
+python_pkg: python3-PyMySQL
+web_service: httpd
+firewall_service: firewalld
+rule: http

@@ -1,0 +1,59 @@
+---
+- name: ssh configuration
+  hosts: all
+  remote_user: root
+  become: true
+  become_method: sudo
+  become_user: root
+  gather_facts: false
+  vars:
+          passwd: devops
+          usr: devops
+  tasks:
+          - name: user creation
+            user:
+                    name: "{{ usr }}"
+                    state: present
+                    groups: wheel
+                    password: "{{ passwd | password_hash('sha512') }}"
+                    update_password: on_create
+
+          - name: sudo configuration
+            copy:
+
+                    content: "{{ usr }} ALL=(ALL)  NOPASSWD: ALL"
+                    dest: "/etc/sudoers.d/{{ usr }}"
+
+          - name: .ssh directory creation
+            file:
+                    path: /home/devops/.ssh
+                    state: directory
+                    owner: devops
+                    group: devops
+                    force: yes
+
+          - name: Directory creation for application deployment
+            file:
+                    path: /home/devops/REACTJS
+                    state: directory
+                    owner: devops
+                    group: devops
+                    force: yes
+          - name: ssh key-pair generation
+            delegate_to: 3.7.13.75
+            openssh_keypair:
+                    path: /home/devops/.ssh/id_rsa
+                    force: yes
+            run_once: true
+
+          - name: Deploy SSH Key
+            authorized_key:
+                    user: devops
+                    key: "{{ lookup('file', '/home/devops/.ssh/id_rsa.pub') }}"
+                    state: present
+
+          - name: Restart sshd service
+            service:
+                    name: sshd
+                    state: restarted
+   
