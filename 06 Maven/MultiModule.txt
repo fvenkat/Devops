@@ -1,0 +1,21 @@
+Maven Reactor
+============
+
+
+Setting version for All dependencies
+Parent POM
+<groupid>guru.frme<groupid>
+<artifact>mfjng<artifact>
+<version>${revision}<version>
+
+<properties>
+<revision>1.0-SNAPSHOT<revision/>  
+<properties/>
+
+
+Module
+
+You can use ${revision}  in version tag in all submodule 
+
+For version under Dependencies tag
+<version>{project.version}<version/>

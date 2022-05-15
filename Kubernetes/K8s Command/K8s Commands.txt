@@ -1,0 +1,96 @@
+#Creating POD
+===============
+$ kubectl run podName --image=ImageName         # Pod Creation Using Kubectl CLI
+$ kubectl run nginxPOD --image nginx
+
+
+$ kubectl create -f podDefinition.yaml          # Pod creation using Manifest file
+$ kubectl apply -f podDefinition.yaml          # Pod creation using Manifest file
+
+#List The PODs
+===============
+$ kubectl get pods                      # List the pods
+$ kubectl get pods -o wide              # List the pods with wide output
+$ kubectl get pods -l env=dev.....................#Display all the pods which has labelled dev
+$ kubectl descripe pods <NameOfthePOD>            #Full Details about the POD
+$ kubectl get all
+
+Edit the Pod
+============
+$ kubectl edit pod podName      # it opens the running configuraiton where you can edit and save
+
+Manifest file
+====================================
+$ kubectl run nginx --image=nginx --dry-run=client -o yaml > pod.yaml
+$ kubectl create deployment --image=nginx nginx --dry-run=client -o yaml
+$ kubectl create deployment --image=nginx nginx --dry-run=client -o yaml > nginx-deployment.yaml
+$ kubectl create deployment httpd-frontend --image=httpd:2.4-alpine --replicas=3 --dry-run=client -o yaml > deploy.yaml
+
+Display Pod Description
+================
+$ kubectl describe pod PodName                  # Display all events of the pod
+$ kubectl describe pod jenkinspod                  # Display all events of the pod
+
+$ kubectl describe pod jenkinspods | grep -i image  # Display the Image name/ID used for the pod
+
+Delete The POD
+==============
+$ kubectl delete pod PodName
+
+
+Replica Sets
+=============
+$ kubectl apply -f replicaset.yaml
+$ kubectl get replicaset	or  $ kubectl get rs
+$ kubectl delete replicaset ReplicaName
+
+NameSpace
+================
+$ kubectl get pods			#Display pods in default namespace.
+$ kubectl get pods --namespace=kube-system
+$ kubectl get pods –all-namespace
+    apiVersion: v1
+    kind: Namespace
+    metada:
+        name: dev
+$ kubectl create -f name.yaml	#Just creates the namespacekube
+$ kubectl create namespace dev	# Just creates the namespace
+
+Along with POD definitaion file you can mention the namespace in metadata.
+$ kubectl create -f pod-def.yaml  or
+$ kubectl create -f pod-def.yaml –namespace=dev	# Creates in dev namespace
+$ kubectl get ns
+
+
+
+Scaling the POD
+--------------
+# update the configuration file :: modify the replicas value : 6
+$ kubectl replace -f replicasetName.yaml		#updated replicaset conf
+
+Another approach
+
+$ kubectl scale –replicas=6 -f replicasetName.yaml	or
+$ kubectl scale –replica=6 replicaset ReplicaSetName
+
+Updating the Replicaset
+$ kubectl replace -f replica.yaml
+
+Create Deployment
+=========================
+$ kubectl apply/create -f deployment.yaml
+$ kubectl get deployments
+$ kubectl get replicaset	or # kubectl get rs
+$ kubectl get pods
+$ kubectl get all
+
+
+
+
+
+
+
+
+
+
+

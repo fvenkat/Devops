@@ -1,0 +1,10 @@
+.noprint { display: none !important; }
+.noP .f14{font-size:14pt}
+.noP .f13{font-size:13pt}
+.noP{border-left:1pt solid #000; border-top:1pt solid #000; width:100%;}
+.noP th{/*background:url(../images/otherY.png) repeat-x 0 -44px;*/ padding:5px;border:1pt solid #000; border-width:0 1pt 1pt 0;font-size:13pt}
+.noP td{border:1pt solid #000; border-width:0 1pt 1pt 0; vertical-align:top; padding:10px; line-height:20px;}
+.noP td.tdplr5{padding-left:5px; padding-right:0; text-align:left; font-size:13pt}
+.pf100p{width:100%}
+.noP .ad{width:120px}
+.noP .f11{font-size:11pt}

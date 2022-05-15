@@ -1,0 +1,20 @@
+*** The second statement allows the user to perform AWS Organizations administrative actions only within a single, specified organizational unit (OU) - does not extend to any child OUs
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "organizations:Describe*", 
+        "organizations:List*" 
+      ],
+      "Resource": "*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": "organizations:*",
+      "Resource": "arn:aws:organizations::<masterAccountId>:ou/o-<organizationId>/ou-<organizationalUnitId>"
+    }
+  ]
+}

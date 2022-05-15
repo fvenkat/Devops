@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html class="js" lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script async="" src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/count.json"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="alexaVerifyID" content="qqxQUyWSeUfqZOencfEoRM9vrVk">
+<meta name="msvalidate.01" content="E8C9208AD2F47ED874ED18E35FC370CE">
+<meta name="google-translate-customization" content="c567e5d7624a883b-609bf053fa02c58b-g01de0b1961de0feb-f">
+<meta property="article:publisher" content="https://facebook.com/tecmint">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<link rel="pingback" href="https://www.tecmint.com/xmlrpc.php">
+<title>11 Basic Linux Interview Questions and Answers</title>
+<script async="" src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/analytics.js"></script><script type="">document.documentElement.className = document.documentElement.className.replace("no-js","js");</script>
+
+<link rel="author" href="https://plus.google.com/u/0/107665449243972690526">
+<meta name="description" content="Here we will bring to you Linux Interview Questions and all other aspects of Linux Interview, which is must for a professional in this cut-throat competition world.">
+<meta name="keywords" content="linux interview questions,basic linux interview questions,linux questions">
+<link rel="canonical" href="https://www.tecmint.com/basic-linux-interview-questions-and-answers/">
+
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="Tecmint: Linux Howtos, Tutorials &amp; Guides » Feed" href="https://feeds.feedburner.com/tecmint">
+<link rel="alternate" type="application/rss+xml" title="Tecmint: Linux Howtos, Tutorials &amp; Guides » Comments Feed" href="https://www.tecmint.com/comments/feed/">
+<link href="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/css_002.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="Tecmint: Linux Howtos, Tutorials &amp; Guides » 11 Basic Linux Interview Questions and Answers Comments Feed" href="https://www.tecmint.com/basic-linux-interview-questions-and-answers/feed/">
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/3td6v.css" media="all">
+<script src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/3td6v_002.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var ajaxurl = "https:\/\/www.tecmint.com\/wp-admin\/admin-ajax.php";
+var QBP_PUBLIC_GLOBALS = {"QBP_PUBLIC_NONCE":"366ea23512","USER_TYPE":"public","VISIBILITY_DATA":{"is_page":false,"is_post":true,"is_homepage":false,"is_archive":false,"is_custom_post_type":false,"id":4781}};
+/* ]]> */
+</script>
+<script src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/3td6v.js" type="text/javascript"></script>
+
+<link rel="https://api.w.org/" href="https://www.tecmint.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.tecmint.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.tecmint.com/wp-includes/wlwmanifest.xml">
+<link rel="prev" title="Shorewall – A High-Level Firewall for Configuring Linux Servers" href="https://www.tecmint.com/shorewall-a-high-level-firewall-for-configuring-linux-servers/">
+<link rel="next" title="Exploring Shorewall Firewall Configuration and Command Line Options" href="https://www.tecmint.com/exploring-shorewall-firewall-configuration-and-command-line-options/">
+<meta name="generator" content="WordPress 4.9.7">
+<link rel="shortlink" href="https://www.tecmint.com/?p=4781">
+<link rel="alternate" type="application/json+oembed" href="https://www.tecmint.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.tecmint.com%2Fbasic-linux-interview-questions-and-answers%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.tecmint.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.tecmint.com%2Fbasic-linux-interview-questions-and-answers%2F&amp;format=xml">
+
+<meta property="og:image" content="https://www.tecmint.com/wp-content/uploads/2013/11/Basic-Interview-Questions.png">
+
+
+<link rel="shortcut icon" href="https://www.tecmint.com/wp-content/themes/tecmint/images/favicon.ico">
+<!--[if lt IE 9]>
+<script src="https://www.tecmint.com/wp-content/themes/tecmint/js/ie/html5.js"></script>
+<script src="https://www.tecmint.com/wp-content/themes/tecmint/js/ie/selectivizr.js"></script>
+<![endif]-->
+<link rel="amphtml" href="https://www.tecmint.com/basic-linux-interview-questions-and-answers/amp/"><link rel="icon" href="https://www.tecmint.com/wp-content/uploads/2015/01/tecmint_square_logo.png" sizes="32x32">
+<link rel="icon" href="https://www.tecmint.com/wp-content/uploads/2015/01/tecmint_square_logo.png" sizes="192x192">
+<link rel="apple-touch-icon-precomposed" href="https://www.tecmint.com/wp-content/uploads/2015/01/tecmint_square_logo.png">
+<meta name="msapplication-TileImage" content="https://www.tecmint.com/wp-content/uploads/2015/01/tecmint_square_logo.png">
+<style type="text/css">
+/* Dynamic CSS: For no styles in head, copy and put the css below in your custom.css or child theme's style.css, disable dynamic styles */
+body { font-family: "Roboto Condensed", Arial, sans-serif; }
+.boxed #wrapper, .container-inner { max-width: 1280px; }
+.sidebar .widget { padding-left: 20px; padding-right: 20px; padding-top: 20px; }
+.search-expand,
+#nav-topbar.nav-container { background-color: #23588c; }
+@media only screen and (min-width: 720px) {
+#nav-topbar .nav ul { background-color: #23588c; }
+}			
+#header { background-color: #075b88; }
+@media only screen and (min-width: 720px) {
+#nav-header .nav ul { background-color: #075b88; }
+}			
+#nav-header.nav-container { background-color: #2f6dab; }
+@media only screen and (min-width: 720px) {
+#nav-header .nav ul { background-color: #2f6dab; }
+}			
+#footer-bottom { background-color: #2f6dab; }
+.site-title a img { max-height: 90px; }
+img { -webkit-border-radius: 2px; border-radius: 2px; }
+</style>
+<link rel="author" href="https://plus.google.com/107665449243972690526/posts">
+<script async="" src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/adsbygoogle.js" type=""></script>
+<script type="application/ld+json">
+{
+"@context": "http://schema.org",
+"@type": "WebSite",
+"url": "https://www.tecmint.com/",
+"potentialAction": {
+"@type": "SearchAction",
+"target": "https://www.tecmint.com/?s={search_term}",
+"query-input": "required name=search_term"
+}
+}
+</script>
+<script type="text/javascript">
+this.randomtip=function(){var e=jQuery("#tips li").length,t=Math.floor(Math.random()*e)+1;jQuery("#tips li:nth-child("+t+")").show()},jQuery(document).ready(function($){randomtip()});</script>
+<script data-cfasync="false" type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-33207530-1', 'auto');
+ga('send', 'pageview');
+</script>
+</head>
+<link id="qbp-fonts" href="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/css.css" rel="stylesheet" type="text/css"><div id="quickiebarpro-show-button" class="show-button-sticky-enabled show-button-placement-top" style="color: rgb(255, 255, 255); background: rgb(241, 90, 41) none repeat scroll 0% 0%; z-index: 100; display: none;"><div class="show-button" style="color:#FFFFFF;background:#F15A29;"><i class="fa fa-chevron-down"></i><i class="fa fa-chevron-up"></i></div></div><div id="quickiebarpro" class="qbp-560b7eb56ce08 qbp-2 qbp qbp-bar_height-skinny qbp-sticky-enabled qbp-placement-top qbp-attribution-hidden qbp-alignment-centered qbp-button_style-rounded qbp-close_button_visibility-onhover qbp-bar_type-basic " style="background: rgb(241, 90, 41) none repeat scroll 0% 0%; z-index: 100; display: block;"><div class="hover-background-overlay"></div><div class="wrap"><div class="qbp-wrap"><span id="qbp-bar-text" class="bar-text" style="color:#FFFFFF;font-family:Roboto Slab;font-weight:700;">RedHat RHCSA and RHCE Certification Exam Study Ebook ($35)</span><span id="qbp-bar-button" class="bar-button" style="color:#FFFFFF;background:#062332;border-color:#FFFFFF;font-family:Roboto Slab;font-weight:700;">Get This Book &nbsp;<i class="fa fa-book"></i>&nbsp;</span><div id="qbp-bar-html" class="bar-html"></div><form id="qbp-subscribe-form" class="subscribe-form" onsubmit="return false;"><input id="qbp-subscribe-input" placeholder="Email" autocomplete="off" type="email"><div id="qbp-subscribe-button" style="color:#FFFFFF;background:#062332;border-color:#FFFFFF;"><i class="fa fa-long-arrow-right"></i></div></form></div></div><div class="qbp-close-button"><i class="fa fa-times-circle-o"></i></div><a href="https://www.tecmint.com/red-hat-rhcsa-rhce-exam-certification-book/" target="_blank" class="link-overlay" style=""></a><div class="qbp-close-bar"><i class="fa fa-chevron-up"></i></div></div><body data-rsssl="1" class="post-template-default single single-post postid-4781 single-format-standard col-2cl full-width topbar-enabled unknown s1-collapse s2-collapse" style="padding-top: 40px;">
+<div id="wrapper">
+<header id="header">
+<nav class="nav-container group" id="nav-topbar">
+<div class="nav-toggle"><i class="fa fa-bars"></i></div>
+<div class="nav-text"></div>
+<div class="nav-wrap container"><ul id="menu-home" class="nav container-inner group"><li id="menu-item-334" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-334"><a href="https://www.tecmint.com/">Home</a></li>
+<li id="menu-item-10774" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10774"><a target="_blank" href="https://www.tecmint.com/who-we-are/">About</a></li>
+<li id="menu-item-3912" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3912"><a title="Free Linux eBooks" target="_blank" href="http://tecmint.tradepub.com/category/information-technology-servers-and-linux-server-os/806/">Free eBooks</a></li>
+<li id="menu-item-17151" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17151"><a title="Discover and save on the best gear, gadgets, and software" target="_blank" href="https://deals.tecmint.com/">Deals</a></li>
+<li id="menu-item-18575" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18575"><a title="Support Us" href="https://www.tecmint.com/donate-to-tecmint/">Donate</a></li>
+<li id="menu-item-10775" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10775"><a target="_blank" href="https://www.tecmint.com/submit-articles/">Join TecMint</a></li>
+<li id="menu-item-11736" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11736"><a target="_blank" href="https://www.tecmint.com/linux-online-training-courses/">Linux Online Courses</a></li>
+<li id="menu-item-11907" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11907"><a title="Subscribe to Daily Updates" target="_blank" href="https://www.tecmint.com/subscribe-to-blog/">Subscribe</a></li>
+<li id="menu-item-13338" class="hosting menu-item menu-item-type-custom menu-item-object-custom menu-item-13338"><a title="Best Web Hosting Companies" target="_blank" href="https://www.tecmint.com/best-web-hosting-for-linux/">Linux Hosting</a></li>
+<li id="menu-item-24734" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24734"><a title="Linux Commands – A Beginners Cheat Sheet" target="_blank" href="https://www.tecmint.com/linux-commands-cheat-sheet/">A-Z Linux Commands</a></li>
+</ul></div>
+<div class="container">
+<div class="container-inner">
+<div class="toggle-search"><i class="fa fa-search"></i></div>
+<div class="search-expand">
+<div class="search-expand-inner">
+<form action="https://www.tecmint.com/search/" id="cse-search-box">
+<div>
+<input name="cx" value="partner-pub-2601749019656699:2173448976" type="hidden">
+<input name="cof" value="FORID:10" type="hidden">
+<input name="ie" value="UTF-8" type="hidden">
+<input class="search" name="q" size="20" style="background: rgb(255, 255, 255) url(&quot;https://www.google.com/cse/static/images/1x/googlelogo_lightgrey_46x16dp.png&quot;) no-repeat scroll left center; text-indent: 48px;" placeholder="Custom Search" type="text">
+<input name="sa" value="Search" type="submit">
+</div>
+<input name="siteurl" value="www.tecmint.com/basic-linux-interview-questions-and-answers/" type="hidden"><input name="ref" value="www.google.com/" type="hidden"><input name="ss" type="hidden"></form>
+<script type="text/javascript" src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/brand"></script>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<div class="container group">
+<div class="container-inner">
+<div class="group pad">
+<p class="site-title"><a href="https://www.tecmint.com/" rel="home"><img src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/logo.png" alt="Tecmint: Linux Howtos, Tutorials &amp; Guides"></a></p>
+<div id="header-ads">
+<div id="text-17" class="widget widget_text"> <div class="textwidget">
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-2601749019656699" data-ad-slot="8210224606"></ins>
+<script type="">
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div> </div>
+</div>
+<nav class="nav-container group" id="nav-header">
+<div class="nav-toggle"><i class="fa fa-bars"></i></div>
+<div class="nav-text"></div>
+<div class="nav-wrap container"><ul id="menu-header" class="nav container-inner group"><li id="menu-item-20410" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20410"><a target="_blank" href="https://www.fossmint.com/">Linux News</a></li>
+<li id="menu-item-10770" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10770"><a href="https://www.tecmint.com/best-linux-distributions/">Linux Distro’s</a></li>
+<li id="menu-item-10771" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-10771"><a href="https://www.tecmint.com/category/interview-questions/">Interview Questions</a></li>
+<li id="menu-item-20869" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-20869"><a href="https://www.tecmint.com/#">Programming</a>
+<ul class="sub-menu" style="display: none;">
+<li id="menu-item-10772" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10772"><a title="Learn Linux Shell Scripting" href="https://www.tecmint.com/category/bash-shell/">Shell Scripting</a></li>
+<li id="menu-item-20870" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20870"><a href="https://www.tecmint.com/category/python/">Learn Python</a></li>
+<li id="menu-item-20871" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20871"><a href="https://www.tecmint.com/category/awk-command/">Learn Awk</a></li>
+</ul>
+</li>
+<li id="menu-item-10773" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10773"><a href="https://www.tecmint.com/category/linux-commands/">Linux Commands</a></li>
+<li id="menu-item-14795" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14795"><a href="https://www.tecmint.com/tag/linux-tricks/">Linux Tricks</a></li>
+<li id="menu-item-19684" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19684"><a href="https://www.tecmint.com/category/top-tools/">Best Linux Tools</a></li>
+<li id="menu-item-10443" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-10443"><a target="_blank" href="https://www.tecmint.com/#">Certifications</a>
+<ul class="sub-menu" style="display: none;">
+<li id="menu-item-14880" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14880"><a href="https://www.tecmint.com/how-to-setup-and-configure-static-network-routing-in-rhel/">RHCE Exam</a></li>
+<li id="menu-item-11906" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11906"><a target="_blank" href="https://www.tecmint.com/rhcsa-exam-reviewing-essential-commands-system-documentation/">RHCSA Exam</a></li>
+<li id="menu-item-10444" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10444"><a target="_blank" href="https://www.tecmint.com/installing-network-services-and-configuring-services-at-system-boot/">LFCE Exam</a></li>
+<li id="menu-item-14793" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14793"><a href="https://www.tecmint.com/sed-command-to-create-edit-and-manipulate-files-in-linux/">LFCS Exam</a></li>
+</ul>
+</li>
+<li id="menu-item-12399" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-12399"><a href="https://www.tecmint.com/#">Guides</a>
+<ul class="sub-menu" style="display: none;">
+<li id="menu-item-18564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18564"><a target="_blank" href="https://www.tecmint.com/install-docker-and-learn-containers-in-centos-rhel-7-6/">Docker Series</a></li>
+<li id="menu-item-17150" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17150"><a href="https://www.tecmint.com/setup-postfix-mail-server-and-dovecot-with-mariadb-in-centos/">Postfix Mail</a></li>
+<li id="menu-item-15041" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15041"><a href="https://www.tecmint.com/citrix-xenserver-installation-and-network-configuration-in-linux/">XenServer Series</a></li>
+<li id="menu-item-14794" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14794"><a href="https://www.tecmint.com/install-redhat-virtualization-rhev/">RHEV Series</a></li>
+<li id="menu-item-14805" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14805"><a href="https://www.tecmint.com/what-is-clustering-and-advantages-disadvantages-of-clustering-in-linux/">Clustering Series</a></li>
+<li id="menu-item-12400" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12400"><a href="https://www.tecmint.com/create-lvm-storage-in-linux/">LVM Series</a></li>
+<li id="menu-item-12402" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12402"><a href="https://www.tecmint.com/understanding-raid-setup-in-linux/">RAID Series</a></li>
+<li id="menu-item-12403" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12403"><a href="https://www.tecmint.com/install-and-configure-kvm-in-linux/">KVM Series</a></li>
+<li id="menu-item-12401" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12401"><a href="https://www.tecmint.com/create-centralized-secure-storage-using-iscsi-targetin-linux/">iSCSI Series</a></li>
+<li id="menu-item-12406" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12406"><a href="https://www.tecmint.com/install-zentyal-as-primary-domain-controller-and-integrate-windows-system/">Zentyal Series</a></li>
+<li id="menu-item-16084" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16084"><a href="https://www.tecmint.com/install-and-configure-ansible-automation-tool-in-linux/">Ansible Series</a></li>
+<li id="menu-item-16395" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16395"><a href="https://www.tecmint.com/install-and-configure-django-web-framework-in-centos-debian-ubuntu/">Django Series</a></li>
+<li id="menu-item-14603" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14603"><a href="https://www.tecmint.com/create-gui-applications-in-linux/">Create GUI Apps</a></li>
+</ul>
+</li>
+<li id="menu-item-14796" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-14796"><a href="https://www.tecmint.com/command-line-tools-to-monitor-linux-performance/">Monitoring Tools</a>
+<ul class="sub-menu" style="display: none;">
+<li id="menu-item-14797" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14797"><a href="https://www.tecmint.com/install-nagios-in-linux/">Nagios</a></li>
+<li id="menu-item-14798" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14798"><a href="https://www.tecmint.com/install-and-configure-zabbix-monitoring-on-debian-centos-rhel/">Zabbix</a></li>
+<li id="menu-item-14799" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14799"><a href="https://www.tecmint.com/install-cacti-network-monitoring-on-rhel-centos-6-3-5-8-and-fedora-17-12/">Cacti</a></li>
+<li id="menu-item-14800" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14800"><a href="https://www.tecmint.com/install-observium-in-centos/">Observium</a></li>
+<li id="menu-item-14801" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14801"><a href="https://www.tecmint.com/monitorix-a-lightweight-system-and-network-monitoring-tool-for-linux/">Monitorix</a></li>
+<li id="menu-item-14802" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14802"><a href="https://www.tecmint.com/install-collectd-and-collectd-web-to-monitor-server-resources-in-linux/">Collectd</a></li>
+<li id="menu-item-14803" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14803"><a href="https://www.tecmint.com/linux-performance-monitoring-with-collectl-tool/">Collectl</a></li>
+<li id="menu-item-14804" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14804"><a href="https://www.tecmint.com/mysql-performance-monitoring/">MySQL Monitoring</a></li>
+</ul>
+</li>
+</ul></div>
+</nav>
+</div>
+</div>
+</header>
+<div class="container" id="page">
+<div class="container-inner">
+<div class="main">
+<div class="main-inner group">
+<section class="content">
+<div class="page-title pad group">
+<ul class="meta-single group">
+<li class="category"><a href="https://www.tecmint.com/category/interview-questions/" rel="category tag">Interview Questions</a></li>
+<li class="comments"><a href="https://www.tecmint.com/basic-linux-interview-questions-and-answers/#comments"><i class="fa fa-comments-o"></i>127</a></li>
+</ul>
+</div>
+<div class="pad group">
+<article class="post-4781 post type-post status-publish format-standard has-post-thumbnail hentry category-interview-questions tag-linux-interview-questions tag-linux-questions">
+<div class="post-inner group">
+<h1 class="post-title">11 Basic Linux Interview Questions and Answers</h1>
+<p class="post-byline">by <a href="https://www.tecmint.com/author/avishek/" title="Posts by Editor" rel="author">Editor</a> | Published: November 18, 2013 | 
+Last Updated: January 7, 2015 </p>
+<div class="add-box">
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2601749019656699" data-ad-slot="2902592253" data-ad-format="link"></ins>
+<script type="">
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div class="clear"></div>
+<div id="exam_announcement">
+<i style="color:#28557a; font-size:20px;" class="fa fa-book"></i>
+<b>Download Your Free eBooks NOW</b> - <a target="_blank" style="text-decoration:underline;" href="https://www.tecmint.com/10-useful-free-linux-ebooks-for-newbies-and-administrators/">10 Free Linux eBooks for Administrators</a> | <a style="text-decoration:underline;" target="_blank" href="https://www.tecmint.com/free-linux-shell-scripting-books/">4 Free Shell Scripting eBooks</a>
+</div>
+<div class="clear"></div>
+<div class="ads-inner-mobile">
+<center>
+
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-2601749019656699" data-ad-slot="9946480174"></ins>
+<script type="">
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</center>
+</div>
+<div class="clear"></div>
+<div class="entry share">
+<div class="entry-inner">
+<p>Theories apart, we are proud to announce a new section on <strong>Tecmint</strong>, dedicated to <strong>Linux Interview</strong>. Here we will bring to you <strong>Linux Interview Questions</strong> and all other aspects of Linux, which is must for a professional in this cut-throat competition world.</p>
+<div id="attachment_4785" style="width: 435px" class="wp-caption aligncenter"><a href="https://www.tecmint.com/wp-content/uploads/2013/11/Basic-Interview-Questions.png"><img src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/Basic-Interview-Questions.png" class="size-full wp-image-4785" alt="Basic Linux Interview Questions" style="display: inline;" data-lazy-loaded="true" width="425" height="276"><noscript><img class="size-full wp-image-4785" alt="Basic Linux Interview Questions" src="https://www.tecmint.com/wp-content/uploads/2013/11/Basic-Interview-Questions.png" width="425" height="276" /></noscript></a><p class="wp-caption-text">Basic Linux Interview Questions</p></div>
+<p>A new article in this section (<strong>Linux Interview</strong>) will be posted on every weekend. The initiative taken by <strong>Tecmint</strong> is first of it’s kind among other <strong>Linux Dedicated</strong> websites, along with quality and unique articles.</p>
+<p>We will start with <strong>Basic Linux Interview</strong> <strong>Question</strong> and will go advance article by article, for which your response is highly appreciated, which put us on a higher note.</p>
+<h6>Q.1: What is the core of Linux Operating System?</h6>
+<ol>
+<li>Shell</li>
+<li>Kernel</li>
+<li>Command</li>
+<li>Script</li>
+<li>Terminal</li>
+</ol>
+<div style="background: #faffc6; margin: 10px 0 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px; padding-top: 20px; border: #def200 1px solid;"><strong><span style="color: red; font-size: normal; text-align: left;">Answer :</span></strong> <span style="color: #333333;">Kernel
+ is the core of Linux Operating System. Shell is a command Line 
+Interpreter, Command is user Instruction to Computer, Script is 
+collection of commands stored in a file and Terminal is a command Line 
+Interface</span></div>
+<h6>Q.2: What Linus Torvalds Created?</h6>
+<ol>
+<li>Fedora</li>
+<li>Slackware</li>
+<li>Debian</li>
+<li>Gentoo</li>
+<li>Linux</li>
+</ol>
+<div style="background: #faffc6; margin: 10px 0 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px; padding-top: 20px; border: #def200 1px solid;"><strong><span style="color: red; font-size: normal; text-align: left;">Answer :</span></strong> <span style="color: #333333;">Linux
+ Torvalds created Linux, which is the kernel (heart) of all of the above
+ Operating System and all other Linux Operating System.</span></div>
+<h6>Q.3: Torvalds, Wrote most of the Linux Kernel in C++ programming Language, do you agree?</h6>
+<div style="background: #faffc6; margin: 10px 0 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px; padding-top: 20px; border: #def200 1px solid;"><strong><span style="color: red; font-size: normal; text-align: left;">Answer :</span></strong> <span style="color: #333333;">No!
+ Linux Kernel contains 12,020,528 Lines of codes out of which 2,151,595 
+Lines are comments. So remaining 9,868,933 lines are codes and out of 
+9,868,933 Lines of codes 7,896,318 are written in C Programming 
+Language.</span></div>
+<p>The remaining Lines of code 1,972,615 is written in C++, Assembly, 
+Perl, Shell Script, Python, Bash Script, HTML, awk, yacc, lex, sed, etc.</p>
+<center style="padding-bottom: 20px;padding-top: 10px;"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2601749019656699" data-ad-slot="5590002574" data-ad-format="auto"></ins><script type="application/ld+json">(adsbygoogle = window.adsbygoogle || []).push({});</script></center><p><strong style="color: red;">Note</strong> : The Number of Lines of codes varies on daily basis and an average of more than 3,509 lines are being added to Kernel.</p>
+<h6>Q.4: Linux initially was developed for intel X86 architecture but 
+has been ported to other hardware platform than any other Operating 
+System. Do you agree?.</h6>
+<div style="background: #faffc6; margin: 10px 0 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px; padding-top: 20px; border: #def200 1px solid;"><strong><span style="color: red; font-size: normal; text-align: left;">Answer :</span></strong> <span style="color: #333333;">Yes,
+ I do agree. Linux was written for x86 machine, and has been ported to 
+all kind of platform. Today’s more than 90% of supercomputers are using 
+Linux. Linux made a very promising future in mobile phone, Tablets. 
+In-fact we are surrounded by Linux in remote controls, space science, 
+Research, Web, Desktop Computing. The list is endless.</span></div>
+<h6>Q.5: Is it legal to edit Linux Kernel?</h6>
+<div style="background: #faffc6; margin: 10px 0 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px; padding-top: 20px; border: #def200 1px solid;"><strong><span style="color: red; font-size: normal; text-align: left;">Answer :</span></strong> <span style="color: #333333;">Yes,
+ Kernel is released under General Public Licence (GPL), and anyone can 
+edit Linux Kernel to the extent permitted under GPL. Linux Kernel comes 
+under the category of Free and Open Source Software (FOSS).</span></div>
+<h6>Q.6: What is the basic difference between UNIX and Linux Operating System.</h6>
+<div style="background: #faffc6; margin: 10px 0px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px; padding-top: 20px; border: #def200 1px solid;"><strong><span style="color: red; font-size: normal; text-align: left;">Answer :</span></strong> <span style="color: #333333;">Linux
+ Operating System is Free and Open Source Software, the kernel of which 
+is created by Linus Torvalds and community. Well you can not say UNIX 
+Operating System doesn’t comes under the category of Free and Open 
+Source Software, BSD, is a variant of UNIX which comes under the 
+category of FOSS. Moreover Big companies like Apple, IBM, Oracle, HP, 
+etc. are contributing to UNIX Kernel. </span></div>
+<h6>Q. 7: Choose the odd one out.</h6>
+<ol>
+<li>HP-UX</li>
+<li>AIX</li>
+<li>OSX</li>
+<li>Slackware</li>
+<li>Solaris</li>
+</ol>
+<div style="background: #faffc6; margin: 10px 0 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px; padding-top: 20px; border: #def200 1px solid;"><strong><span style="color: red; font-size: normal; text-align: left;">Answer :</span></strong> <span style="color: #333333;">Slackware
+ is the odd in the above list. HP-UX, AIX, OSX, Solaris are developed by
+ HP, IBM, APPLE, Oracle respectively and all are UNIX variant. Slackware
+ is a Linux Operating System.</span></div>
+<h6>Q.8: Is Linux Operating system Virus free?</h6>
+<div style="background: #faffc6; margin: 10px 0 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px; padding-top: 20px; border: #def200 1px solid;"><strong><span style="color: red; font-size: normal; text-align: left;">Answer :</span></strong> <span style="color: #333333;">No!
+ There doesn’t exist any Operating System on this earth that is virus 
+free. However Linux is known to have least number of Viruses, till date,
+ yes even less than UNIX OS. Linux has had about 60-100 viruses listed 
+till date. None of them actively spreading nowadays. A rough estimate of
+ UNIX viruses is between 85 -120 viruses reported till date.</span></div>
+<h6>Q.9: Linux is which kind of Operating System?</h6>
+<ol>
+<li>Multi User</li>
+<li>Multi Tasking</li>
+<li>Multi Process</li>
+<li>All of the above</li>
+<li>None of the above</li>
+</ol>
+<div style="background: #faffc6; margin: 10px 0 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px; padding-top: 20px; border: #def200 1px solid;"><strong><span style="color: red; font-size: normal; text-align: left;">Answer :</span></strong> <span style="color: #333333;">All
+ of the Above. Linux is an Operating System which supports Multi User, 
+Running a Number of Processes performing different tasks simultaneously.</span></div>
+<h6>Q.10: Syntax of any Linux command is:</h6>
+<ol>
+<li>command [options] [arguments]</li>
+<li>command options [arguments]</li>
+<li>command [options] [arguments]</li>
+<li>command options arguments</li>
+</ol>
+<div style="background: #faffc6; margin: 10px 0 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px; padding-top: 20px; border: #def200 1px solid;"><strong><span style="color: red; font-size: normal; text-align: left;">Answer :</span></strong> <span style="color: #333333;">The correct Syntax of Linux Command is Command [options] [arguments].</span></div>
+<h6>Q.11: Choose the odd one out.</h6>
+<ol>
+<li>Vi</li>
+<li>vim</li>
+<li>cd</li>
+<li>nano</li>
+</ol>
+<div style="background: #faffc6; margin: 10px 0 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px; padding-top: 20px; border: #def200 1px solid;"><strong><span style="color: red; font-size: normal; text-align: left;">Answer :</span></strong> <span style="color: #333333;">The
+ odd one in the above list is cd. Vi, vim and nano are editors which is 
+useful in editing files, while cd command is used for changing 
+directory.</span></div>
+<p>That’s all for now. How much you learned for the above questions? How
+ it helped you in your Interview? We would like to hear all these from 
+you in our comment section. Wait till the next weekend, for new set of 
+questions. Till then stay healthy, tuned and connected to <strong>Tecmint</strong>.</p>
+</div>
+<div class="sharrre-container">
+<span>Share</span>
+<div id="twitter" data-url="https://www.tecmint.com/basic-linux-interview-questions-and-answers/" data-text="11 Basic Linux Interview Questions and Answers" data-title="Tweet" class="sharrre"><a class="box" href="#"><div class="count" href="#">+</div><div class="share"><i class="fa fa-twitter"></i></div></a></div>
+<div id="facebook" data-url="https://www.tecmint.com/basic-linux-interview-questions-and-answers/" data-text="11 Basic Linux Interview Questions and Answers" data-title="Like" class="sharrre"><a class="box" href="#"><div class="count" href="#">0</div><div class="share"><i class="fa fa-facebook-square"></i></div></a></div>
+<div id="googleplus" data-url="https://www.tecmint.com/basic-linux-interview-questions-and-answers/" data-text="11 Basic Linux Interview Questions and Answers" data-title="+1" class="sharrre"><a class="box" href="#"><div class="count" href="#">0</div><div class="share"><i class="fa fa-google-plus-square"></i></div></a></div>
+<div id="linkedin" data-url="https://www.tecmint.com/basic-linux-interview-questions-and-answers/" data-text="11 Basic Linux Interview Questions and Answers" data-title="Share It" class="sharrre"><a class="box" href="#" rel="nofollow"><div class="count" href="#">0</div><div class="share"><i class="fa fa-linkedin"></i></div></a></div>
+<div style="font-weight: 600; padding-top: 10px; width: 55px;"><a href="#comments"><img alt="Ask Anything" src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/help.png"></a></div>
+</div>
+<script type="text/javascript">
+// Sharrre
+jQuery(document).ready(function(){
+jQuery('#twitter').sharrre({
+share: {
+twitter: true
+},
+template: '<a class="box" href="#"><div class="count" href="#">{total}</div><div class="share"><i class="fa fa-twitter"></i></div></a>',
+enableHover: false,
+enableTracking: true,
+buttons: { twitter: {via: 'tecmint'}},
+click: function(api, options){
+api.simulateClick();
+api.openPopup('twitter');
+}
+});
+jQuery('#facebook').sharrre({
+share: {
+facebook: true
+},
+template: '<a class="box" href="#"><div class="count" href="#">{total}</div><div class="share"><i class="fa fa-facebook-square"></i></div></a>',
+enableHover: false,
+enableTracking: true,
+click: function(api, options){
+api.simulateClick();
+api.openPopup('facebook');
+}
+});
+jQuery('#googleplus').sharrre({
+share: {
+googlePlus: true
+},
+template: '<a class="box" href="#"><div class="count" href="#">{total}</div><div class="share"><i class="fa fa-google-plus-square"></i></div></a>',
+enableHover: false,
+enableTracking: true,
+urlCurl: 'https://www.tecmint.com/wp-content/themes/tecmint/js/sharrre.php',
+click: function(api, options){
+api.simulateClick();
+api.openPopup('googlePlus');
+}
+});
+jQuery('#linkedin').sharrre({
+share: {
+linkedin: true
+},
+template: '<a class="box" href="#" rel="nofollow"><div class="count" href="#">{total}</div><div class="share"><i class="fa fa-linkedin"></i></div></a>',
+enableHover: false,
+enableTracking: true,
+buttons: {
+linkedin: {
+description: '11 Basic Linux Interview Questions and Answers',media: 'https://www.tecmint.com/wp-content/uploads/2013/11/Basic-Interview-Questions.png'				}
+},
+click: function(api, options){
+api.simulateClick();
+api.openPopup('linkedin');
+}
+});
+// Scrollable sharrre bar, contributed by Erik Frye. Awesome!
+var shareContainer = jQuery(".sharrre-container"),
+header = jQuery('#header'),
+postEntry = jQuery('.entry'),
+$window = jQuery(window),
+distanceFromTop = 20,
+startSharePosition = shareContainer.offset(),
+contentBottom = postEntry.offset().top + postEntry.outerHeight(),
+topOfTemplate = header.offset().top;
+getTopSpacing();
+shareScroll = function(){
+if($window.width() > 719){	
+var scrollTop = $window.scrollTop() + topOfTemplate,
+stopLocation = contentBottom - (shareContainer.outerHeight() + topSpacing);
+if(scrollTop > stopLocation){
+shareContainer.offset({top: contentBottom - shareContainer.outerHeight(),left: startSharePosition.left});
+}
+else if(scrollTop >= postEntry.offset().top-topSpacing){
+shareContainer.offset({top: scrollTop + topSpacing, left: startSharePosition.left});
+}else if(scrollTop < startSharePosition.top+(topSpacing-1)){
+shareContainer.offset({top: startSharePosition.top,left:startSharePosition.left});
+}
+}
+},
+shareMove = function(){
+startSharePosition = shareContainer.offset();
+contentBottom = postEntry.offset().top + postEntry.outerHeight();
+topOfTemplate = header.offset().top;
+getTopSpacing();
+};
+/* As new images load the page content body gets longer. The bottom of the content area needs to be adjusted in case images are still loading. */
+setTimeout(function() {
+contentBottom = postEntry.offset().top + postEntry.outerHeight();
+}, 2000);
+if (window.addEventListener) {
+window.addEventListener('scroll', shareScroll, false);
+window.addEventListener('resize', shareMove, false);
+} else if (window.attachEvent) {
+window.attachEvent('onscroll', shareScroll);
+window.attachEvent('onresize', shareMove);
+}
+function getTopSpacing(){
+if($window.width() > 1024)
+topSpacing = distanceFromTop + jQuery('.nav-wrap').outerHeight();
+else
+topSpacing = distanceFromTop;
+}
+});
+</script>
+<div class="clear"></div>
+</div>
+</div>
+</article>
+<div class="clear"></div>
+<div class="clear"></div>
+<div class="ads-inner-mobile">
+<center style="padding-top:30px;">
+
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-2601749019656699" data-ad-slot="7807254572"></ins>
+<script type="">
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</center>
+</div>
+<div class="clear"></div>
+<div class="after-post-box">
+<h2>If You Appreciate What We Do Here On TecMint, You Should Consider:</h2>
+<ol>
+<li>Stay Connected to: <strong><a target="_blank" rel="nofollow" href="https://bit.ly/1TP6lcM" title="Follow TecMint on Twitter">Twitter</a></strong> | <strong><a target="_blank" rel="nofollow" href="https://bit.ly/1rDYrdj" title="Like Us on Facebook">Facebook</a></strong> | <strong><a target="_blank" rel="nofollow" href="https://bit.ly/24J6lna" title="Join Us On Google+">Google Plus</a></strong></li>
+<li>Subscribe to our email updates: <strong><a target="_blank" rel="nofollow" href="https://bit.ly/2dhBpWQ" title="Subscribe to TecMint Email Updates">Sign Up Now</a></strong></li>
+<li>Get your own <strong><a target="_blank" rel="nofollow" title="WordPress Hosting" href="https://www.bluehost.com/track/tecmint/">self-hosted blog with a Free Domain</a></strong> at (<strong>$3.45/month</strong>).</li>
+<li>Become a Supporter - <strong><a target="_blank" href="https://www.tecmint.com/donate-to-tecmint/">Make a contribution via PayPal</a></strong></li>
+<li>Support us by <strong><a href="https://www.tecmint.com/linux-books-in-pdf-format/" target="_blank">purchasing our premium books</a></strong> in PDF format.</li>
+<li>Support us by taking our <strong><a rel="nofollow" target="_blank" href="https://deals.tecmint.com/search?utf8=%E2%9C%93&amp;query=linux">online Linux courses</a></strong></li>
+</ol>
+<p style="text-align: center;"><strong style=" color:#fe3300;font-size:20px;">We are thankful for your never ending support.</strong></p>
+</div>
+<div class="clear"></div>
+<p class="post-tags"><span>Tags:</span> <a href="https://www.tecmint.com/tag/linux-interview-questions/" rel="tag">linux interview questions</a><a href="https://www.tecmint.com/tag/linux-questions/" rel="tag">linux questions</a></p> <div class="hr"></div>
+<div class="grid one-fourth">
+<a href="https://www.tecmint.com/red-hat-rhcsa-rhce-exam-certification-book/" target="_blank"><img alt="RedHat RHCE and RHCSA Certification Book" src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/RedHat-RHCSA-RHCE-Exam-Study-Ebook.png" style="margin-right:10px;" width="200"></a>
+</div>
+<div class="grid one-fourth">
+<a href="https://www.tecmint.com/linux-foundation-lfcs-lfce-certification-exam-book/" target="_blank"><img alt="Linux Foundation LFCS and LFCE Certification Preparation Guide" src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/Linux-Foundation-LFCS-LFCE-Certification-Ebook.png" width="200"></a>
+</div>
+<div class="grid one-fourth">
+<a href="https://deals.tecmint.com/sales/complete-linux-crash-course-includes-topics-on-red-hat-unix-kali-python-and-opensuse?utm_source=tecmint.com&amp;utm_medium=referral&amp;utm_campaign=complete-linux-crash-course-includes-topics-on-red-hat-unix-kali-python-and-opensu" rel="nofollow" target="_blank"><img src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/Linux-System-Administrator-Course.png" style="margin-right:10px;" width="200"></a>
+</div>
+<div class="grid one-fourth last">
+<a href="https://deals.tecmint.com/sales/become-an-ethical-hacker-bonus-bundle?utm_source=tecmint.com&amp;utm_medium=referral&amp;utm_campaign=become-an-ethical-hacker-bonus-bundle_090216" rel="nofollow" target="_blank"><img src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/Become-an-Ethical-Hacker.png" width="200"></a>
+</div>
+<div class="clear"></div>
+<div class="hr"></div>
+<ul class="post-nav group">
+<li class="next"><a href="https://www.tecmint.com/exploring-shorewall-firewall-configuration-and-command-line-options/" rel="next"><i class="fa fa-chevron-right"></i><strong>Next story</strong> <span>Exploring Shorewall Firewall Configuration and Command Line Options</span></a></li>
+<li class="previous"><a href="https://www.tecmint.com/shorewall-a-high-level-firewall-for-configuring-linux-servers/" rel="prev"><i class="fa fa-chevron-left"></i><strong>Previous story</strong> <span>Shorewall – A High-Level Firewall for Configuring Linux Servers</span></a></li>
+</ul>
+<h4 class="heading">
+<i class="fa fa-hand-o-right"></i>You may also like...</h4>
+<ul class="related-posts group">
+<li class="related post-hover">
+<article class="post-5089 post type-post status-publish format-standard has-post-thumbnail hentry category-interview-questions category-mysql tag-mysql-interview-questions tag-mysql-questions">
+<div class="post-thumbnail">
+<a href="https://www.tecmint.com/basic-mysql-interview-questions-for-database-administrators/" title="15 Basic MySQL Interview Questions for Database Administrators">
+<img src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/1x1.gif" data-lazy-src="https://www.tecmint.com/wp-content/uploads/2013/12/Mysql-Interview-Questions.png" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="Mysql Interview Questions" width="425" height="276"><noscript><img width="425" height="276" src="https://www.tecmint.com/wp-content/uploads/2013/12/Mysql-Interview-Questions.png" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="Mysql Interview Questions" /></noscript> </a>
+<a class="post-comments" href="https://www.tecmint.com/basic-mysql-interview-questions-for-database-administrators/#comments"><span><i class="fa fa-comments-o"></i>21</span></a>
+</div>
+<div class="related-inner">
+<h4 class="post-title">
+<a href="https://www.tecmint.com/basic-mysql-interview-questions-for-database-administrators/" rel="bookmark" title="15 Basic MySQL Interview Questions for Database Administrators">15 Basic MySQL Interview Questions for Database Administrators</a>
+</h4>
+<div class="post-meta group">
+<p class="post-date">20 Dec, 2013</p>
+</div>
+</div>
+</article>
+</li>
+<li class="related post-hover">
+<article class="post-5878 post type-post status-publish format-standard has-post-thumbnail hentry category-interview-questions tag-linux-answers tag-linux-questions">
+<div class="post-thumbnail">
+<a href="https://www.tecmint.com/10-interview-questions-and-answers-on-various-commands-in-linux/" title="10 Interview Questions and Answers on Various Commands in Linux">
+<img src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/1x1.gif" data-lazy-src="https://www.tecmint.com/wp-content/uploads/2014/03/Questions-on-Various-Commands.png" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="Linux Questions on Commands" width="442" height="317"><noscript><img width="442" height="317" src="https://www.tecmint.com/wp-content/uploads/2014/03/Questions-on-Various-Commands.png" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="Linux Questions on Commands" /></noscript> </a>
+<a class="post-comments" href="https://www.tecmint.com/10-interview-questions-and-answers-on-various-commands-in-linux/#comments"><span><i class="fa fa-comments-o"></i>16</span></a>
+</div>
+<div class="related-inner">
+<h4 class="post-title">
+<a href="https://www.tecmint.com/10-interview-questions-and-answers-on-various-commands-in-linux/" rel="bookmark" title="10 Interview Questions and Answers on Various Commands in Linux">10 Interview Questions and Answers on Various Commands in Linux</a>
+</h4>
+<div class="post-meta group">
+<p class="post-date">22 Mar, 2014</p>
+</div>
+</div>
+</article>
+</li>
+<li class="related post-hover">
+<article class="post-14302 post type-post status-publish format-standard has-post-thumbnail hentry category-interview-questions tag-linux-interview tag-rpm">
+<div class="post-thumbnail">
+<a href="https://www.tecmint.com/linux-rpm-package-management-interview-questions/" title="Shilpa Nair Shares Her Interview Experience on RedHat Linux Package Management">
+<img src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/1x1.gif" data-lazy-src="https://www.tecmint.com/wp-content/uploads/2015/06/Linux-Interview-Questions-on-RPM-520x245.jpeg" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="Linux Interview Questions on RPM" srcset="https://www.tecmint.com/wp-content/uploads/2015/06/Linux-Interview-Questions-on-RPM-520x245.jpeg 520w, https://www.tecmint.com/wp-content/uploads/2015/06/Linux-Interview-Questions-on-RPM-720x340.jpeg 720w" sizes="(max-width: 520px) 100vw, 520px" width="520" height="245"><noscript><img width="520" height="245" src="https://www.tecmint.com/wp-content/uploads/2015/06/Linux-Interview-Questions-on-RPM-520x245.jpeg" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="Linux Interview Questions on RPM" srcset="https://www.tecmint.com/wp-content/uploads/2015/06/Linux-Interview-Questions-on-RPM-520x245.jpeg 520w, https://www.tecmint.com/wp-content/uploads/2015/06/Linux-Interview-Questions-on-RPM-720x340.jpeg 720w" sizes="(max-width: 520px) 100vw, 520px" /></noscript> </a>
+<a class="post-comments" href="https://www.tecmint.com/linux-rpm-package-management-interview-questions/#comments"><span><i class="fa fa-comments-o"></i>7</span></a>
+</div>
+<div class="related-inner">
+<h4 class="post-title">
+<a href="https://www.tecmint.com/linux-rpm-package-management-interview-questions/" rel="bookmark" title="Shilpa Nair Shares Her Interview Experience on RedHat Linux Package Management">Shilpa Nair Shares Her Interview Experience on RedHat Linux Package Management</a>
+</h4>
+<div class="post-meta group">
+<p class="post-date">23 Jun, 2015</p>
+</div>
+</div>
+</article>
+</li>
+</ul>
+<section id="comments" class="themeform">
+<h3 class="heading">127 Responses</h3>
+<ul class="comment-tabs group">
+<li class="active"><a href="#commentlist-container"><i class="fa fa-comments-o"></i>Comments<span>6</span></a></li>
+<li><a href="#pinglist-container"><i class="fa fa-share"></i>Pingbacks<span>0</span></a></li>
+</ul>
+<div id="commentlist-container" class="comment-tab">
+<ol class="commentlist">
+<li class="comment even thread-even depth-1" id="comment-965716">
+<div id="div-comment-965716" class="comment-body">
+<div class="comment-author vcard">
+<img src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/1x1.gif" data-lazy-src="https://secure.gravatar.com/avatar/8af4310b94c71f83cbd4f98929280167?s=96&amp;d=blank&amp;r=g" alt="" srcset="https://secure.gravatar.com/avatar/8af4310b94c71f83cbd4f98929280167?s=192&amp;d=blank&amp;r=g 2x" class="avatar avatar-96 photo" width="96" height="96"><noscript><img alt='' src='https://secure.gravatar.com/avatar/8af4310b94c71f83cbd4f98929280167?s=96&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/8af4310b94c71f83cbd4f98929280167?s=192&#038;d=blank&#038;r=g 2x' class='avatar avatar-96 photo' height='96' width='96' /></noscript> <cite class="fn">Rutuja</cite> <span class="says">says:</span> </div>
+<div class="comment-meta commentmetadata"><a href="https://www.tecmint.com/basic-linux-interview-questions-and-answers/comment-page-7/#comment-965716">
+February 2, 2018 at 3:00 pm</a> </div>
+<p>Really…. Nice one and more to learn</p>
+<div class="reply"><a rel="nofollow" class="comment-reply-link" href="https://www.tecmint.com/basic-linux-interview-questions-and-answers/?replytocom=965716#respond" onclick='return addComment.moveForm( "div-comment-965716", "965716", "respond", "4781" )' aria-label="Reply to Rutuja">Reply</a></div>
+</div>
+</li>
+<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-965715">
+<div id="div-comment-965715" class="comment-body">
+<div class="comment-author vcard">
+<img src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/1x1.gif" data-lazy-src="https://secure.gravatar.com/avatar/8af4310b94c71f83cbd4f98929280167?s=96&amp;d=blank&amp;r=g" alt="" srcset="https://secure.gravatar.com/avatar/8af4310b94c71f83cbd4f98929280167?s=192&amp;d=blank&amp;r=g 2x" class="avatar avatar-96 photo" width="96" height="96"><noscript><img alt='' src='https://secure.gravatar.com/avatar/8af4310b94c71f83cbd4f98929280167?s=96&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/8af4310b94c71f83cbd4f98929280167?s=192&#038;d=blank&#038;r=g 2x' class='avatar avatar-96 photo' height='96' width='96' /></noscript> <cite class="fn"><a href="https://www.tecmint.com/" rel="external nofollow" class="url">Rutuja</a></cite> <span class="says">says:</span> </div>
+<div class="comment-meta commentmetadata"><a href="https://www.tecmint.com/basic-linux-interview-questions-and-answers/comment-page-7/#comment-965715">
+February 2, 2018 at 2:59 pm</a> </div>
+<p>Thanku for creating this article it’s very important for interview preparation..</p>
+<div class="reply"><a rel="nofollow" class="comment-reply-link" href="https://www.tecmint.com/basic-linux-interview-questions-and-answers/?replytocom=965715#respond" onclick='return addComment.moveForm( "div-comment-965715", "965715", "respond", "4781" )' aria-label="Reply to Rutuja">Reply</a></div>
+</div>
+</li>
+<li class="comment even thread-even depth-1" id="comment-905332">
+<div id="div-comment-905332" class="comment-body">
+<div class="comment-author vcard">
+<img src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/1x1.gif" data-lazy-src="https://secure.gravatar.com/avatar/47a733c34cf4480074a904e65aba9a6e?s=96&amp;d=blank&amp;r=g" alt="" srcset="https://secure.gravatar.com/avatar/47a733c34cf4480074a904e65aba9a6e?s=192&amp;d=blank&amp;r=g 2x" class="avatar avatar-96 photo" width="96" height="96"><noscript><img alt='' src='https://secure.gravatar.com/avatar/47a733c34cf4480074a904e65aba9a6e?s=96&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/47a733c34cf4480074a904e65aba9a6e?s=192&#038;d=blank&#038;r=g 2x' class='avatar avatar-96 photo' height='96' width='96' /></noscript> <cite class="fn">Emmanuel</cite> <span class="says">says:</span> </div>
+<div class="comment-meta commentmetadata"><a href="https://www.tecmint.com/basic-linux-interview-questions-and-answers/comment-page-7/#comment-905332">
+August 4, 2017 at 11:32 pm</a> </div>
+<p>It’s a very good.</p>
+<div class="reply"><a rel="nofollow" class="comment-reply-link" href="https://www.tecmint.com/basic-linux-interview-questions-and-answers/?replytocom=905332#respond" onclick='return addComment.moveForm( "div-comment-905332", "905332", "respond", "4781" )' aria-label="Reply to Emmanuel">Reply</a></div>
+</div>
+</li>
+<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-880389">
+<div id="div-comment-880389" class="comment-body">
+<div class="comment-author vcard">
+<img src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/1x1.gif" data-lazy-src="https://secure.gravatar.com/avatar/7c625c315b666fbd5d5943b526aca1c0?s=96&amp;d=blank&amp;r=g" alt="" srcset="https://secure.gravatar.com/avatar/7c625c315b666fbd5d5943b526aca1c0?s=192&amp;d=blank&amp;r=g 2x" class="avatar avatar-96 photo" width="96" height="96"><noscript><img alt='' src='https://secure.gravatar.com/avatar/7c625c315b666fbd5d5943b526aca1c0?s=96&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/7c625c315b666fbd5d5943b526aca1c0?s=192&#038;d=blank&#038;r=g 2x' class='avatar avatar-96 photo' height='96' width='96' /></noscript> <cite class="fn">JackF</cite> <span class="says">says:</span> </div>
+<div class="comment-meta commentmetadata"><a href="https://www.tecmint.com/basic-linux-interview-questions-and-answers/comment-page-7/#comment-880389">
+March 31, 2017 at 9:48 pm</a> </div>
+<p>This website is huge helpful for me, thanks for a millions.</p>
+<div class="reply"><a rel="nofollow" class="comment-reply-link" href="https://www.tecmint.com/basic-linux-interview-questions-and-answers/?replytocom=880389#respond" onclick='return addComment.moveForm( "div-comment-880389", "880389", "respond", "4781" )' aria-label="Reply to JackF">Reply</a></div>
+</div>
+</li>
+<li class="comment even thread-even depth-1" id="comment-863556">
+<div id="div-comment-863556" class="comment-body">
+<div class="comment-author vcard">
+<img src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/1x1.gif" data-lazy-src="https://secure.gravatar.com/avatar/a29ad9c26b935a1acb197eaf5938aec6?s=96&amp;d=blank&amp;r=g" alt="" srcset="https://secure.gravatar.com/avatar/a29ad9c26b935a1acb197eaf5938aec6?s=192&amp;d=blank&amp;r=g 2x" class="avatar avatar-96 photo" width="96" height="96"><noscript><img alt='' src='https://secure.gravatar.com/avatar/a29ad9c26b935a1acb197eaf5938aec6?s=96&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/a29ad9c26b935a1acb197eaf5938aec6?s=192&#038;d=blank&#038;r=g 2x' class='avatar avatar-96 photo' height='96' width='96' /></noscript> <cite class="fn">sivasakthi</cite> <span class="says">says:</span> </div>
+<div class="comment-meta commentmetadata"><a href="https://www.tecmint.com/basic-linux-interview-questions-and-answers/comment-page-7/#comment-863556">
+January 30, 2017 at 4:22 pm</a> </div>
+<p>thanks its good.</p>
+<div class="reply"><a rel="nofollow" class="comment-reply-link" href="https://www.tecmint.com/basic-linux-interview-questions-and-answers/?replytocom=863556#respond" onclick='return addComment.moveForm( "div-comment-863556", "863556", "respond", "4781" )' aria-label="Reply to sivasakthi">Reply</a></div>
+</div>
+</li>
+<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-857602">
+<div id="div-comment-857602" class="comment-body">
+<div class="comment-author vcard">
+<img src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/1x1.gif" data-lazy-src="https://secure.gravatar.com/avatar/facd1f1b282049ef013d1a15f5df6a19?s=96&amp;d=blank&amp;r=g" alt="" srcset="https://secure.gravatar.com/avatar/facd1f1b282049ef013d1a15f5df6a19?s=192&amp;d=blank&amp;r=g 2x" class="avatar avatar-96 photo" width="96" height="96"><noscript><img alt='' src='https://secure.gravatar.com/avatar/facd1f1b282049ef013d1a15f5df6a19?s=96&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/facd1f1b282049ef013d1a15f5df6a19?s=192&#038;d=blank&#038;r=g 2x' class='avatar avatar-96 photo' height='96' width='96' /></noscript> <cite class="fn">sandy</cite> <span class="says">says:</span> </div>
+<div class="comment-meta commentmetadata"><a href="https://www.tecmint.com/basic-linux-interview-questions-and-answers/comment-page-7/#comment-857602">
+January 5, 2017 at 12:30 pm</a> </div>
+<p>This is very good article. A lot to learn from this</p>
+<div class="reply"><a rel="nofollow" class="comment-reply-link" href="https://www.tecmint.com/basic-linux-interview-questions-and-answers/?replytocom=857602#respond" onclick='return addComment.moveForm( "div-comment-857602", "857602", "respond", "4781" )' aria-label="Reply to sandy">Reply</a></div>
+</div>
+</li>
+</ol>
+<nav class="comments-nav group">
+<div class="nav-previous"><a href="https://www.tecmint.com/basic-linux-interview-questions-and-answers/comment-page-6/#comments">« Older Comments</a></div>
+<div class="nav-next"></div>
+</nav>
+</div>
+<div id="respond" class="comment-respond">
+<h3 id="reply-title" class="comment-reply-title">Got something to say? Join the discussion. <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://www.tecmint.com/basic-linux-interview-questions-and-answers/#respond" style="display:none;">Cancel reply</a></small></h3> <form action="https://www.tecmint.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" size="30" maxlength="245" required="required" type="text"></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" size="30" maxlength="100" aria-describedby="email-notes" required="required" type="text"></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" size="30" maxlength="200" type="text"></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" value="yes" type="checkbox"><label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+<p class="comment-form-subscriptions"><label for="subscribe-reloaded"><input style="width:30px" name="subscribe-reloaded" id="subscribe-reloaded" value="yes" type="checkbox"> Notify me of followup comments via e-mail. You can also <a href="https://www.tecmint.com/comment-subscriptions/?srp=4781&amp;srk=dfad03934223c77dc11fd848a92dc080&amp;sra=s&amp;srsrc=f">subscribe</a> without commenting.</label></p><p class="form-submit"><input name="submit" id="submit" class="submit" value="Post Comment" type="submit"> <input name="comment_post_ID" value="4781" id="comment_post_ID" type="hidden">
+<input name="comment_parent" id="comment_parent" value="0" type="hidden">
+</p><p style="display: none;"><input id="akismet_comment_nonce" name="akismet_comment_nonce" value="92662ba019" type="hidden"></p><p style="display: none;"></p> <input id="ak_js" name="ak_js" value="1532252640120" type="hidden"></form>
+</div>
+<p class="akismet_comment_form_privacy_notice">This site uses Akismet to reduce spam. <a href="https://akismet.com/privacy/" target="_blank" rel="nofollow noopener">Learn how your comment data is processed</a>.</p>
+</section>
+</div>
+</section>
+<div class="sidebar s1">
+<a class="sidebar-toggle" title="Expand Sidebar"><i class="fa icon-sidebar-toggle"></i></a>
+<div class="sidebar-content">
+<div class="sidebar-top group">
+<span style="color:#002873; font-weight:600; font-size:20px;">I <i class="fa fa-heart col-love-l"></i> TecMint :</span>
+<ul class="social-links"><li><a rel="nofollow" class="social-tooltip" title="twitter" href="https://twitter.com/tecmint" target="Array"><i class="fa fa-twitter" style="color: #33ccff;"></i></a></li><li><a rel="nofollow" class="social-tooltip" title="facebook" href="https://www.facebook.com/TecMint" target="Array"><i class="fa fa-facebook" style="color: #3b5998;"></i></a></li><li><a rel="nofollow" class="social-tooltip" title="Google+" href="https://plus.google.com/101049688653487009744" target="Array"><i class="fa fa-google-plus" style="color: #db4a39;"></i></a></li><li><a rel="nofollow" class="social-tooltip" title="Feedly" href="https://feedly.com/i/subscription/feed/https://www.tecmint.com/feed/" target="Array"><i class="fa fa-rss" style="color: #87c040;"></i></a></li><li><a rel="nofollow" class="social-tooltip" title="Youtube" href="https://www.youtube.com/channel/UCkiRkzdLvoGBtW_YArytJlQ" target="Array"><i class="fa fa fa-youtube-square" style="color: #c4302b;"></i></a></li></ul> </div>
+<div id="text-23" class="widget widget_text"> <div class="textwidget"> <div style="background:#db4455;" class="message">
+<center><a href="https://www.tecmint.com/free-online-linux-learning-guide-for-beginners/" target="_blank"><span style="font-weight:bold;font-size:18px;"><i class="fa fa-linux"></i> BEGINNER'S GUIDE FOR LINUX <i class="fa fa-linux"></i></span> <span style="font-weight:bold;font-size:16px;">Start learning Linux in minutes</span> <i class="fa fa-arrow-right"></i></a>
+</center>
+</div></div>
+</div><div id="text-21" class="widget widget_text"> <div class="textwidget"><center>
+
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-2601749019656699" data-ad-slot="7270921771"></ins>
+<script type="">
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</center></div>
+</div><div id="text-25" class="widget widget_text"> <div class="textwidget"><div class="message"><center><a href="https://www.tecmint.com/vi-editor-usage/" target="_blank"><span style="font-weight:bold;font-size:17px;"><i class="fa fa-linux"></i> Vi/Vim Editor BEGINNER'S GUIDE <i class="fa fa-linux"></i></span> <span style="font-weight:bold;font-size:16px;">Learn vi/vim as a Full Text Editor</span> <i class="fa fa-file-text"></i>
+</a></center></div></div>
+</div><div id="text-24" class="widget widget_text"> <div class="textwidget">
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-2601749019656699" data-ad-slot="8362602806"></ins>
+<script type="">
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+</div><div id="text-26" class="widget widget_text"> <div class="textwidget"><div class="message" style="background-color: #ab0619;"><center><span style="font-weight:bold;font-size:17px;"><i class="fa fa-linux"></i> Linux Foundation Certification <i class="fa fa-linux"></i></span> <span style="font-weight:bold;font-size:16px;">Exam Study Guide to <a style="text-decoration:underline;" target="_blank" href="https://www.tecmint.com/linux-foundation-lfcs-lfce-certification-exam-book/">LFCS and LFCE</a></span></center></div></div>
+</div><div id="custom_html-2" class="widget_text widget widget_custom_html"><h3>Best Selling Online Courses</h3><div class="textwidget custom-html-widget"><center><script type="text/javascript">
+var total_images = 3;
+var random_number = Math.floor((Math.random()*total_images));
+var random_img = new Array();
+random_img[0] = '<a target="_blank" rel="nofollow" href="https://deals.tecmint.com/sales/it-hacking-bundle"><img src="https://www.fossmint.com/wp-content/themes/fossmint/backupads/Learn-Ethical-Hacking.jpg"/></a>';
+random_img[1] = '<a target="_blank" rel="nofollow" href="https://deals.tecmint.com/sales/complete-linux-crash-course-includes-topics-on-red-hat-unix-kali-python-and-opensuse"><img src="https://www.fossmint.com/wp-content/themes/fossmint/backupads/Linux-System-Administrator-Bundle.jpg"/></a>';
+random_img[2] = '<a target="_blank" rel="nofollow" href="https://deals.tecmint.com/sales/python-novice-to-ninja-linux-system-administration"><img src="https://www.fossmint.com/wp-content/themes/fossmint/backupads/Python-Linux-Administration.jpg"/></a>';
+document.write(random_img[random_number]);
+</script><a target="_blank" rel="nofollow" href="https://deals.tecmint.com/sales/complete-linux-crash-course-includes-topics-on-red-hat-unix-kali-python-and-opensuse"><img src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/Linux-System-Administrator-Bundle.jpg"></a></center>
+</div></div><div id="alxtabs-3" class="widget widget_alx_tabs">
+<ul class="alx-tabs-nav group tab-count-2"><li class="alx-tab tab-popular active"><a href="#tab-popular" title="Popular Posts"><i class="fa fa-star"></i><span>Popular Posts</span></a></li><li class="alx-tab tab-comments"><a href="#tab-comments" title="Recent Comments"><i class="fa fa-comments-o"></i><span>Recent Comments</span></a></li></ul>
+<div class="alx-tabs-container">
+<ul id="tab-popular" class="alx-tab group " style="display: block;">
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-title"><a href="https://www.tecmint.com/how-to-add-linux-host-to-nagios-monitoring-server/" rel="bookmark" title="How to Add Linux Host to Nagios Monitoring Server Using NRPE Plugin">How to Add Linux Host to Nagios Monitoring Server Using NRPE Plugin</a></p>
+</div>
+</li>
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-title"><a href="https://www.tecmint.com/install-nagios-in-linux/" rel="bookmark" title="How to Install Nagios 4.3.4 on RHEL, CentOS and Fedora">How to Install Nagios 4.3.4 on RHEL, CentOS and Fedora</a></p>
+</div>
+</li>
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-title"><a href="https://www.tecmint.com/install-cacti-network-monitoring-on-rhel-centos-6-3-5-8-and-fedora-17-12/" rel="bookmark" title="Install Cacti (Network Monitoring) on RHEL/CentOS 7.x/6.x/5.x and Fedora 24-12">Install Cacti (Network Monitoring) on RHEL/CentOS 7.x/6.x/5.x and Fedora 24-12</a></p>
+</div>
+</li>
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-title"><a href="https://www.tecmint.com/install-google-chrome-on-redhat-centos-fedora-linux/" rel="bookmark" title="Google Chrome 65 Released – Install on RHEL/CentOS 7 and Fedora 27-20">Google Chrome 65 Released – Install on RHEL/CentOS 7 and Fedora 27-20</a></p>
+</div>
+</li>
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-title"><a href="https://www.tecmint.com/install-ubuntu-16-04-alongside-with-windows-10-or-8-in-dual-boot/" rel="bookmark" title="How to Install Ubuntu 16.10/16.04 Alongside With Windows 10 or 8 in Dual-Boot">How to Install Ubuntu 16.10/16.04 Alongside With Windows 10 or 8 in Dual-Boot</a></p>
+</div>
+</li>
+</ul>
+<ul id="tab-comments" class="alx-tab group avatars-enabled" style="display: none;">
+<li>
+<div class="tab-item-avatar">
+<a href="https://www.tecmint.com/linux-foundation-lfcs-lfce-certification-exam-book/comment-page-4/#comment-1017429">
+<img src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/1x1.gif" data-lazy-src="https://secure.gravatar.com/avatar/7badddbc53297b2e8ed7011cf45df0c0?s=96&amp;d=blank&amp;r=g" alt="" srcset="https://secure.gravatar.com/avatar/7badddbc53297b2e8ed7011cf45df0c0?s=192&amp;d=blank&amp;r=g 2x" class="avatar avatar-96 photo" width="96" height="96"><noscript><img alt='' src='https://secure.gravatar.com/avatar/7badddbc53297b2e8ed7011cf45df0c0?s=96&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/7badddbc53297b2e8ed7011cf45df0c0?s=192&#038;d=blank&#038;r=g 2x' class='avatar avatar-96 photo' height='96' width='96' /></noscript> </a>
+</div>
+<div class="tab-item-inner group">
+<div class="tab-item-name">Ravi Saive says:</div>
+<div class="tab-item-comment"><a href="https://www.tecmint.com/linux-foundation-lfcs-lfce-certification-exam-book/comment-page-4/#comment-1017429">@Govind, Yes we are working on it, but the whole...</a></div>
+</div>
+</li>
+<li>
+<div class="tab-item-avatar">
+<a href="https://www.tecmint.com/create-luns-using-lvm-in-iscsi-target/comment-page-2/#comment-1017424">
+<img src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/1x1.gif" data-lazy-src="https://secure.gravatar.com/avatar/0d7ffbf193ed423f767870d759189dba?s=96&amp;d=blank&amp;r=g" alt="" srcset="https://secure.gravatar.com/avatar/0d7ffbf193ed423f767870d759189dba?s=192&amp;d=blank&amp;r=g 2x" class="avatar avatar-96 photo" width="96" height="96"><noscript><img alt='' src='https://secure.gravatar.com/avatar/0d7ffbf193ed423f767870d759189dba?s=96&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/0d7ffbf193ed423f767870d759189dba?s=192&#038;d=blank&#038;r=g 2x' class='avatar avatar-96 photo' height='96' width='96' /></noscript> </a>
+</div>
+<div class="tab-item-inner group">
+<div class="tab-item-name">Abhi says:</div>
+<div class="tab-item-comment"><a href="https://www.tecmint.com/create-luns-using-lvm-in-iscsi-target/comment-page-2/#comment-1017424">Hello Admins, I gone through the post it is very...</a></div>
+</div>
+</li>
+<li>
+<div class="tab-item-avatar">
+<a href="https://www.tecmint.com/teleconsole-share-linux-terminal-session-with-friends/comment-page-1/#comment-1017415">
+<img src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/1x1.gif" data-lazy-src="https://secure.gravatar.com/avatar/62308637055e4b7705f8c208a7556d68?s=96&amp;d=blank&amp;r=g" alt="" srcset="https://secure.gravatar.com/avatar/62308637055e4b7705f8c208a7556d68?s=192&amp;d=blank&amp;r=g 2x" class="avatar avatar-96 photo" width="96" height="96"><noscript><img alt='' src='https://secure.gravatar.com/avatar/62308637055e4b7705f8c208a7556d68?s=96&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/62308637055e4b7705f8c208a7556d68?s=192&#038;d=blank&#038;r=g 2x' class='avatar avatar-96 photo' height='96' width='96' /></noscript> </a>
+</div>
+<div class="tab-item-inner group">
+<div class="tab-item-name">niraj says:</div>
+<div class="tab-item-comment"><a href="https://www.tecmint.com/teleconsole-share-linux-terminal-session-with-friends/comment-page-1/#comment-1017415">Nice and useful article !! how secure is that ??</a></div>
+</div>
+</li>
+<li>
+<div class="tab-item-avatar">
+<a href="https://www.tecmint.com/linux-system-backup-tools/comment-page-3/#comment-1017349">
+<img src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/1x1.gif" data-lazy-src="https://secure.gravatar.com/avatar/1e38f22177e522c1f16d649caeb92b68?s=96&amp;d=blank&amp;r=g" alt="" srcset="https://secure.gravatar.com/avatar/1e38f22177e522c1f16d649caeb92b68?s=192&amp;d=blank&amp;r=g 2x" class="avatar avatar-96 photo" width="96" height="96"><noscript><img alt='' src='https://secure.gravatar.com/avatar/1e38f22177e522c1f16d649caeb92b68?s=96&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/1e38f22177e522c1f16d649caeb92b68?s=192&#038;d=blank&#038;r=g 2x' class='avatar avatar-96 photo' height='96' width='96' /></noscript> </a>
+</div>
+<div class="tab-item-inner group">
+<div class="tab-item-name">Steven Zawadzski says:</div>
+<div class="tab-item-comment"><a href="https://www.tecmint.com/linux-system-backup-tools/comment-page-3/#comment-1017349">What ever happened to Amanda? Amanda was at one time...</a></div>
+</div>
+</li>
+<li>
+<div class="tab-item-avatar">
+<a href="https://www.tecmint.com/clear-ram-memory-cache-buffer-and-swap-space-on-linux/comment-page-3/#comment-1017327">
+<img src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/1x1.gif" data-lazy-src="https://secure.gravatar.com/avatar/1efc1e0e9c06390edbf42a907738974a?s=96&amp;d=blank&amp;r=g" alt="" srcset="https://secure.gravatar.com/avatar/1efc1e0e9c06390edbf42a907738974a?s=192&amp;d=blank&amp;r=g 2x" class="avatar avatar-96 photo" width="96" height="96"><noscript><img alt='' src='https://secure.gravatar.com/avatar/1efc1e0e9c06390edbf42a907738974a?s=96&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/1efc1e0e9c06390edbf42a907738974a?s=192&#038;d=blank&#038;r=g 2x' class='avatar avatar-96 photo' height='96' width='96' /></noscript> </a>
+</div>
+<div class="tab-item-inner group">
+<div class="tab-item-name">Ian Pride says:</div>
+<div class="tab-item-comment"><a href="https://www.tecmint.com/clear-ram-memory-cache-buffer-and-swap-space-on-linux/comment-page-3/#comment-1017327">I ran into the same issue, you can sudo a shell...</a></div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="text-27" class="widget widget_text"> <div class="textwidget"><center>
+<a target="_blank" href="https://www.tecmint.com/red-hat-rhcsa-rhce-exam-certification-book/"><img alt="RedHat RHCSA and RHCE Certification Exam Study Ebook" src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/RedHat-RHCSA-RHCE-Exam.png"></a>
+</center></div>
+</div><div id="text-28" class="widget widget_text"> <div class="textwidget"><div class="message" style="background-color: #0d7c39;"><center><p style="font-weight:bold;font-size:18px;">Linux System Administrator Bundle with 7-Courses (96% off)</p>
+<p style="background-color: #03441d;margin:6px 35px;padding:10px;"><a rel="nofollow" target="_blank" href="https://deals.tecmint.com/sales/complete-linux-crash-course-includes-topics-on-red-hat-unix-kali-python-and-opensuse?utm_source=tecmint.com&amp;utm_medium=referral&amp;utm_campaign=complete-linux-crash-course-includes-topics-on-red-hat-unix-kali-python-and-opensu&amp;_ga=1.95416024.550662903.1451974395" style="font-size:25px;font-weight:bold;">Add to Cart - $69</a></p>
+<p style="font-size:14px;font-weight:bold;"><i aria-hidden="true" class="fa fa-clock-o"></i> Ending In: 3 days
+</p></center></div>
+<div style="background-color: #f4403b;" class="message"><center><p style="font-weight:bold;font-size:18px;">Computer Hacker Professional Certification Course (96% Off)</p>
+<p style="background-color: #9d1815;margin:6px 35px;padding:10px;"><a style="font-size:25px;font-weight:bold;" href="https://deals.tecmint.com/sales/computer-hacker-professional-certification-package-2" target="_blank" rel="nofollow">Add to Cart - $59</a></p>
+<p style="font-size:14px;font-weight:bold;"><i class="fa fa-clock-o" aria-hidden="true"></i> Ending In: 4 days
+</p></center></div></div>
+</div><div id="text-4" class="widget widget_text"><h3>Linux eBooks</h3> <div class="textwidget"><ol class="custom-counter">
+<li><a onclick="ga('send','event','Learn Linux in One Week','TecMint')" href="https://www.tecmint.com/learn-linux-in-one-week/" target="_blank">Introducing Learn Linux In One Week and Go from Zero to Hero</a></li>
+<li><a onclick="ga('send','event','RedHat RHCE/RHCSA Guide','TecMint')" href="https://www.tecmint.com/red-hat-rhcsa-rhce-exam-certification-book/" target="_blank">RedHat RHCE/RHCSA Certification Preparation Guide</a></li>
+<li><a onclick="ga('send','event','Linux Foundation LFCS/LFCE Guide','TecMint')" href="https://www.tecmint.com/linux-foundation-lfcs-lfce-certification-exam-book/" target="_blank">Linux Foundations LFCS/LFCE Certification Guide</a></li>
+<li><a onclick="ga('send','event','Postfix Mail Server Setup','TecMint')" href="https://www.tecmint.com/postfix-mail-server-setup-linux-book/" target="_blank">Postfix Mail Server Setup Guide for Linux</a></li>
+<li><a onclick="ga('send','event','Ansible Setup Guide','TecMint')" href="https://www.tecmint.com/ansible-book-guide-for-linux/" target="_blank">Ansible Setup Guide for Linux</a></li>
+<li><a onclick="ga('send','event','Django Setup Guide','TecMint')" href="https://www.tecmint.com/django-web-framework-book/" target="_blank">Django Setup Guide for Linux</a></li>
+<li><a onclick="ga('send','event','Awk Guide for Beginners','TecMint')" href="https://www.tecmint.com/linux-awk-command-book-for-beginners/" target="_blank">Awk Getting Started Guide for Beginners</a></li>
+<li><a onclick="ga('send','event','Citrix XenServer Setup Guide','TecMint')" href="https://www.tecmint.com/citrix-xenserver-book-for-linux/" target="_blank">Citrix XenServer Setup Guide for Linux</a></li>
+</ol></div>
+</div><div id="text-29" class="widget widget_text"> <div class="textwidget"><div style="background-color: rgb(25, 67, 87); color: rgb(255, 255, 255); border-radius: 5px; text-align: center; padding: 10px;">
+<div class="follow-subscribe-social">
+<ul>
+<li><a href="https://twitter.com/tecmint" target="_blank"><i class="fa fa-twitter"></i></a></li>
+<li><a href="https://www.facebook.com/TecMint" target="_blank"><i class="fa fa-facebook"></i></a></li>
+<li><a href="https://plus.google.com/101049688653487009744" target="_blank"><i class="fa fa-google"></i></a></li>
+<li><a href="https://www.youtube.com/channel/UCkiRkzdLvoGBtW_YArytJlQ" target="_blank"><i class="fa fa-youtube"></i></a></li>
+<li><a href="https://www.linkedin.com/company/tecmint" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+</ul>
+</div>
+<p style="font-weight: bold; font-size: 20px; margin-bottom: 10px; margin-top: 10px;">Never Miss Any Linux Tutorials, Guides, Tips and Free eBooks</p>
+<p>Join Our Community Of <strong style="color:#fff;font-weight:bold;">150,000+ Linux Lovers</strong> and get a weekly newsletter in your inbox</p>
+<p style="background-color: rgb(0, 0, 0); border-radius: 5px; padding: 6px;"><a style="font-size:20px;font-weight:bold;color:#fff;" href="http://subscribe.tecmint.com/newsletter" target="_blank" rel="nofollow">YES! SIGN ME UP</a></p></div></div>
+</div><div id="text-31" class="widget widget_text"> <div class="textwidget"><p><br>
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-2601749019656699" data-ad-slot="9838765188"></ins><br>
+<script type="">
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer id="footer">
+<section class="container" id="footer-ads">
+<div class="container-inner">
+<div id="text-30" class="widget widget_text"> <div class="textwidget"><p></p><center><script type="text/javascript">
+var total_images = 2;
+var random_number = Math.floor((Math.random()*total_images));
+var random_img = new Array();
+random_img[0] = '<a target="_blank" rel="nofollow" href="https://shareasale.com/r.cfm?b=768106&#038;u=1260899&#038;m=59485&#038;urllink=&#038;afftrack=%22"><img src="https://www.fossmint.com/wp-content/themes/fossmint/backupads/Linux-Foundation-LFCS-Certification.png"/></a>';
+random_img[1] = '<a target="_blank" rel="nofollow" href="https://shareasale.com/r.cfm?b=768109&#038;u=1260899&#038;m=59485&#038;urllink=&#038;afftrack=%22"><img src="https://www.fossmint.com/wp-content/themes/fossmint/backupads/Linux-Foundation-LFCE-Certification.png"/></a>';
+document.write(random_img[random_number]);
+</script><a target="_blank" rel="nofollow" href="https://shareasale.com/r.cfm?b=768109&amp;u=1260899&amp;m=59485&amp;urllink=&amp;afftrack=%22"><img src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/Linux-Foundation-LFCE-Certification.png"></a></center><p></p>
+</div>
+</div> </div>
+</section>
+<section class="container" id="footer-widgets">
+<div class="container-inner">
+<div class="pad group">
+<div class="footer-widget-1 grid one-third ">
+<div id="alxposts-3" class="widget widget_alx_posts">
+<h3>Linux Monitoring Tools</h3>
+<ul class="alx-posts group ">
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="https://www.tecmint.com/use-nmap-script-engine-nse-scripts-in-linux/" rel="bookmark" title="How to Use Nmap Script Engine (NSE) Scripts in Linux">How to Use Nmap Script Engine (NSE) Scripts in Linux</a></p>
+</div>
+</li>
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="https://www.tecmint.com/block-ssh-server-attacks-brute-force-attacks-using-denyhosts/" rel="bookmark" title="Block SSH Server Attacks (Brute Force Attacks) Using DenyHosts">Block SSH Server Attacks (Brute Force Attacks) Using DenyHosts</a></p>
+</div>
+</li>
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="https://www.tecmint.com/install-php-server-monitor-in-arch-linux/" rel="bookmark" title="Installing “PHP Server Monitor” Tool using LEMP or LAMP Stack in Arch Linux">Installing “PHP Server Monitor” Tool using LEMP or LAMP Stack in Arch Linux</a></p>
+</div>
+</li>
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="https://www.tecmint.com/tuned-automatic-performance-tuning-of-centos-rhel-servers/" rel="bookmark" title="Tuned – Automatic Performance Tuning of CentOS/RHEL Servers">Tuned – Automatic Performance Tuning of CentOS/RHEL Servers</a></p>
+</div>
+</li>
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="https://www.tecmint.com/monitor-linux-commands-executed-by-system-users-in-real-time/" rel="bookmark" title="How to Monitor Linux Commands Executed by System Users in Real-time">How to Monitor Linux Commands Executed by System Users in Real-time</a></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="footer-widget-2 grid one-third ">
+<div id="alxposts-4" class="widget widget_alx_posts">
+<h3>Linux Interview Questions</h3>
+<ul class="alx-posts group ">
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="https://www.tecmint.com/networking-interview-questions/" rel="bookmark" title="10 Basic Interview Questions and Answers on Linux Networking – Part 1">10 Basic Interview Questions and Answers on Linux Networking – Part 1</a></p>
+</div>
+</li>
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="https://www.tecmint.com/apache-interview-questions/" rel="bookmark" title="25 Apache Interview Questions for Beginners and Intermediates">25 Apache Interview Questions for Beginners and Intermediates</a></p>
+</div>
+</li>
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="https://www.tecmint.com/10-mysql-database-interview-questions-for-beginners-and-intermediates/" rel="bookmark" title="10 MySQL Database Interview Questions for Beginners and Intermediates">10 MySQL Database Interview Questions for Beginners and Intermediates</a></p>
+</div>
+</li>
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="https://www.tecmint.com/ls-interview-questions/" rel="bookmark" title="10 Useful ‘ls’ Command Interview Questions – Part 2">10 Useful ‘ls’ Command Interview Questions – Part 2</a></p>
+</div>
+</li>
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="https://www.tecmint.com/ls-command-interview-questions/" rel="bookmark" title="15 Interview Questions on Linux “ls” Command – Part 1">15 Interview Questions on Linux “ls” Command – Part 1</a></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="footer-widget-3 grid one-third last">
+<div id="alxposts-5" class="widget widget_alx_posts">
+<h3>Open Source Tools</h3>
+<ul class="alx-posts group ">
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="https://www.tecmint.com/best-image-photo-editors-for-linux/" rel="bookmark" title="15 Best Linux Photo/Image Editors I Discovered in 2015">15 Best Linux Photo/Image Editors I Discovered in 2015</a></p>
+</div>
+</li>
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="https://www.tecmint.com/linux-disk-scanning-tools/" rel="bookmark" title="3 Useful GUI and Terminal Based Linux Disk Scanning Tools">3 Useful GUI and Terminal Based Linux Disk Scanning Tools</a></p>
+</div>
+</li>
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="https://www.tecmint.com/linux-command-line-editors/" rel="bookmark" title="My Favorite Command Line Editors for Linux – What’s Your Editor?">My Favorite Command Line Editors for Linux – What’s Your Editor?</a></p>
+</div>
+</li>
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="https://www.tecmint.com/best-linux-screen-recorders-for-desktop-screen-recording/" rel="bookmark" title="8 Best Screen Recorders for Desktop Screen Recording in Linux">8 Best Screen Recorders for Desktop Screen Recording in Linux</a></p>
+</div>
+</li>
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="https://www.tecmint.com/best-linux-log-monitoring-and-management-tools/" rel="bookmark" title="4 Good Open Source Log Monitoring and Management Tools for Linux">4 Good Open Source Log Monitoring and Management Tools for Linux</a></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<nav class="nav-container group" id="nav-footer">
+<div class="nav-toggle"><i class="fa fa-bars"></i></div>
+<div class="nav-text"></div>
+<div class="nav-wrap"><ul id="menu-footer" class="nav container group"><li id="menu-item-18572" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18572"><a href="https://www.tecmint.com/donate-to-tecmint/">Donate to TecMint</a></li>
+<li id="menu-item-10437" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10437"><a href="https://www.tecmint.com/contact-us/">Contact Us</a></li>
+<li id="menu-item-10442" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10442"><a href="https://www.tecmint.com/advertise/">Advertise on TecMint</a></li>
+<li id="menu-item-10441" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10441"><a href="https://www.tecmint.com/services/">Linux Services</a></li>
+<li id="menu-item-10435" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10435"><a href="https://www.tecmint.com/copyright-policy/">Copyright Policy</a></li>
+<li id="menu-item-10436" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10436"><a href="https://www.tecmint.com/privacy-policy/">Privacy Policy</a></li>
+<li id="menu-item-13339" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13339"><a href="https://www.tecmint.com/career/">Career</a></li>
+<li id="menu-item-24288" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24288"><a href="https://www.tecmint.com/sponsored-post-guidelines-tecmint/">Sponsored Post</a></li>
+</ul></div>
+</nav>
+<section class="container" id="footer-bottom">
+<div class="container-inner">
+<a id="back-to-top" href="#"><i class="fa fa-angle-up"></i></a>
+<div class="pad group">
+<div class="grid one-half">
+<div id="copyright">
+<p>Tecmint: Linux Howtos, Tutorials &amp; Guides © 2018. All Rights Reserved.</p>
+<p>The material in this site cannot be republished either online or offline, without our permission.</p>
+</div>
+</div>
+<div class="grid one-half last">
+<ul class="social-links"><li><a rel="nofollow" class="social-tooltip" title="twitter" href="https://twitter.com/tecmint" target="Array"><i class="fa fa-twitter" style="color: #33ccff;"></i></a></li><li><a rel="nofollow" class="social-tooltip" title="facebook" href="https://www.facebook.com/TecMint" target="Array"><i class="fa fa-facebook" style="color: #3b5998;"></i></a></li><li><a rel="nofollow" class="social-tooltip" title="Google+" href="https://plus.google.com/101049688653487009744" target="Array"><i class="fa fa-google-plus" style="color: #db4a39;"></i></a></li><li><a rel="nofollow" class="social-tooltip" title="Feedly" href="https://feedly.com/i/subscription/feed/https://www.tecmint.com/feed/" target="Array"><i class="fa fa-rss" style="color: #87c040;"></i></a></li><li><a rel="nofollow" class="social-tooltip" title="Youtube" href="https://www.youtube.com/channel/UCkiRkzdLvoGBtW_YArytJlQ" target="Array"><i class="fa fa fa-youtube-square" style="color: #c4302b;"></i></a></li></ul> </div>
+</div>
+</div>
+</section>
+</footer>
+</div>
+<script type="text/javascript" src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/jquery_003.js"></script>
+<script type="text/javascript" src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/light.js"></script>
+<script type="text/javascript" src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/scripts.js"></script>
+<script type="text/javascript" src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/jquery_002.js"></script>
+<script type="text/javascript" src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/comment-reply.js"></script>
+<script type="text/javascript" src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/jquery.js"></script>
+<script type="text/javascript" src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/lazy-load.js"></script>
+<script async="async" type="text/javascript" src="11%20Basic%20Linux%20Interview%20Questions%20and%20Answers_files/form.js"></script>
+<!--[if lt IE 9]>
+<script src="https://www.tecmint.com/wp-content/themes/tecmint/js/ie/respond.js"></script>
+<![endif]-->
+<div class="fixedBar">
+<div class="boxfloat">
+<ul id="tips">
+<li><a href="https://www.tecmint.com/51-useful-lesser-known-commands-for-linux-users/">51 Useful Lesser Known Commands for Linux Users</a></li>
+<li><a href="https://www.tecmint.com/linux-server-hardening-security-tips/">25 Hardening Security Tips for Linux Servers</a></li>
+<li><a href="https://www.tecmint.com/60-commands-of-linux-a-guide-from-newbies-to-system-administrator/">60 Commands of Linux : A Guide from Newbies to System Administrator</a></li>
+<li style="display: list-item;"><a href="https://www.tecmint.com/command-line-tools-to-monitor-linux-performance/">20 Command Line Tools to Monitor Linux Performance</a></li>
+<li><a href="https://www.tecmint.com/18-tar-command-examples-in-linux/">18 Tar Command Examples in Linux</a></li>
+<li><a href="https://www.tecmint.com/20-linux-yum-yellowdog-updater-modified-commands-for-package-mangement/">20 Linux YUM (Yellowdog Updater, Modified) Commands</a></li>
+<li><a href="https://www.tecmint.com/useful-basic-commands-of-apt-get-and-apt-cache-for-package-management/">25 Useful Basic Commands of APT-GET and APT-CACHE</a></li>
+<li><a href="https://www.tecmint.com/20-funny-commands-of-linux-or-linux-is-fun-in-terminal/">20 Funny Commands of Linux or Linux is Fun in Terminal</a></li>
+<li><a href="https://www.tecmint.com/red-hat-rhcsa-rhce-exam-certification-book/">Ebook: Introducing the RHCSA and RHCE Exam Preparation Guide</a></li>
+<li><a href="https://www.tecmint.com/sed-command-to-create-edit-and-manipulate-files-in-linux/">Preparation for the LFCS (Linux Foundation Certified SysAdmin) Exam</a></li>
+<li><a href="https://www.tecmint.com/installing-network-services-and-configuring-services-at-system-boot/">Preparation for the LFCE (Linux Foundation Certified Engineer) Exam</a></li>
+<li><a href="https://www.tecmint.com/10-useful-free-linux-ebooks-for-newbies-and-administrators/">10 Useful Free Linux eBooks for Newbies and Administrators</a></li>
+<li><a href="https://www.tecmint.com/free-linux-shell-scripting-books/">4 Free Shell Scripting eBooks for Newbies and Administrators</a></li>
+</ul>
+</div>
+</div>
+
+</body></html>

@@ -1,0 +1,136 @@
+/* Global Styles */
+.nc_socialPanel {clear: both;width: 100%!important;margin-top:20px!important;margin-bottom:20px!important;height: 30px;padding: 0;line-height:1;}
+.nc_wrapper .nc_socialPanel {margin-top:10px!important;margin-bottom:10px!important;}
+.nc_socialPanel .nc_tweetContainer {float:left;margin:0 5px;cursor:pointer;height:auto;font-family: 'Lato';border-radius:2px;transition:all 0.1s linear;}
+.nc_socialPanel .nc_tweetContainer a.nc_tweet, .nc_socialPanel a:hover, .nc_socialPanel .totes .count {display: block;color: white;font-size: 18px;font-family: 'Lato', sans-serif;font-weight: bold;color: rgb(255, 255, 255);text-decoration: none;background-color:transparent;height:30px;border:none!important;}
+.nc_socialPanel a .count {padding: 0;line-height: 32px;display:inline-block;}
+.nc_socialPanel .totes .count {line-height:30px;}
+/* Adjusted Margins for First and Last Elements */
+.nc_socialPanel.notMobile .nc_tweetContainer:nth-child(1) {margin-left:0;}
+.nc_socialPanel.notMobile .nc_tweetContainer:nth-last-child(1) {margin-right:0;}
+.nc_socialPanel div.totes.totesalt:nth-child(1) {margin-left:0;padding-left:0;margin-right:15px;}
+.nc_socialPanel div.totes.totesalt:nth-last-child(1) {margin-right:0px;padding-right:0px;}
+/* Click to Tweet Cursor */
+a.sw_CTT {cursor:pointer;}
+/* Icons and Calls to Action */
+span.sw_share {font-weight: normal;font-size: 14px;display:block;height: 30px;vertical-align: middle;line-height: 32px;float:right;}
+.nc_socialPanel .fa {margin: 0 7px;height: 30px;line-height: 32px; text-shadow:none!important;}
+/* Default Colors */
+.nc_socialPanel .googlePlus, .nc_socialPanel:hover .googlePlus {background:#df4b37;border:1px solid #c44133}
+.nc_socialPanel .twitter, .nc_socialPanel:hover .twitter {background:#5fa8dc;border:1px solid #5595bc}
+.nc_socialPanel .fb, .nc_socialPanel:hover .fb {background:#3a589e;border:1px solid #2e4675}
+.nc_socialPanel .nc_pinterest, .nc_socialPanel:hover .nc_pinterest {background:#cd2029;border:1px solid #aa1b29}
+.nc_socialPanel .linkedIn, .nc_socialPanel:hover .linkedIn {background:#0d77b7;border:1px solid #0c6591}
+/* Default Icon Settings */
+.iconFiller {display:block;float:left;transition: width .1s linear;overflow:hidden;height:30px}
+.nc_socialPanel .googlePlus .iconFiller {width: 27px;}
+.nc_socialPanel .twitter .iconFiller {width: 30px;}
+.nc_socialPanel .fb .iconFiller {width: 25px;}
+.nc_socialPanel .nc_pinterest .iconFiller {width: 30px;}
+.nc_socialPanel .linkedIn .iconFiller {width: 29px;}
+/* Mobile Fix */
+.mobile .nc_tweetContainer:nth-last-child(2), .nc_tweetContainer.totes:nth-last-child(1) {margin-right:0;}
+/* Total Shares */
+.nc_socialPanel .totes {height:30px;color:white;padding:0px 10px;display:block;font-size:19px;cursor:default;background:#c4c4c4;border-radius:2px;}
+.nc_socialPanel div.totes.totesalt, .nc_socialPanel:hover div.totes.totesalt:not(:nth-child(1)) {background:transparent!important;color:#474B4D;margin-left:10px;border:none;}
+div.nc_socialPanel:hover div.totes.totesalt:not(:nth-child(1)) {background:transparent;color:#474B4D;margin-left:10px;}
+.nc_socialPanel .totes.totesalt .label {font-size:10px;color:#474B4D;vertical-align:middle;}
+.nc_socialPanel .totes.totesalt .count {color:#474B4D;font-size:24px;}
+.nc_socialPanel:hover .totes, .nc_socialPanel.sw_fullColor .totes, .nc_socialPanel.sw_fade .totes, .nc_socialPanel.sw_customFull:hover div.totes {background:#e08a0f;}
+/* Fade on Hover Effect */
+.sw_fade:hover .nc_tweetContainer:not(:hover), .sw_customFade:hover .nc_tweetContainer:not(:hover) {opacity:0.5}
+/* Grayscales */
+.sw_grayscale .nc_tweetContainer, .sw_grayscaleFade .nc_tweetContainer, .sw_grayscaleFade:hover .nc_tweetContainer, .sw_darkGrayFade:hover .nc_tweetContainer:not(:hover) {background:#CCCCCC;border-color:#999999;}
+.sw_grayscaleFade .nc_tweetContainer:hover, .sw_darkGrayColor .nc_tweetContainer, .sw_darkGrayFade .nc_tweetContainer, .sw_darkGrayFade .nc_tweetContainer:hover {background:#444;border-color:#000000}
+/* Outline Styles */
+.sw_outlinesOnly .nc_tweetContainer, .sw_outlinesOnly:hover .nc_tweetContainer, .sw_outlinesColor .nc_tweetContainer, .sw_outlinesColor:hover .nc_tweetContainer:not(:hover), .sw_outlinesFull .nc_tweetContainer {border:1px solid #444444;background:transparent;}
+.sw_outlinesOnly .nc_tweetContainer a.nc_tweet, .sw_outlinesColor .nc_tweetContainer a.nc_tweet, .sw_outlinesFull .nc_tweetContainer a.nc_tweet {color:#444444;}
+.sw_outlinesColor .nc_tweetContainer:hover a, .sw_outlinesFull:hover .nc_tweetContainer a {color:#FFFFFF;}
+/* Leaf Styles */
+.nc_socialPanel.sw_leaf .nc_tweetContainer {border-radius:15px 0;border-width:1px;}
+.nc_socialPanel.sw_pill .nc_tweetContainer {border-radius:50px; border-width:1px;}
+.nc_socialPanel.sw_shift .nc_tweetContainer:not(.totes) {border-width:1px;-webkit-transform:skew(-25deg);-moz-transform:skew(-25deg);-o-transform:skew(-25deg); }
+.nc_socialPanel.sw_shift .nc_tweetContainer a {-webkit-transform:skew(25deg);-moz-transform:skew(25deg);-o-transform:skew(25deg); }
+/* Color Outline Styles */
+.sw_colorOutlinesOnly .nc_tweetContainer, .sw_colorOutlinesOnly:hover .nc_tweetContainer, .sw_colorOutlinesColor .nc_tweetContainer, .sw_colorOutlinesColor:hover .nc_tweetContainer:not(:hover), .sw_colorOutlinesFull .nc_tweetContainer {background:transparent;border-width:1px;}
+.sw_colorOutlinesOnly .googlePlus a.nc_tweet, .sw_colorOutlinesColor .googlePlus a.nc_tweet, .sw_colorOutlinesFull .googlePlus a.nc_tweet {color:#df4b37}
+.sw_colorOutlinesOnly .twitter a.nc_tweet, .sw_colorOutlinesColor .twitter a.nc_tweet, .sw_colorOutlinesFull .twitter a.nc_tweet {color:#5fa8dc}
+.sw_colorOutlinesOnly .fb a.nc_tweet, .sw_colorOutlinesColor .fb a.nc_tweet, .sw_colorOutlinesFull .fb a.nc_tweet {color:#3a589e}
+.sw_colorOutlinesOnly .nc_pinterest a.nc_tweet, .sw_colorOutlinesColor .nc_pinterest a.nc_tweet, .sw_colorOutlinesFull .nc_pinterest a.nc_tweet {color:#cd2029}
+.sw_colorOutlinesOnly .linkedIn a.nc_tweet, .sw_colorOutlinesColor .linkedIn a.nc_tweet, .sw_colorOutlinesFull .linkedIn a.nc_tweet {color:#0d77b7}
+.sw_colorOutlinesColor .nc_tweetContainer:hover a, .sw_colorOutlinesFull:hover .nc_tweetContainer a {color:#ffffff;}
+.sw_colorOutlinesColor .nc_tweetContainer:hover, .sw_colorOutlinesFull:hover .nc_tweetContainer {border-width:1px;}
+/* Connected Button Styles */
+.sw_connected .nc_tweetContainer, .sw_connected:hover .nc_tweetContainer, .sw_connected .nc_tweetContainer:hover  {margin:0;border-radius:0;border-width:1px;}
+/* Connected Button Styles */
+.nc_socialPanel.sw_threeDee.sw_grayscale .nc_tweetContainer:not(.totes), .nc_socialPanel.sw_threeDee.sw_grayscaleFade .nc_tweetContainer:not(:hover):not(.totes) {border-bottom:3px solid #999999}
+.nc_socialPanel.sw_threeDee.sw_darkGrayColor:not(:hover) .nc_tweetContainer:not(.totes), .nc_socialPanel.sw_threeDee.sw_darkGrayFade:not(:hover) .nc_tweetContainer:not(:hover):not(.totes) {border-bottom:3px solid #000000}
+.sw_threeDee .nc_tweetContainer.googlePlus:hover {background:#C44133;}
+.sw_threeDee.sw_grayscaleFade .nc_tweetContainer.googlePlus:hover {background:#df4b37;}
+.sw_threeDee .nc_tweetContainer.googlePlus, .nc_socialPanel.sw_threeDee.sw_grayscale:hover .googlePlus {border-bottom:3px solid #C44133;}
+.sw_threeDee .nc_tweetContainer.twitter:hover {background:#5595bc;}
+.sw_threeDee.sw_grayscaleFade .nc_tweetContainer.twitter:hover {background:#5fa8dc;}
+.sw_threeDee .nc_tweetContainer.twitter, .nc_socialPanel.sw_threeDee.sw_grayscale:hover .twitter {border-bottom:3px solid #5595bc;}
+.sw_threeDee .nc_tweetContainer.fb:hover {background:#2e4675;}
+.sw_threeDee.sw_grayscaleFade .nc_tweetContainer.fb:hover {background:#3a589e;}
+.sw_threeDee .nc_tweetContainer.fb, .nc_socialPanel.sw_threeDee.sw_grayscale:hover .fb {border-bottom:3px solid #2e4675;}
+.sw_threeDee .nc_tweetContainer.nc_pinterest:hover {background:#aa1b29;}
+.sw_threeDee.sw_grayscaleFade .nc_tweetContainer.nc_pinterest:hover {background:#cd2029;}
+.sw_threeDee .nc_tweetContainer.nc_pinterest, .nc_socialPanel.sw_threeDee.sw_grayscale:hover .nc_pinterest {border-bottom:3px solid #aa1b29;}
+.sw_threeDee .nc_tweetContainer.linkedIn:hover {background:#0c6591;}
+.sw_threeDee.sw_grayscaleFade .nc_tweetContainer.linkedIn:hover {background:#0d77b7;}
+.sw_threeDee .nc_tweetContainer.linkedIn, .nc_socialPanel.sw_threeDee.sw_grayscale:hover .linkedIn {border-bottom:3px solid #0c6591;}
+/* Side Floating Buttons */
+.nc_socialPanelSide {position:fixed;left:-100px;z-index:9999999;width:auto;top:200px;overflow:hidden;transition:all 0.2s linear;}
+.nc_socialPanelSide.displayed {left:5px;transition:all 0.2s linear;}
+.nc_tweetContainerSide {width: auto;height: 32px;background: #DD4B38;margin: 5px 0;padding: 0;display: block;font-family: "Lato" , sans serif;clear: both;vertical-align: top;width:90px;transition:all 0.1s linear;overflow:hidden;border-radius:3px;}
+.nc_tweetContainerSide .iconFiller {display: inline-block;width: 21px;height: 32px;margin: 0 6px;padding: 0;vertical-align: middle;transition:all 0.1s linear;}
+.nc_tweetContainerSide .count {display: inline-block;width: 0;overflow:hidden;color: #FFF;line-height: 35px;text-align: right;padding: 0;font-size: 19px;margin: 0;height: 32px;vertical-align: top;transition:all 0.1s linear;}
+.nc_tweetContainerSide a {display: block;text-decoration: none;padding: 0;margin: 0;vertical-align: top;height: 36px;cursor:pointer;transition:all 0.1s linear;font-weight:500;color:#ffffff;}
+.nc_tweetContainerSide a:hover {font-weight:500;color:#ffffff;}
+.nc_tweetContainerSide .fa, .nc_tweetContainerSide .sw_share {line-height:34px;}
+.nc_tweetContainerSide:hover, .nc_tweetContainerSide:hover .iconFiller, .nc_tweetContainerSide:hover .count {transition:all 0.1s linear;}
+/* Side Floating Google Plus */
+.nc_tweetContainerSide.googlePlus {background: #DD4B38;line-height:34px;}
+.nc_tweetContainerSide.googlePlus .iconFiller {width:21px;margin-left:9px;}
+.nc_tweetContainerSide.googlePlus .count {width:41px;}
+.nc_tweetContainerSide.googlePlus:hover {width:130px;}
+.nc_tweetContainerSide.googlePlus:hover .iconFiller {width:45px;}
+.nc_tweetContainerSide.googlePlus:hover .count {width:70px;padding:0 10px;}
+/* Side Floating Twitter */
+.nc_tweetContainerSide.twitter {background: #5FA9DD;}
+.nc_tweetContainerSide.twitter .iconFiller {background-position-x:-43px;width:28px;}
+.nc_tweetContainerSide.twitter .count {width:37px;}
+.nc_tweetContainerSide.twitter:hover {width:130px;}
+.nc_tweetContainerSide.twitter:hover .iconFiller {width:70px;}
+.nc_tweetContainerSide.twitter:hover .count {width:45px;padding:0 10px;}
+/* Side Floating Facebook */
+.nc_tweetContainerSide.fb {background: #3B579D;}
+.nc_tweetContainerSide.fb .iconFiller {background-position-x:-109px;width:20px;}
+.nc_tweetContainerSide.fb .count {width:45px;}
+.nc_tweetContainerSide.fb:hover {width:130px;}
+.nc_tweetContainerSide.fb:hover .iconFiller {width:65px;}
+.nc_tweetContainerSide.fb:hover .count {width:52px;padding:0 10px;}
+/* Side Floating Pinterest */
+.nc_tweetContainerSide.nc_pinterest {background: #CB2128;}
+.nc_tweetContainerSide.nc_pinterest .iconFiller {background-position-x:-161px;width:26px;}
+.nc_tweetContainerSide.nc_pinterest .count {width:39px;}
+.nc_tweetContainerSide.nc_pinterest:hover {width:130px;}
+.nc_tweetContainerSide.nc_pinterest:hover .iconFiller {width:55px;}
+.nc_tweetContainerSide.nc_pinterest:hover .count {width:62px;padding:0 10px;}
+/* Side Floating LinkedIn */
+.nc_tweetContainerSide.linkedIn {background: #0977B5;}
+.nc_tweetContainerSide.linkedIn .iconFiller {background-position-x:-215px;width:26px;}
+.nc_tweetContainerSide.linkedIn .count {width:39px;}
+.nc_tweetContainerSide.linkedIn:hover {width:130px;}
+.nc_tweetContainerSide.linkedIn:hover .iconFiller {width:70px;}
+.nc_tweetContainerSide.linkedIn:hover .count {width:47px;padding:0 10px;}
+/* Side Floating Totals */
+.nc_tweetContainerSide.totes {background: rgba(0, 0, 0, 0);height: 45px;font-weight: 500;text-align: center;}
+.nc_tweetContainerSide.totes .count {color: #444;font-weight: 500;display: block;width: 100%;text-align: center;height:28px;}	
+.nc_tweetContainerSide.totes .label {display: block;width: 100%;text-align: center;font-size: 50%;color: #444;font-weight:500;}
+/* Top and Bottom Floating Buttons */
+.nc_wrapper {position: fixed;background: white;width: 100%;transition: top 0.5s, bottom 0.5s;z-index:999;}
+.nc_wrapper.floatBottom {bottom:0px;left:0;}
+.nc_wrapper.floatTop {top:0px;left:0;}
+.nc_floater {width: 740px;left: 304px;position: relative;margin: 10px 0;}

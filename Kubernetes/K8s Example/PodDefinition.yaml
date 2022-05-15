@@ -1,0 +1,18 @@
+apiVersion: V1
+kind: pod
+metadata:
+  name: FirstPod
+  labels:
+    dev: nginx1
+    location: Offshore
+    type: FrontEnd
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx
+
+
+#kubectl create -f podDefinition.yaml
+
+
+

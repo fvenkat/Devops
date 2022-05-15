@@ -1,0 +1,4 @@
+Repository can be defined in the repositories element of the POM or in the repo element in the settings.xml file
+
+POM def will be specifc to the Maven project
+settings.xml are system wide

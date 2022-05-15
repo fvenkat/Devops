@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/06 Maven/Mvn Example/Common Maven Plugins/Clean Plugin/helloworld" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/06 Maven/Mvn Example/Common Maven Plugins/Compiler Plugin/helloworld" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/06 Maven/Mvn Example/Common Maven Plugins/Resources Plugin/helloworld" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/06 Maven/Mvn Example/Common Maven Plugins/SureFire Plugin/helloworld" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/06 Maven/Mvn Example/Common Maven Plugins/SureFire Plugin/mb2g-testing" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/06 Maven/Mvn Example/Getting Started with Maven/HelloWorld-Add stringutils/helloworld" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/06 Maven/Mvn Example/Getting Started with Maven/mvnWrapper/helloworld" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/06 Maven/Mvn Example/Mvn Testing/Junit4/mb2g-testing" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/08 AWS/AWS CERTIFIED DEVELOPER/Bash" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/08 AWS/AWS CERTIFIED DEVELOPER/Bash/ticgit" vcs="Git" />
+  </component>
+</project>

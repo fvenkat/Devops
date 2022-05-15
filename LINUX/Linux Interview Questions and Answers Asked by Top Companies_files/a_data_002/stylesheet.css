@@ -1,0 +1,30 @@
+#siqiframe{
+	height: 300px;
+}
+.outerwin .sqico-chat{
+	display: none;
+}
+body:before, .siqc_prochtcls:before{
+	display:none
+}
+.siqembed header {
+	margin: 0;
+	padding: 8px 10px 0px 10px;
+	height: 47px;
+}
+.outerwin header:not(.conv_headview) .txtelips{
+	font-size: 20px;
+	padding: 5px 0;
+}
+.siq-convback ~ .siq-descdiv {
+    width: auto;
+}
+.siq-convback.sqico-larrow{
+	width: 20px;
+}
+.zsiq_theme10 .sqico-offline::before{
+	display: none;
+}
+#zsiq_byline{
+	display: none;
+}

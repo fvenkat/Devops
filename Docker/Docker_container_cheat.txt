@@ -1,0 +1,280 @@
+#Create a new container [docker container create]
+     $ docker container create [OPTIONS] IMAGE [COMMAND] [ARG...]
+     $ docker container create -it imageName bash
+     $ docker container start containerID
+
+#List containers [docker container ls or ps]
+
+     $ docker container ls [OPTIONS]
+                -a		        Show all containers (default shows just running)
+                -f		        Filter output based on conditions provided
+                --format		Pretty-print containers using a Go template
+                -n		        Show n last created containers (includes all states) default -1
+                -l		        Show the latest created container (includes all states)
+                --no-trunc		Don't truncate output
+                -q		        Only display container IDs
+                -s		        Display total file sizes
+
+                $ docker container ls -a        [Show all containers (default shows just running)]
+                $ docker container ls -aq
+                $ docker container ls -aq –no-trunc
+                $ docker container ls -n5       [Show n last created containers]
+                $ docker container ls -l        [Show the latest created container (includes all states)]
+                $ docker container ls -s        [Display total file sizes] [SIZE 3.35MB (virtual 467MB)]
+        The “size” information shows the amount of data (on disk) that is used for the writable layer of each container
+        The “virtual size” is the total amount of disk-space used for the read-only image data used by the container and the writable layer..
+
+                Filter by name      $ docker container ls -a -f “name=ct_j”
+                Filer by status     $ docker container ls -a -f “status=running”
+                Filter by images    $ docker container ls -af “ancestor=imageName:tag”
+                Filter by Volume    $ docker ps --filter volume=remote-volume --format "table {{.ID}}\t{{.Mounts}}"
+                Filter by health    $ docker container ls -af “health=healthy”
+                Filter by Network   $ docker ps --filter network=net1
+                Filter by publish & expose  $ docker ps --filter expose=8000-8080/tcp       &&  	$ docker ps --filter publish=80/udp
+
+#Run a command in a new container [docker container run]
+
+    $ docker container run [OPTIONS] IMAGE [COMMAND] [ARG...]
+
+        Assign name:                                $ docker container run --name <containerName> <imageName>           Default : foreground
+        Attach                                      $ docker container run --name ContainerName -p 8081:80 nginx 	       #Def : Attach mode
+        De-attach                                   $ docker container run -d --name ContainerName -p 8081:80 nginx
+        Run a Container Interactively               $ docker container run -it [docker_image] /bin/bash
+        Default Container Command                   $ docker container run -dt nginx sleep 500
+        Port Binding                                $ docker container run -dt --name ContainerName -p 8080:80 nginx      container port : host ports
+                                By default, Docker exposes container ports to the IP address 0.0.0.0 (this matches any IP on the system)
+                                To bind on IP address 10.0.0.3, host port 80, and container port 8080
+                                $ docker container run -dt --name ContainerName -p 10.0.0.3:8080:80 nginx
+                                $ docker run -p 80:80/tcp -p 500:500/udp test
+        Publish all exposed ports to random ports [P]           $ docker container run -dt -P nginx
+        expose port [--expose)]                                 $ docker run --expose 80 ubuntu bash
+        Container Restart policies  no | on-failure | unless-stopped| always
+                                $ docker container run --name <ContainerName> -dt --restart unless-stopped redis
+                                $ docker container update --restart unless-stopped redis
+                                $ docker container update --restart unless-stopped $(docker ps -q)
+        Automatically delete container on exit      $ docker container run -dt --rm	 --name ContainerName busybox ping -c10 google.com
+        Capture container ID (--cidfile)            $ docker container run --cidfile /tmp/docker_test.cid ubuntu echo "test"
+        Mount Host Volumes                          $ docker container run -v [/host/volume/location]:[/container/storage] [docker_image]
+        Add bind mounts or volumes [--mount]        $  docker run --read-only --mount type=volume,src=volumeName,target=/icanwrite busybox touch /icanwrite/here
+                                                    $  docker run -t -i --mount type=bind,src=/data,dst=/data busybox sh
+        Capture container ID (--cidfile)            $ docker container run --cidfile /tmp/docker_test.cid ubuntu echo "test"
+        Full container capabilities                 $ docker run -t -i --privileged ubuntu bash
+        Set working directory (-w)                  $ docker  run -w /path/to/dir/ -i -t  ubuntu pwd
+        Set storage driver options per container    $ docker run -it --storage-opt size=120G fedora /bin/bash
+                                                    $  docker run --label-file ./labels ubuntu bash
+        Mount tmpfs (--tmpfs)                       $ docker run -d --tmpfs /run:rw,noexec,nosuid,size=65536k my_image
+        Set metadata on container (-l,--label-file) $ docker run -l my-label --label com.example.foo=bar ubuntu bash
+        Set environment variables (-e,--env-file)   $ docker run --env VAR1=value1 --env VAR2=value2 ubuntu env | grep VAR
+                                                    $ docker run --env-file env.list ubuntu env | grep VAR
+        Connect a container to a network            $ docker run -itd --network=my-net busybox
+        Mount volumes from container                $ docker run --volumes-from 777f7dc92da7 --volumes-from ba8c0c54f0f2:ro -i -t ubuntu pwd
+        Add host device to container (--device)     $ docker run --device=/dev/sdc:/dev/xvdc --device=/dev/sdd --device=/dev/zero:/dev/nulo -i -t ubuntu
+        Add entries to container hosts file         $ docker run --add-host=docker:93.184.216.34 --rm -it alpine
+                                                    $ docker run  --add-host=docker:${HOSTIP} --rm -it debian
+        Stop container with timeout                 $ docker run --stop-timeout=30 --name=test test
+        How to apply The Limits ?                   $ docker container run -d –name nginx2 –memory “200mb” nginx:alpine
+
+
+#Run a command in a running container
+
+    $ docker container exec [OPTIONS] CONTAINER COMMAND [ARG...]
+
+    Execute the command in the background:      $ docker container exec -d containerName ls -lrt		#touch	#netstat -nltnlp
+    Execute the commands without login:         $ docker container exec -it containerName ls -lrt		#touch 	#netstat -nlp	#pwd
+    Login & execute the commands:               $ docker container exec -it containerName bash		#/bin/bash	or sh
+    Working Directory to execute                $ docker exec -it -w /root ubuntu /bin/bash -c “pwd”
+    Execute the commands as other user [u]      $ docker container exec -it -u 0 -w /root containerName touch f1	# executed as ROOT user
+    Set an environment variable                 $ docker container exec -it -e var=”value” containerName command
+    Multiple commands                           $ docker container exec -it  containerName bash -c “command1 ; command 2;  command3”
+                                                $ docker container exec -it f1 bash -c "cd /venkat; ls -lrt; ls"
+
+
+
+#Container Life Cycle Management
+
+    Stop one or more running containers         $ docker container stop <containerName>	# -t=20 Seconds to wait for stop before killing it
+    Start one or more stopped containers        $ docker container start  <containerName>	# --interactive , -i
+    Kill one or more running containers         $ docker container kill my_container		# -s=signal
+    Pause[Suspend] all processes in containers  $ docker container pause  <containerName>	# -t=20 Seconds to wait for stop before killing it
+    Unpause all processes in containers         $ docker container unpause  <containerName>
+    Remove one or more containers               $ docker container rm  <containerName>
+    Force-remove a running container            $ docker container rm --force redis
+    Remove a container and its volumes          $ docker rm -v redis            Note: It will not rm named volume
+    Remove all stopped containers               $ docker rm $(docker ps --filter status=exited -q)   or
+                                                $ docker ps --filter status=exited -q | xargs docker rm
+    Rename a container                          $ docker container rename CONTAINER NEW_NAME
+    Remove a link specified with --link
+    on the default bridge network🔗             $ docker rm --link /webapp/redis
+
+#Prune Container [Remove all stopped containers]
+================================================
+
+        $ docker container prune [OPTIONS]
+
+        Remove all stopped containers           $ docker container prune
+        Remove all stopped containers force     $ docker container -f prune     [Do not prompt for confirmation]
+                                                --filter options support until && label
+
+#Copy files/folders between a container and the local filesystem
+================================================================
+
+            Host to container   	$ docker container cp /tmp/config.ini ContainerName:/usr/share/grafana/conf/
+            Container to Host       $ docker container cp ContainerName:/usr/share/grafana/conf/defaults.ini /tmp
+
+#Create a new image from a container’s changes
+================================================
+
+            $ docker container commit [OPTIONS] CONTAINER [REPOSITORY[:TAG]]
+            $ docker container commit c3f279d17e0a  svendowideit/testimage:version3     
+		
+		Create new image with configuration changes		$ docker commit --change "ENV DEBUG=true" c3f279d17e0a  svendowideit/testimage:version3
+														$ docker commit --change='CMD ["apachectl", "-DFOREGROUND"]' -c "EXPOSE 80" c3f279d17e0a  svendowideit/testimage:version4
+  
+
+
+#Inspect changes to files or directories on a container’s filesystem
+======================================================================
+		$ docker container diff CONTAINER
+			List the changed files and directories in a container᾿s filesystem since the container was created. Three different types of change are tracked:
+			A file or directory was added / deleted /changed
+
+
+#Export a container’s filesystem as a tar archive
+==========================================================
+
+		$ docker export [OPTIONS] CONTAINER				# You will loose history
+		$ docker export {Container Name} > {filename}	$ docker export red_panda > latest.tar or
+		$ docker export -o={filename} {Container Name}	$ docker export --output="latest.tar" red_panda
+		
+		
+		
+#Display detailed information on one or more containers
+==========================================================
+		
+		$ docker container inspect [OPTIONS] CONTAINER [CONTAINER...]
+		
+		ID | Created| Args | State| Images| LogPath| HostPath |Restart Count |Driver |Platform | MountLabel
+		HostConfig::
+					NetworkMode | PortBinding | Restart policy| Volume Driver| DNS| PublishedAllPorts| Memory| CPU Count
+								
+		Mounts:
+				Type
+		Config:
+					Exposed ports| Hostname| USER| ENV| CMD| IMAGE| Volume| ENTRYPOINT| WORKDIR
+							
+		NetworkSettings	::	
+		
+					
+		Get an instance’s IP address 	$ docker container inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $INSTANCE_ID
+		Get an instance’s MAC address	$ docker inspect --format='{{range .NetworkSettings.Networks}}{{.MacAddress}}{{end}}' $INSTANCE_ID
+		Get an instance’s log path		$ docker inspect --format='{{.LogPath}}' $INSTANCE_ID
+		Get an instance’s image name	$ docker inspect --format='{{.Config.Image}}' $INSTANCE_ID	
+		List all port bindings			$ docker inspect --format='{{range $p, $conf := .NetworkSettings.Ports}} {{$p}} -> {{(index $conf 0).HostPort}} {{end}}' $INSTANCE_ID
+		Find a specific port mapping	$ docker inspect --format='{{(index (index .NetworkSettings.Ports "8787/tcp") 0).HostPort}}' $INSTANCE_ID
+		
+		
+		
+#Fetch the logs of a container
+===================================
+
+	$  docker logs [OPTIONS] CONTAINER
+		
+		--details			Show extra details provided to logs
+		--follow , -f		Follow log output
+		--tail , -n	all		Number of lines to show from the end of the logs
+		--timestamps , -t	Show timestamps
+		--until && --since
+
+
+	Retrieve logs until a specific point in time		$ docker logs -f --until=2s test
+		
+		
+		
+#List port mappings or a specific mapping for the container
+===========================================================
+
+
+		$ docker container port CONTAINER [PRIVATE_PORT[/PROTO]]
+		$ docker port ContainerName
+		$ docker port ContainerName 7890/tcp
+	
+
+#Display a live stream of container(s) resource usage statistics
+================================================================
+
+	$ docker container stats [OPTIONS] [CONTAINER...]
+	CONTAINER ID        NAME                                    CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+
+	Running docker stats on all running containers 			$ docker container stats
+	Running docker stats on all containers					$ docker container stats -a
+
+	
+
+#Display the running processes of a container
+================================================
+	
+	$ docker container top CONTAINER [ps OPTIONS]
+	ID                 PID                 PPID                C                   STIME               TTY                 TIME                CMD
+
+
+
+#Update configuration of one or more containers
+==================================================
+		
+		$ docker container update [OPTIONS] CONTAINER [CONTAINER...]
+		
+		Update a container’s cpu-shares					$ docker update --cpu-shares 512 abebf7571666
+		Update a container with cpu-shares and memory	$ docker update --cpu-shares 512 -m 300M abebf7571666 hopeful_morse
+		Update a container’s restart policy				$ docker update --restart=on-failure:3 abebf7571666 hopeful_morse
+		
+
+Block until one or more containers stop, then print their exit codes
+==================================================================
+			
+			$ docker wait CONTAINER [CONTAINER...]
+			
+	
+
+#Restart one or more containers
+
+	$ docker container restart [OPTIONS] CONTAINER [CONTAINER...]
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+

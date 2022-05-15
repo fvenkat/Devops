@@ -1,0 +1,23 @@
+*** The following sample policy allows the user or role to perform any AWS Organizations operation unless that resource has a tag with the key department and the value security. If that key and value is present, then the policy explicitly denies the UntagResource operation
+
+{
+    "Version" : "2012-10-17",
+    "Statement" : [
+        {
+            "Effect" : "Allow",
+            "Action" : "organizations:*",
+            "Resource" : "*"
+            
+        },
+        {
+            "Effect" : "Deny",
+            "Action" : "organizations:UntagResource",
+            "Resource" : "*",
+            "Condition" : {
+                "StringEquals" : {
+                    "aws:ResourceTag/department" : "security"
+                }
+            }
+        }
+    ]
+}

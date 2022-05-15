@@ -1,0 +1,95 @@
+To Display Curent Shell
+=======================
+$ cat /etc/shells
+
+To find out your current shell type
+===================================
+$ echo ${SHELL}
+$ ps $$
+$ ps -p $$
+
+CLI ShortCut
+============
+CTRL + W : Delete the word starting at cursor
+CTRL + U : Clear the line i.e. Delete the all words from command line.
+
+Type Command
+============
+The type command can be used to find out if a command is built in or an external binary file
+$ type -a ls 		# ls is /bin/ls
+$ type -a history	# history is a shell built in
+$ type -a echo		# echo is a shell built in && echo is /bin/echo
+
+Which Command
+=============
+You can also use the which command to display the full path of (shell) commands
+
+$ which commandName
+$ $ which bash			# /bin/bash
+Also you can use type -p commandName
+
+Date Command
+============
+$ date      #Mon Sep 20 20:47:13 IST 2021
+
+Change Directory [CD]
+=====================
+$ cd 	or $ cd ~		  #Return to users current directory
+$ cd -				      #Switch back to previous directory
+$ cd .. 			      #Move to the Parent directory of current directory
+$ cd ../	 or cd ..	  #one level back>
+$ cd ../../			      #two level back>
+$ cd ../../			      #three level back>
+
+Listing Files && Directories
+=============================
+Perm    Link    User    Group   Size    Date    File/directory
+-rwxr-xr-x. 1 venkat venkat 100 Sep 19 20:39 hello.sh
+
+$ls	                #list files & directories in bare format
+$ls -l  or ll       #list with long format - show permissions
+$ls -laF            #Diferentiate files && directories
+$ls -a              #list all files including hidden file starting with '.'
+$ls -ld         	#list directories themselves
+$ls -lR              #list recursively directory tree
+
+$ls -lh             #list long format with readable file size
+$ls -ls             #Print the File Size  [It shows Block size as well]
+$ls -S              #sort by file size
+$ls -t              #sort by modification time, newest first
+$ls -r              #list in reverse order
+
+$ls -i	            #list file's inode index number
+$ls -I	            #Capital I [Ignore the pattern ] $ls -I rhca*
+
+$ls -X	            #sort by extension name
+$ls -n	            #display UID and GID of files and directories
+
+$ls -l | grep ^-	#Lists regular files
+$ls -l grep ^d		#Lists directories
+
+
+Inode Number
+============
+
+$df -i              #Check how many inodes are free and left unused in the filesystem
+$df -i /dev         #Check how many inodes are free and left unused in the filesystem
+
+$ls -li             #Display inode number of file/dir
+$stat filename      #Display inode number of file/dir
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

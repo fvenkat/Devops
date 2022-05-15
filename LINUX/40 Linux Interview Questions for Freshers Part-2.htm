@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<link rel="pingback" href="https://www.linuxtechi.com/xmlrpc.php">
+<title>40 Linux Interview Questions for Freshers Part-2</title>
+<script type="2cdf0800fd2f63a0dc630a53-">document.documentElement.className = document.documentElement.className.replace("no-js","js");</script>
+
+<link rel="author" href="https://plus.google.com/u/0/106374064320328901397" />
+<meta name="description" content="Top 40 Linux Interview Questions and answers for freshers and beginners." />
+<meta name="keywords" content="linux interview questions for freshers,check default ulimit of user in linux,linux admin interview questions,linux interview questions" />
+<link rel="canonical" href="https://www.linuxtechi.com/40-linux-interview-questions-for-freshers-part2/" />
+<script type="2cdf0800fd2f63a0dc630a53-text/javascript">
+				window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+				ga('create', 'UA-48714625-1', 'auto');
+				// Plugins
+				
+				ga('send', 'pageview');
+			</script>
+<script async src="https://www.google-analytics.com/analytics.js" type="2cdf0800fd2f63a0dc630a53-"></script>
+
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Linuxtechi &raquo; Feed" href="https://www.linuxtechi.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Linuxtechi &raquo; Comments Feed" href="https://www.linuxtechi.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Linuxtechi &raquo; 40 Linux Interview Questions for Freshers Part-2 Comments Feed" href="https://www.linuxtechi.com/40-linux-interview-questions-for-freshers-part2/feed/" />
+<script type="2cdf0800fd2f63a0dc630a53-text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.linuxtechi.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.7"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='cptch_stylesheet-css' href='https://www.linuxtechi.com/wp-content/plugins/captcha/css/front_end_style.css?ver=4.4.5' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css' href='https://www.linuxtechi.com/wp-includes/css/dashicons.min.css?ver=4.9.7' type='text/css' media='all' />
+<link rel='stylesheet' id='cptch_desktop_style-css' href='https://www.linuxtechi.com/wp-content/plugins/captcha/css/desktop_style.css?ver=4.4.5' type='text/css' media='all' />
+<link rel='stylesheet' id='responsive-lightbox-swipebox-css' href='https://www.linuxtechi.com/wp-content/plugins/responsive-lightbox/assets/swipebox/css/swipebox.min.css?ver=2.0.5' type='text/css' media='all' />
+<link rel='stylesheet' id='scfp-form-repeater-css-css' href='https://www.linuxtechi.com/wp-content/plugins/wcp-contact-form/agp-core/assets/repeater/css/style.css?ver=4.9.7' type='text/css' media='all' />
+<link rel='stylesheet' id='scfp-css-css' href='https://www.linuxtechi.com/wp-content/plugins/wcp-contact-form/assets/css/style.css?ver=4.9.7' type='text/css' media='all' />
+<link rel='stylesheet' id='hueman-main-style-css' href='https://www.linuxtechi.com/wp-content/themes/hueman/assets/front/css/main.min.css?ver=3.4.0' type='text/css' media='all' />
+<style id='hueman-main-style-inline-css' type='text/css'>
+body { font-family:Georgia, serif;font-size:0.94rem }@media only screen and (min-width: 720px) {
+        .nav > li { font-size:0.94rem; }
+      }.sidebar .widget { padding-left: 20px; padding-right: 20px; padding-top: 20px; }::selection { background-color: #155c8e; }
+::-moz-selection { background-color: #155c8e; }a,.themeform label .required,#flexslider-featured .flex-direction-nav .flex-next:hover,#flexslider-featured .flex-direction-nav .flex-prev:hover,.post-hover:hover .post-title a,.post-title a:hover,.sidebar.s1 .post-nav li a:hover i,.content .post-nav li a:hover i,.post-related a:hover,.sidebar.s1 .widget_rss ul li a,#footer .widget_rss ul li a,.sidebar.s1 .widget_calendar a,#footer .widget_calendar a,.sidebar.s1 .alx-tab .tab-item-category a,.sidebar.s1 .alx-posts .post-item-category a,.sidebar.s1 .alx-tab li:hover .tab-item-title a,.sidebar.s1 .alx-tab li:hover .tab-item-comment a,.sidebar.s1 .alx-posts li:hover .post-item-title a,#footer .alx-tab .tab-item-category a,#footer .alx-posts .post-item-category a,#footer .alx-tab li:hover .tab-item-title a,#footer .alx-tab li:hover .tab-item-comment a,#footer .alx-posts li:hover .post-item-title a,.comment-tabs li.active a,.comment-awaiting-moderation,.child-menu a:hover,.child-menu .current_page_item > a,.wp-pagenavi a{ color: #155c8e; }.themeform input[type="submit"],.themeform button[type="submit"],.sidebar.s1 .sidebar-top,.sidebar.s1 .sidebar-toggle,#flexslider-featured .flex-control-nav li a.flex-active,.post-tags a:hover,.sidebar.s1 .widget_calendar caption,#footer .widget_calendar caption,.author-bio .bio-avatar:after,.commentlist li.bypostauthor > .comment-body:after,.commentlist li.comment-author-admin > .comment-body:after{ background-color: #155c8e; }.post-format .format-container { border-color: #155c8e; }.sidebar.s1 .alx-tabs-nav li.active a,#footer .alx-tabs-nav li.active a,.comment-tabs li.active a,.wp-pagenavi a:hover,.wp-pagenavi a:active,.wp-pagenavi span.current{ border-bottom-color: #155c8e!important; }.sidebar.s2 .post-nav li a:hover i,
+.sidebar.s2 .widget_rss ul li a,
+.sidebar.s2 .widget_calendar a,
+.sidebar.s2 .alx-tab .tab-item-category a,
+.sidebar.s2 .alx-posts .post-item-category a,
+.sidebar.s2 .alx-tab li:hover .tab-item-title a,
+.sidebar.s2 .alx-tab li:hover .tab-item-comment a,
+.sidebar.s2 .alx-posts li:hover .post-item-title a { color: #3e92cc; }
+.sidebar.s2 .sidebar-top,.sidebar.s2 .sidebar-toggle,.post-comments,.jp-play-bar,.jp-volume-bar-value,.sidebar.s2 .widget_calendar caption{ background-color: #3e92cc; }.sidebar.s2 .alx-tabs-nav li.active a { border-bottom-color: #3e92cc; }
+.post-comments span:before { border-right-color: #3e92cc; }
+      .search-expand,
+              #nav-topbar.nav-container { background-color: #000000}@media only screen and (min-width: 720px) {
+                #nav-topbar .nav ul { background-color: #000000; }
+              }.is-scrolled #header .nav-container.desktop-sticky,
+              .is-scrolled #header .search-expand { background-color: #000000; background-color: rgba(0,0,0,0.90) }.is-scrolled .topbar-transparent #nav-topbar.desktop-sticky .nav ul { background-color: #000000; background-color: rgba(0,0,0,0.95) }#header { background-color: #ffffff; }
+@media only screen and (min-width: 720px) {
+  #nav-header .nav ul { background-color: #ffffff; }
+}
+        #header #nav-mobile { background-color: #e8e8e8; }.is-scrolled #header #nav-mobile { background-color: #e8e8e8; background-color: rgba(232,232,232,0.90) }#nav-header.nav-container, #main-header-search .search-expand { background-color: #33363b; }
+@media only screen and (min-width: 720px) {
+  #nav-header .nav ul { background-color: #33363b; }
+}
+        .site-title a img { max-height: 80px; }img { -webkit-border-radius: 5px; border-radius: 5px; }body { background-color: #eaeaea; }
+</style>
+<link rel='stylesheet' id='hueman-font-awesome-css' href='https://www.linuxtechi.com/wp-content/themes/hueman/assets/front/css/font-awesome.min.css?ver=3.4.0' type='text/css' media='all' />
+<script type="2cdf0800fd2f63a0dc630a53-text/javascript" src='https://www.linuxtechi.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type="2cdf0800fd2f63a0dc630a53-text/javascript" src='https://www.linuxtechi.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type="2cdf0800fd2f63a0dc630a53-text/javascript" src='https://www.linuxtechi.com/wp-content/plugins/responsive-lightbox/assets/swipebox/js/jquery.swipebox.min.js?ver=2.0.5'></script>
+<script type="2cdf0800fd2f63a0dc630a53-text/javascript" src='https://www.linuxtechi.com/wp-content/plugins/responsive-lightbox/assets/infinitescroll/infinite-scroll.pkgd.min.js?ver=4.9.7'></script>
+<script type="2cdf0800fd2f63a0dc630a53-text/javascript">
+/* <![CDATA[ */
+var rlArgs = {"script":"swipebox","selector":"lightbox","customEvents":"","activeGalleries":"1","animation":"1","hideCloseButtonOnMobile":"0","removeBarsOnMobile":"0","hideBars":"1","hideBarsDelay":"5000","videoMaxWidth":"1080","useSVG":"1","loopAtEnd":"0","woocommerce_gallery":"0","ajaxurl":"https:\/\/www.linuxtechi.com\/wp-admin\/admin-ajax.php","nonce":"130ded5a62"};
+/* ]]> */
+</script>
+<script type="2cdf0800fd2f63a0dc630a53-text/javascript" src='https://www.linuxtechi.com/wp-content/plugins/responsive-lightbox/js/front.js?ver=2.0.5'></script>
+<script type="2cdf0800fd2f63a0dc630a53-text/javascript" src='https://www.linuxtechi.com/wp-content/plugins/wcp-contact-form/agp-core/assets/repeater/js/main.js?ver=4.9.7'></script>
+<link rel='https://api.w.org/' href='https://www.linuxtechi.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.linuxtechi.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.linuxtechi.com/wp-includes/wlwmanifest.xml" />
+<link rel='prev' title='A Definitive Guide to Install Xubuntu 16.04 LTS' href='https://www.linuxtechi.com/definitive-guide-to-install-xubuntu-16-04-lts/' />
+<link rel='next' title='An Insider Scoop on Ubuntu 16.10 &#8211; Major Expectations' href='https://www.linuxtechi.com/insider-scoop-on-ubuntu-16-10-major-expectations/' />
+<meta name="generator" content="WordPress 4.9.7" />
+<link rel='shortlink' href='https://www.linuxtechi.com/?p=4130' />
+<link rel="alternate" type="application/json+oembed" href="https://www.linuxtechi.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.linuxtechi.com%2F40-linux-interview-questions-for-freshers-part2%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.linuxtechi.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.linuxtechi.com%2F40-linux-interview-questions-for-freshers-part2%2F&#038;format=xml" />
+<!--[if lt IE 9]>
+<script src="https://www.linuxtechi.com/wp-content/themes/hueman/assets/front/js/ie/html5shiv-printshiv.min.js"></script>
+<script src="https://www.linuxtechi.com/wp-content/themes/hueman/assets/front/js/ie/selectivizr.js"></script>
+<![endif]-->
+<link rel="icon" href="https://www.linuxtechi.com/wp-content/uploads/2018/06/linuxtechi-favicon-150x150.jpg" sizes="32x32" />
+<link rel="icon" href="https://www.linuxtechi.com/wp-content/uploads/2018/06/linuxtechi-favicon-300x300.jpg" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://www.linuxtechi.com/wp-content/uploads/2018/06/linuxtechi-favicon-300x300.jpg" />
+<meta name="msapplication-TileImage" content="https://www.linuxtechi.com/wp-content/uploads/2018/06/linuxtechi-favicon-300x300.jpg" />
+</head>
+<body data-rsssl=1 class="post-template-default single single-post postid-4130 single-format-standard wp-custom-logo col-2cl full-width topbar-enabled mobile-sidebar-hide-s2 header-desktop-sticky gecko">
+<div id="wrapper">
+<header id="header" class="both-menus-mobile-on two-mobile-menus both_menus header-ads-desktop  topbar-transparent no-header-img">
+<nav class="nav-container group desktop-menu desktop-sticky " id="nav-topbar" data-menu-id="header-1">
+
+<div class="ham__navbar-toggler-two collapsed" title="Menu" aria-expanded="false">
+<div class="ham__navbar-span-wrapper">
+<span class="line line-1"></span>
+<span class="line line-2"></span>
+<span class="line line-3"></span>
+</div>
+</div>
+<div class="nav-text"></div>
+<div class="topbar-toggle-down">
+<i class="fas fa-angle-double-down" aria-hidden="true" data-toggle="down" title="Expand menu"></i>
+<i class="fas fa-angle-double-up" aria-hidden="true" data-toggle="up" title="Collapse menu"></i>
+</div>
+<div class="nav-wrap container">
+<ul class="nav container-inner group"><li><a href="https://www.linuxtechi.com/">Home</a></li><li class="page_item page-item-156"><a href="https://www.linuxtechi.com/contact-us/">Contact Us</a></li><li class="page_item page-item-1779"><a href="https://www.linuxtechi.com/about-us/">About Us</a></li><li class="page_item page-item-2254"><a href="https://www.linuxtechi.com/write-for-us/">Write For LinuxTechi</a></li></ul> </div>
+</nav>
+<div class="container group">
+<div class="container-inner">
+<div class="group pad central-header-zone">
+<div class="logo-tagline-group">
+<p class="site-title"><a class="custom-logo-link" href="https://www.linuxtechi.com/" rel="home" title="Linuxtechi | Home page"><img src="https://www.linuxtechi.com/wp-content/uploads/2007/09/logo-1.png" alt="Linuxtechi"></a></p>
+</div>
+<div id="header-widgets">
+</div>
+</div>
+<nav class="nav-container group desktop-menu " id="nav-header" data-menu-id="header-2">
+
+<div class="ham__navbar-toggler-two collapsed" title="Menu" aria-expanded="false">
+<div class="ham__navbar-span-wrapper">
+<span class="line line-1"></span>
+<span class="line line-2"></span>
+<span class="line line-3"></span>
+</div>
+</div>
+<div class="nav-text"></div>
+<div class="nav-wrap container">
+<ul id="menu-linuxtechi" class="nav container-inner group"><li id="menu-item-6" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-6"><a href="https://www.linuxtechi.com/">Home</a></li>
+<li id="menu-item-5151" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5151"><a href="https://www.linuxtechi.com/category/how-to/">How To</a></li>
+<li id="menu-item-5152" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5152"><a href="https://www.linuxtechi.com/category/linux-commands/">Commands</a></li>
+<li id="menu-item-158" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-158"><a href="https://www.linuxtechi.com/category/shell-scripting/">Shell Scripting</a></li>
+<li id="menu-item-5696" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5696"><a href="https://www.linuxtechi.com/category/monitoring-tools/">Monitoring Tools</a></li>
+<li id="menu-item-157" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-157"><a href="https://www.linuxtechi.com/category/linux-interview/">Linux Interview</a></li>
+<li id="menu-item-3227" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3227"><a target="_blank" href="https://linuxtechi.tradepub.com/category/information-technology-servers-and-linux-server-os/806/">Linux ebooks</a></li>
+<li id="menu-item-2255" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2255"><a href="https://www.linuxtechi.com/write-for-us/">Write For LinuxTechi</a></li>
+<li id="menu-item-1781" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1781"><a href="https://www.linuxtechi.com/contact-us/">Contact Us</a></li>
+<li id="menu-item-1780" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1780"><a href="https://www.linuxtechi.com/about-us/">About Us</a></li>
+</ul> </div>
+</nav>
+</div>
+</div>
+</header>
+<div class="container" id="page">
+<div class="container-inner">
+<div class="main">
+<div class="main-inner group">
+<section class="content">
+<div class="page-title pad group">
+<ul class="meta-single group">
+<li class="category"><a href="https://www.linuxtechi.com/category/linux-interview/" rel="category tag">Linux Interview</a></li>
+<li class="comments"><a href="https://www.linuxtechi.com/40-linux-interview-questions-for-freshers-part2/#respond"><i class="far fa-comments"></i>0</a></li>
+</ul>
+</div>
+<div class="pad group">
+<article class="post-4130 post type-post status-publish format-standard has-post-thumbnail hentry category-linux-interview tag-linux-admin-interview-questions tag-linux-interview-questions">
+<div class="post-inner group">
+<h1 class="post-title entry-title">40 Linux Interview Questions for Freshers Part-2</h1>
+<p class="post-byline">by <span class="vcard author">
+<span class="fn"><a href="https://www.linuxtechi.com/author/linuxtechi/" title="Posts by LinuxTechi" rel="author">LinuxTechi</a></span>
+</span> &middot;
+Published <time class="published" datetime="June 5, 2016">June 5, 2016</time>
+&middot; Updated <time class="updated" datetime="August 3, 2017">August 3, 2017</time>
+</p>
+<div class="clear"></div>
+<div class="entry themeform share">
+<div class="entry-inner">
+<p>Hello Techies, In this post we are going to discuss 40 basic Linux interview questions for freshers or beginners. These questions will give you an idea about what type of questions generally asked for Linux administrator Job.</p>
+<h6><span style="color: #000000;">Q:1 What will happen when you execute the command &#8220;mv *&#8221; in your current directory ?</span></h6>
+<p><strong>Ans :</strong> Linux Shell usually expand * in alphabetical Order, So When we execute the command &#8220;mv *&#8221; then it will check the file and directories alphabetically order and will move all the files and directories to the directory which is created in the last according to alphabetical order, if alphabetically a file is created in the last then command will through an error</p>
+<p>&#8221; mv: target &#8216;x&#8217; is not a directory.</p><div class="bMBBS3eU" style="clear:both;float:left;width:100%;margin:0 0 20px 0;"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" type="2cdf0800fd2f63a0dc630a53-"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2130177517648108" data-ad-slot="3075279854"></ins>
+<script type="2cdf0800fd2f63a0dc630a53-">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<h6><span style="color: #000000;">Q:2 Tell me the main difference between SSH and Telnet command ?</span></h6>
+<p><strong>Ans : </strong>Both SSH and telnet are used to connect remote servers. SSH stands for Secure Shell and When we do ssh to any server then data (User&#8217;s Credentials) is transferred in an encrypted form between the client and server but in case of Telnet data is transferred in plain text. Intruder can easily extract the confidential info in case of telnet.</p>
+<h6><span style="color: #000000;">Q:3 What is RAID and why it is required ?</span></h6>
+<p><strong>Ans :</strong> RAID Stands for Redundancy Array inexpensive Disk, it is required to provide high availability and redundancy in case of hard disk failure in physical servers. We can also used RAID to increase disk throughput via striping</p>
+<h6><span style="color: #000000;">Q:4 How to check when was the particular rpm installed on your server ?</span></h6>
+<p><strong>Ans :</strong> Use the rpm command &#8220;<span style="color: #000080;">rpm -q {rpm_name} &#8211;last</span>&#8221;</p>
+<h6><span style="color: #000000;">Q:5 How to check number of open files of a particular user ?</span></h6>
+<p><strong>Ans :</strong> Using lsof command we find number of files associated to particular user.</p>
+<p><span style="color: #000080;"># lsof -u apache</span><br />
+<span style="color: #000080;"> # lsof -u apache | wc -l</span></p>
+<h6><span style="color: #000000;">Q:6 How to check  what is your current working shell ?<br />
+</span></h6>
+<p><strong>Ans :</strong> echo $SHELL and &#8216;/etc/passwd&#8217; will tell you your default shell.</p>
+<h6><span style="color: #000000;">Q:7 Is it possible to do a dry-run installation of a RPM ?</span></h6>
+<p><strong>Ans :</strong> Yes, it is possible with option &#8220;&#8211;test&#8221; with rpm command like &#8220;<span style="color: #000080;">rpm -ivh &lt;rpm_package&gt; &#8211;test</span>&#8220;, this command will not install rpm package but it will check whether rpm installation will be successful or not.</p>
+<h6><span style="color: #000000;">Q:8 How to check whether a local linux user account is locked or not ?</span></h6>
+<p><strong>Ans :</strong> Using the passwd command &#8220;<span style="color: #333399;">passwd -S &lt;user_name&gt;</span>&#8221; we can check whether the password is set or not. Moreover we can also see the login failed attempts using &#8220;<span style="color: #333399;">pam_tally2 -u {user_name}</span>&#8220;. If login failed attempts cross the limit then account will be locked.</p>
+<h6><span style="color: #000000;">Q:9 How to check when was the password changed for local Linux user  ?</span></h6>
+<p><strong>Ans :</strong> Use the chage command &#8220;<span style="color: #333399;">chage -l {user_name}</span>&#8220;, there is entry in the output &#8220;Last password change&#8221; from there we can check the date.</p>
+<h6><span style="color: #000000;">Q:10 What are the different fields of /etc/passwd file ?</span></h6>
+<p><strong>Ans :</strong> There are 7 fields in /etc/passwd file</p>
+<ul>
+<li>User Name</li>
+<li>Password ( x character that shows password is encrypted and kept in /etc/shadow file)</li>
+<li>UID</li>
+<li>GID</li>
+<li>Comments for the User</li>
+<li>Home directory</li>
+<li>Shell</li>
+</ul>
+<h6><span style="color: #000000;">Q:11 what is the toggle id for LVM partition in Linux ?</span></h6>
+<p><strong>Ans :</strong> &#8220;8e&#8221; is the toggle id in fdisk command for Linux LVM partition.</p>
+<h6><span style="color: #000000;">Q:12 How to find access and modify time of a file and directory in linux ?</span></h6>
+<p><strong>Ans :</strong> Using the &#8216;stat&#8217; command we can find the access and modify time of a file and directory. Example is shown below :</p>
+<p><span style="color: #000080;"># stat {file_name}</span><br />
+<span style="color: #000080;"> # stat {Directory_name}</span></p>
+<h6><span style="color: #000000;">Q:13 List all the files of /var file system which are not accessed more than 30 days ?</span></h6>
+<p><strong>Ans :</strong> Use the find command to list all files which are not accessed more than 30 days in /var.</p>
+<p><span style="color: #000080;"># find /var -type f -atime +30 -exec ls -ltr {} \;</span></p>
+<h6><span style="color: #000000;">Q:14 How to recreate initrd image file in Linux ?</span></h6>
+<p><strong>Ans :</strong> In Case of RHEL 4 &amp; 5 , we can use &#8216;<span style="color: #333399;"><span style="color: #000080;">mkinitrd</span>&#8216;</span> command to recreate initrd file. In RHEL 6 &amp; 7 &#8216;<span style="color: #000080;">dracut&#8217;</span> command is used to rebuild initrd file.</p>
+<h6><span style="color: #000000;">Q:15 How to list inodes of a file system in linux ?</span></h6>
+<p><strong>Ans :</strong> Use &#8216;-i&#8217; option in df command to view the inode of the file system, Example &#8220;<span style="color: #000080;">df -i  /var&#8221;</span></p>
+<h6><span style="color: #000000;">Q:16 How to increase of &#8216;number of open files&#8217; limit for a particular user in Linux ?</span></h6>
+<p><strong>Ans :</strong> &#8216;Number of open files&#8217; limit for a particular user can be increased by modifying the file &#8220;<span style="color: #000080;">/etc/security/limits.conf&#8221;</span>. Add the following line in the file.</p>
+<pre>&lt;user_name&gt;     soft    nofile           4096 (Change this value as per requirement)
+&lt;user_name&gt;     hard    nofile           4096 (Change this value as per requirement)</pre>
+<h6><span style="color: #000000;">Q:17 How you will find the default ulimit values for a user in Linux ?</span></h6>
+<p><strong>Ans :</strong> To check the default ulimit values of local user, first login to system with that user name and type the command &#8220;<span style="color: #000080;">ulimit -a&#8221;</span>.</p>
+<h6><span style="color: #000000;">Q:18 How to send a mail from terminal or console ?</span></h6>
+<p><strong>Ans :</strong> There are two ways to send mail from the terminal</p>
+<ul>
+<li>mail command , example : # <span style="color: #000080;">echo &#8220;body of mail&#8221; | mail -s {subject_of_mail} &#8212; {email_id}</span></li>
+<li>telnet command</li>
+</ul>
+<h6><span style="color: #000000;">Q:19 How to set proxy settings on Linux terminal ?</span></h6>
+<p><strong>Ans :</strong> We can set the proxy settings on Linux terminal using the variables like<span style="color: #000080;"> http_proxy</span>, <span style="color: #000080;">https_proxy</span> and <span style="color: #000080;">ftp_proxy</span>.</p>
+<pre># export http_proxy=http://&lt;ip_or_dns_name_of_proxy_server&gt;:&lt;port_no&gt;
+# export https_proxy=http://&lt;ip_or_dns_name_of_proxy_server&gt;:&lt;port_no&gt;
+# export ftp_proxy=http://&lt;ip_or_dns_name_of_proxy_server&gt;:&lt;port_no&gt;</pre>
+<h6><span style="color: #000000;">Q:20 Find all files under /opt which has 777 permissions and change it to 644.</span></h6>
+<p>Ans: Use the below find command :</p>
+<pre># find /opt -type f -perm 777 -exec chmod 644 {} \;</pre>
+<h6><span style="color: #000000;">Q:21 How to check which linux flavor and version is installed ?</span></h6>
+<p><strong>Ans :</strong> Use the following command to get linux flavor and version :</p>
+<p><span style="color: #000080;"># cat /etc/*-release</span></p>
+<h6><span style="color: #000000;">Q:22 What is the uid and gid of root user on Linux server ?</span></h6>
+<p><strong>Ans :</strong> UID and GID of root is user is &#8216;0&#8217;</p>
+<h6><span style="color: #000000;">Q:23 What are default configuration files of postfix mail server ?</span></h6>
+<p><strong>Ans :</strong> There are two main configuration files of postfix mail server.</p>
+<ul>
+<li>/etc/postfix/main.cf</li>
+<li>/etc/postfix/master.cf</li>
+</ul>
+<h6><span style="color: #000000;">Q:24 What is the default umask of root user on Linux servers ?</span></h6>
+<p><strong>Ans :</strong> Default umask of root user is &#8220;0022&#8221;</p>
+<h6><span style="color: #000000;">Q:25 How to disable and enable swap memory ?</span></h6>
+<p>Ans: Command &#8220;<span style="color: #000080;">swapoff -a</span>&#8221; is used to disable swap memory and &#8220;<span style="color: #000080;">swapon -a</span>&#8221; is used to enable swap memory on linux servers.</p>
+<h6><span style="color: #000000;">Q:26  What is default port of proxy server(Squid), SMTP, Apache Web Server(httpd) and MariaDB Database Server ?</span></h6>
+<p><strong>Ans :</strong> Following ports are used for the respective servers.<br />
+Ports                    Services<br />
+3128         &#8212;       proxy server(Squid)<br />
+25           &#8212;         SMTP<br />
+80 and 443   &#8212;   Apache Web Server(http and https)<br />
+3306         &#8212;      MariaDB Database</p>
+<h6><span style="color: #000000;">Q:27 How to check kernel related logs on Linux server ?</span></h6>
+<p><strong>Ans:</strong> &#8216;<span style="color: #000080;">dmesg</span>&#8216; command is used to display kernel related logs.</p>
+<h6><span style="color: #000000;">Q:28 How you will check ip address and routing table of a linux box  ?</span></h6>
+<p><strong>Ans :</strong> Using the commands &#8216;<span style="color: #000080;">ifconfig&#8217;</span> and &#8216;<span style="color: #000080;">ip address</span>&#8216; we can view the ip address of a linux server. With the commands like  &#8216;<span style="color: #000080;">netstat -nr&#8217;</span> and &#8216;<span style="color: #000080;">route -n</span>&#8216; we can view the current routing table.</p>
+<h6><span style="color: #000000;">Q:29 Tell me the default configuration file of linux ftp server (vsftp ) ?</span></h6>
+<p><strong>Ans :</strong> &#8220;<span style="color: #000080;">/etc/vsftpd/vsftpd.conf</span>&#8221; is the default configuration file of vsftpd.</p>
+<h6><span style="color: #000000;">Q:30 How to merge the contents of two files into a single file from the command line ?</span></h6>
+<p>Ans: With the help of cat command we can merge the contents of two or more files into a single file.</p>
+<p><span style="color: #000080;"># cat tech_file1 tech_file2 &gt; merger_file</span></p>
+<h6><span style="color: #000000;">Q:31 Which command is used to check the permissions of a file and directory ?</span></h6>
+<p><strong>Ans :</strong> &#8220;<span style="color: #000080;">ls -l {path_file_name}</span>&#8221; is used to check the permissions of a file. &#8220;<span style="color: #000080;">ls -ld {path_directory_name}</span>&#8221; is used to check the permissions of a folder or directory.</p>
+<h6><span style="color: #000000;">Q:32 what is the role of /etc/mtab file ?</span></h6>
+<p><strong>Ans :</strong> mtab file keeps the information of all the current mounted file system only.</p>
+<h6><span style="color: #000000;">Q:33 How to recover root password in Linux server ?</span></h6>
+<p>Ans: There is no way to recover the root password, the only way is to reset the root password from single user mode.</p>
+<h6><span style="color: #000000;">Q:34 What can be the reasons that Oracle user is unable to run its cron jobs ?</span></h6>
+<p><strong>Ans :</strong> There can be multiple reasons like :<br />
+a) Oracle User password might have expired.<br />
+b) Oracle user might not be allowed to run cron jobs<br />
+c) /var file system might be 100 % utilized.</p>
+<h6><span style="color: #000000;">Q:35 What are the different fields of crontab file ?</span></h6>
+<p><strong>Ans :</strong> A Crontab file conatins following fields</p>
+<p>*                      *                   *                              *                 *                            {Command_to_be_executed}<br />
+(minute)      {hour}       {day_of_month}     {month}         {day_of_week}</p>
+<h6><span style="color: #000000;">Q:36 Tell me the log file for cron jobs in linux server ?</span></h6>
+<p><strong>Ans :</strong> All the cron job&#8217;s logs are stored in its log file &#8220;<span style="color: #000080;">/var/log/cron</span>&#8221;</p>
+<h6><span style="color: #000000;">Q:37 what will happen if i run the command &#8221; kill -9 1&#8243; ?</span></h6>
+<p>Ans: Nothing will happen</p>
+<h6><span style="color: #000000;">Q:38 What is default home directory of ftp user and how to change it ?</span></h6>
+<p>Ans: &#8220;<span style="color: #000080;">/var/ftp</span>&#8221; is the default home directory of ftp user. It can be changed using the usermod command like &#8220;<span style="color: #000080;">usermod -d /{path_new_directory} ftp</span>&#8220;.</p>
+<h6><span style="color: #000000;">Q:39 How to create partitions on raw disk in Linux ?</span></h6>
+<p><strong>Ans :</strong> Partitions can be created on raw disk either by using &#8216;fdisk&#8217; command or by &#8216;parted&#8217; command</p>
+<h6><span style="color: #000000;">Q:40 How to copy the files and directory from one Linux server to another remote Linux server ?</span></h6>
+<p><strong>Ans :</strong> With help of &#8216;<strong>scp</strong>&#8216; and &#8216;<strong>rsync</strong>&#8216; command we can copy the files of one linux server to another. You need to use the -r option if you&#8217;re using scp to copy a directory tree. Syntax of scp and rsync is shown below :<br />
+<span style="color: #000080;"># scp {files_to_be_copied}  <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d8aab7b7ac98">[email&#160;protected]</a>&lt;remote_server_ip&gt;:/{location_where_to_copy_files}</span><br />
+<span style="color: #000080;"> # rsync -av &#8211;progress {files_to_be_copied}  <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="73011c1c0733">[email&#160;protected]</a>&lt;remote_server_ip&gt;:/{location_where_to_copy_files}</span></p>
+<p>In the past we have already shared 20 basic interview questions for beginners. Please refer the below:</p>
+<h4><span style="color: #800080;"><a style="color: #800080;" href="https://www.linuxtechi.com/linux-system-admin-interview-questions-for-beginners-part1/" target="_blank" rel="noopener noreferrer">&#8220;20 Linux System Admin Interview Questions For Beginners &#8211; Part 1&#8221;</a></span></h4>
+</p> <nav class="pagination group">
+</nav>
+</div>
+<div class="sharrre-container ">
+<span>Share</span>
+<div id="twitter" data-url="https://www.linuxtechi.com/40-linux-interview-questions-for-freshers-part2/" data-text="40 Linux Interview Questions for Freshers Part-2" data-title="Tweet"><a class="box" href="#"><div class="count" href="#"><i class="fas fa-plus"></i></div><div class="share"><i class="fab fa-twitter"></i></div></a></div>
+<div id="facebook" data-url="https://www.linuxtechi.com/40-linux-interview-questions-for-freshers-part2/" data-text="40 Linux Interview Questions for Freshers Part-2" data-title="Like"></div>
+<div id="googleplus" data-url="https://www.linuxtechi.com/40-linux-interview-questions-for-freshers-part2/" data-text="40 Linux Interview Questions for Freshers Part-2" data-title="+1"></div>
+<div id="linkedin" data-url="https://www.linuxtechi.com/40-linux-interview-questions-for-freshers-part2/" data-text="40 Linux Interview Questions for Freshers Part-2" data-title="Publish on Linked In"></div>
+</div>
+<style type="text/css"></style>
+<script data-cfasync="false" src="/cdn-cgi/scripts/f2bf09f8/cloudflare-static/email-decode.min.js"></script><script type="2cdf0800fd2f63a0dc630a53-text/javascript">
+  	// Sharrre
+  	jQuery( function($) {
+      //<temporary>
+      $('head').append( $( '<style>', { id : 'hide-sharre-count', type : 'text/css', html:'.sharrre-container.no-counter .box .count {display:none;}' } ) );
+      //</temporary>
+                		$('#twitter').sharrre({
+        			share: {
+        				twitter: true
+        			},
+        			template: '<a class="box" href="#"><div class="count" href="#">{total}</div><div class="share"><i class="fab fa-twitter"></i></div></a>',
+        			enableHover: false,
+        			enableTracking: true,
+        			buttons: { twitter: {via: 'linuxtechi'}},
+        			click: function(api, options){
+        				api.simulateClick();
+        				api.openPopup('twitter');
+        			}
+        		});
+            		            $('#facebook').sharrre({
+        			share: {
+        				facebook: true
+        			},
+        			template: '<a class="box" href="#"><div class="count" href="#">{total}</div><div class="share"><i class="fab fa-facebook-square"></i></div></a>',
+        			enableHover: false,
+        			enableTracking: true,
+              buttons:{layout: 'box_count'},
+        			click: function(api, options){
+        				api.simulateClick();
+        				api.openPopup('facebook');
+        			}
+        		});
+                                    		$('#googleplus').sharrre({
+        			share: {
+        				googlePlus: true
+        			},
+        			template: '<a class="box" href="#"><div class="count" href="#">{total}</div><div class="share"><i class="fab fa-google-plus-square"></i></div></a>',
+        			enableHover: false,
+        			enableTracking: true,
+              buttons:{size: 'tall'},
+        			urlCurl: 'https://www.linuxtechi.com/wp-content/plugins/hueman-addons/addons/assets/front/js/sharrre.php',
+        			click: function(api, options){
+        				api.simulateClick();
+        				api.openPopup('googlePlus');
+        			}
+        		});
+                                    $('#linkedin').sharrre({
+              share: {
+                linkedin: true
+              },
+              template: '<a class="box" href="#" rel="nofollow"><div class="count" href="#">{total}</div><div class="share"><i class="fab fa-linkedin"></i></div></a>',
+              enableHover: false,
+              enableTracking: true,
+              buttons: {
+              linkedin: {
+                description: '40 Linux Interview Questions for Freshers Part-2',media: 'https://www.linuxtechi.com/wp-content/uploads/2016/06/linux-1.png'                }
+              },
+              click: function(api, options){
+                api.simulateClick();
+                api.openPopup('linkedin');
+              }
+            });
+        
+    		
+    			// Scrollable sharrre bar, contributed by Erik Frye. Awesome!
+    			var $_shareContainer = $(".sharrre-container"),
+    			    $_header         = $('#header'),
+    			    $_postEntry      = $('.entry'),
+        			$window          = $(window),
+        			startSharePosition = $_shareContainer.offset(),//object
+        			contentBottom    = $_postEntry.offset().top + $_postEntry.outerHeight(),
+        			topOfTemplate    = $_header.offset().top,
+              topSpacing       = _setTopSpacing();
+
+          //triggered on scroll
+    			shareScroll = function(){
+      				var scrollTop     = $window.scrollTop() + topOfTemplate,
+      				    stopLocation  = contentBottom - ($_shareContainer.outerHeight() + topSpacing);
+
+              $_shareContainer.css({position : 'fixed'});
+
+      				if( scrollTop > stopLocation ){
+      					  $_shareContainer.css( { position:'relative' } );
+                  $_shareContainer.offset(
+                      {
+                        top: contentBottom - $_shareContainer.outerHeight(),
+                        left: startSharePosition.left,
+                      }
+                  );
+      				}
+      				else if (scrollTop >= $_postEntry.offset().top - topSpacing){
+      					 $_shareContainer.css( { position:'fixed',top: '100px' } );
+                 $_shareContainer.offset(
+                      {
+                        //top: scrollTop + topSpacing,
+                        left: startSharePosition.left,
+                      }
+                  );
+      				} else if (scrollTop < startSharePosition.top + ( topSpacing - 1 ) ) {
+      					 $_shareContainer.css( { position:'relative' } );
+                 $_shareContainer.offset(
+                      {
+                        top: $_postEntry.offset().top,
+                        left:startSharePosition.left,
+                      }
+                  );
+      				}
+    			},
+
+          //triggered on resize
+    			shareMove = function() {
+      				startSharePosition = $_shareContainer.offset();
+      				contentBottom = $_postEntry.offset().top + $_postEntry.outerHeight();
+      				topOfTemplate = $_header.offset().top;
+      				_setTopSpacing();
+    			};
+
+    			/* As new images load the page content body gets longer. The bottom of the content area needs to be adjusted in case images are still loading. */
+    			setTimeout( function() {
+    				  contentBottom = $_postEntry.offset().top + $_postEntry.outerHeight();
+    			}, 2000);
+
+          function _setTopSpacing(){
+              var distanceFromTop  = 20;
+
+              if( $window.width() > 1024 ) {
+                topSpacing = distanceFromTop + $('.nav-wrap').outerHeight();
+              } else {
+                topSpacing = distanceFromTop;
+              }
+              return topSpacing;
+          }
+
+          //setup event listeners
+          $window.scroll( _.throttle( function() {
+              if ( $window.width() > 719 ) {
+                  shareScroll();
+              } else {
+                  $_shareContainer.css({
+                      top:'',
+                      left:'',
+                      position:''
+                  })
+              }
+          }, 50 ) );
+          $window.resize( _.debounce( function() {
+              if ( $window.width() > 719 ) {
+                  shareMove();
+              } else {
+                  $_shareContainer.css({
+                      top:'',
+                      left:'',
+                      position:''
+                  })
+              }
+          }, 50 ) );
+    		
+  	});
+</script>
+<div class="clear"></div>
+</div>
+</div>
+</article>
+<div class="clear"></div>
+<p class="post-tags"><span>Tags:</span> <a href="https://www.linuxtechi.com/tag/linux-admin-interview-questions/" rel="tag">linux admin interview questions</a><a href="https://www.linuxtechi.com/tag/linux-interview-questions/" rel="tag">linux interview questions</a></p>
+<ul class="post-nav group">
+<li class="next"><a href="https://www.linuxtechi.com/insider-scoop-on-ubuntu-16-10-major-expectations/" rel="next"><i class="fas fa-chevron-right"></i><strong>Next story</strong> <span>An Insider Scoop on Ubuntu 16.10 &#8211; Major Expectations</span></a></li>
+<li class="previous"><a href="https://www.linuxtechi.com/definitive-guide-to-install-xubuntu-16-04-lts/" rel="prev"><i class="fas fa-chevron-left"></i><strong>Previous story</strong> <span>A Definitive Guide to Install Xubuntu 16.04 LTS</span></a></li>
+</ul>
+<h4 class="heading">
+<i class="far fa-hand-point-right"></i>You may also like...</h4>
+<ul class="related-posts group">
+<li class="related post-hover">
+<article class="post-2828 post type-post status-publish format-standard hentry category-linux-interview tag-linux-commands-interview-questions">
+<div class="post-thumbnail">
+<a href="https://www.linuxtechi.com/20-linux-commands-interview-questions-answers/" title="20  Linux Commands Interview Questions and Answers">
+<svg class="hu-svg-placeholder thumb-medium-empty" id="5b5452dd40f1b" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M928 832q0-14-9-23t-23-9q-66 0-113 47t-47 113q0 14 9 23t23 9 23-9 9-23q0-40 28-68t68-28q14 0 23-9t9-23zm224 130q0 106-75 181t-181 75-181-75-75-181 75-181 181-75 181 75 75 181zm-1024 574h1536v-128h-1536v128zm1152-574q0-159-112.5-271.5t-271.5-112.5-271.5 112.5-112.5 271.5 112.5 271.5 271.5 112.5 271.5-112.5 112.5-271.5zm-1024-642h384v-128h-384v128zm-128 192h1536v-256h-828l-64 128h-644v128zm1664-256v1280q0 53-37.5 90.5t-90.5 37.5h-1536q-53 0-90.5-37.5t-37.5-90.5v-1280q0-53 37.5-90.5t90.5-37.5h1536q53 0 90.5 37.5t37.5 90.5z" /></svg>
+<script type="2cdf0800fd2f63a0dc630a53-text/javascript">
+          jQuery( function($){
+            if ( $('#flexslider-featured').length ) {
+              $('#flexslider-featured').on('featured-slider-ready', function() {
+                $( '#5b5452dd40f1b' ).animateSvg();
+              });
+            } else { $( '#5b5452dd40f1b' ).animateSvg( { svg_opacity : 0.3, filter_opacity : 0.5 } ); }
+          });
+        </script>
+<img class="hu-img-placeholder" src="https://www.linuxtechi.com/wp-content/themes/hueman/assets/front/img/thumb-medium-empty.png" alt="20  Linux Commands Interview Questions and Answers" data-hu-post-id="5b5452dd40f1b" /> </a>
+<a class="post-comments" href="https://www.linuxtechi.com/20-linux-commands-interview-questions-answers/#comments"><span><i class="far fa-comments"></i>3</span></a>
+</div>
+<div class="related-inner">
+<h4 class="post-title entry-title">
+<a href="https://www.linuxtechi.com/20-linux-commands-interview-questions-answers/" rel="bookmark" title="20  Linux Commands Interview Questions and Answers">20 Linux Commands Interview Questions and Answers</a>
+</h4>
+<div class="post-meta group">
+<p class="post-date">
+<time class="published updated" datetime="2014-12-21 16:24:14">December 21, 2014</time>
+</p>
+<p class="post-byline" style="display:none">&nbsp;by <span class="vcard author">
+<span class="fn"><a href="https://www.linuxtechi.com/author/pradeep/" title="Posts by Pradeep Kumar" rel="author">Pradeep Kumar</a></span>
+</span> &middot; Published <span class="published">December 21, 2014</span>
+&middot; Last modified <span class="updated">January 6, 2018</span> </p>
+</div>
+</div>
+</article>
+</li>
+<li class="related post-hover">
+<article class="post-7280 post type-post status-publish format-standard has-post-thumbnail hentry category-linux-interview tag-red-hat-satellite-server-interview-questions">
+<div class="post-thumbnail">
+<a href="https://www.linuxtechi.com/20-redhat-satellite-server-interview-questions-answers/" title="20 Red Hat Satellite Server Interview Questions and Answers">
+<img src="https://www.linuxtechi.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="https://www.linuxtechi.com/wp-content/uploads/2017/12/Satellite-Server-Interview-Question-Answers-520x245.jpg" width="520" height="245" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="Satellite-Server-Interview-Question-Answers" srcset="https://www.linuxtechi.com/wp-content/uploads/2017/12/Satellite-Server-Interview-Question-Answers-520x245.jpg 520w, https://www.linuxtechi.com/wp-content/uploads/2017/12/Satellite-Server-Interview-Question-Answers-720x340.jpg 720w" sizes="(max-width: 520px) 100vw, 520px"><noscript><img width="520" height="245" src="https://www.linuxtechi.com/wp-content/uploads/2017/12/Satellite-Server-Interview-Question-Answers-520x245.jpg" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="Satellite-Server-Interview-Question-Answers" srcset="https://www.linuxtechi.com/wp-content/uploads/2017/12/Satellite-Server-Interview-Question-Answers-520x245.jpg 520w, https://www.linuxtechi.com/wp-content/uploads/2017/12/Satellite-Server-Interview-Question-Answers-720x340.jpg 720w" sizes="(max-width: 520px) 100vw, 520px" /></noscript> </a>
+<a class="post-comments" href="https://www.linuxtechi.com/20-redhat-satellite-server-interview-questions-answers/#comments"><span><i class="far fa-comments"></i>1</span></a>
+</div>
+<div class="related-inner">
+<h4 class="post-title entry-title">
+<a href="https://www.linuxtechi.com/20-redhat-satellite-server-interview-questions-answers/" rel="bookmark" title="20 Red Hat Satellite Server Interview Questions and Answers">20 Red Hat Satellite Server Interview Questions and Answers</a>
+</h4>
+<div class="post-meta group">
+<p class="post-date">
+<time class="published updated" datetime="2017-12-04 03:26:41">December 4, 2017</time>
+</p>
+<p class="post-byline" style="display:none">&nbsp;by <span class="vcard author">
+<span class="fn"><a href="https://www.linuxtechi.com/author/pradeep/" title="Posts by Pradeep Kumar" rel="author">Pradeep Kumar</a></span>
+</span> &middot; Published <span class="published">December 4, 2017</span>
+</p>
+</div>
+</div>
+</article>
+</li>
+<li class="related post-hover">
+<article class="post-2008 post type-post status-publish format-standard hentry category-linux-interview tag-linux-interview-questions">
+<div class="post-thumbnail">
+<a href="https://www.linuxtechi.com/experience-linux-admin-interview-questions/" title="Top 30 Linux System Admin Interview Questions &#038; Answers">
+<svg class="hu-svg-placeholder thumb-medium-empty" id="5b5452dd4342f" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M928 832q0-14-9-23t-23-9q-66 0-113 47t-47 113q0 14 9 23t23 9 23-9 9-23q0-40 28-68t68-28q14 0 23-9t9-23zm224 130q0 106-75 181t-181 75-181-75-75-181 75-181 181-75 181 75 75 181zm-1024 574h1536v-128h-1536v128zm1152-574q0-159-112.5-271.5t-271.5-112.5-271.5 112.5-112.5 271.5 112.5 271.5 271.5 112.5 271.5-112.5 112.5-271.5zm-1024-642h384v-128h-384v128zm-128 192h1536v-256h-828l-64 128h-644v128zm1664-256v1280q0 53-37.5 90.5t-90.5 37.5h-1536q-53 0-90.5-37.5t-37.5-90.5v-1280q0-53 37.5-90.5t90.5-37.5h1536q53 0 90.5 37.5t37.5 90.5z" /></svg>
+<script type="2cdf0800fd2f63a0dc630a53-text/javascript">
+          jQuery( function($){
+            if ( $('#flexslider-featured').length ) {
+              $('#flexslider-featured').on('featured-slider-ready', function() {
+                $( '#5b5452dd4342f' ).animateSvg();
+              });
+            } else { $( '#5b5452dd4342f' ).animateSvg( { svg_opacity : 0.3, filter_opacity : 0.5 } ); }
+          });
+        </script>
+<img class="hu-img-placeholder" src="https://www.linuxtechi.com/wp-content/themes/hueman/assets/front/img/thumb-medium-empty.png" alt="Top 30 Linux System Admin Interview Questions &#038; Answers" data-hu-post-id="5b5452dd4342f" /> </a>
+<a class="post-comments" href="https://www.linuxtechi.com/experience-linux-admin-interview-questions/#comments"><span><i class="far fa-comments"></i>35</span></a>
+</div>
+<div class="related-inner">
+<h4 class="post-title entry-title">
+<a href="https://www.linuxtechi.com/experience-linux-admin-interview-questions/" rel="bookmark" title="Top 30 Linux System Admin Interview Questions &#038; Answers">Top 30 Linux System Admin Interview Questions &#038; Answers</a>
+</h4>
+<div class="post-meta group">
+<p class="post-date">
+<time class="published updated" datetime="2014-04-05 04:53:12">April 5, 2014</time>
+</p>
+<p class="post-byline" style="display:none">&nbsp;by <span class="vcard author">
+<span class="fn"><a href="https://www.linuxtechi.com/author/pradeep/" title="Posts by Pradeep Kumar" rel="author">Pradeep Kumar</a></span>
+</span> &middot; Published <span class="published">April 5, 2014</span>
+&middot; Last modified <span class="updated">August 4, 2017</span> </p>
+</div>
+</div>
+</article>
+</li>
+</ul>
+<section id="comments" class="themeform">
+
+<div id="respond" class="comment-respond">
+<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/40-linux-interview-questions-for-freshers-part2/#respond" style="display:none;">Cancel reply</a></small></h3> <form action="https://www.linuxtechi.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea autocomplete="nope" id="e3fa89ce3d" name="45c30738a2" cols="45" rows="8" maxlength="65525" required="required"></textarea><textarea id="comment" aria-hidden="true" name="comment" autocomplete="nope" style="padding:0;clip:rect(1px, 1px, 1px, 1px);position:absolute !important;white-space:nowrap;height:1px;width:1px;overflow:hidden;" tabindex="-1"></textarea><script type="2cdf0800fd2f63a0dc630a53-text/javascript">document.getElementById("comment").setAttribute( "id", "eb9422364067369d7b5de8b28636260b" );document.getElementById("e3fa89ce3d").setAttribute( "id", "comment" );</script></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /><label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+<p class="cptch_block"><span class="cptch_wrap cptch_math_actions">
+<label class="cptch_label" for="cptch_input_12"><span class="cptch_span">5</span>
+<span class="cptch_span">&nbsp;&minus;&nbsp;</span>
+<span class="cptch_span">t&#104;ree</span>
+<span class="cptch_span">&nbsp;=&nbsp;</span>
+<span class="cptch_span"><input id="cptch_input_12" class="cptch_input cptch_wp_comments" type="text" autocomplete="off" name="cptch_number" value="" maxlength="2" size="2" aria-required="true" required="required" style="margin-bottom:0;display:inline;font-size: 12px;width: 40px;" /></span>
+<input type="hidden" name="cptch_result" value="deQ=" /><input type="hidden" name="cptch_time" value="1532252893" />
+<input type="hidden" name="cptch_form" value="wp_comments" />
+</label><span class="cptch_reload_button_wrap hide-if-no-js">
+<noscript>
+						<style type="text/css">
+							.hide-if-no-js {
+								display: none !important;
+							}
+						</style>
+					</noscript>
+<span class="cptch_reload_button dashicons dashicons-update"></span>
+</span></span></p><p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='4130' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p> </form>
+</div>
+</section> </div>
+</section>
+<div class="sidebar s1 collapsed" data-position="right" data-layout="col-2cl" data-sb-id="s1">
+<a class="sidebar-toggle" title="Expand Sidebar"><i class="fas icon-sidebar-toggle"></i></a>
+<div class="sidebar-content">
+<div class="sidebar-top group">
+<p>Follow:</p>
+<ul class="social-links"><li><a rel="nofollow" class="social-tooltip" title="Follow us on Facebook" aria-label="Follow us on Facebook" href="http://www.facebook.com/linuxtechi" target="_blank" style="color:rgba(255,255,255,0.7)"><i class="fab fa-facebook"></i></a></li><li><a rel="nofollow" class="social-tooltip" title="Follow us on Twitter" aria-label="Follow us on Twitter" href="http://www.twitter.com/linuxtechi" target="_blank" style="color:rgba(255,255,255,0.7)"><i class="fab fa-twitter"></i></a></li><li><a rel="nofollow" class="social-tooltip" title="Follow us on Google-plus" aria-label="Follow us on Google-plus" href="https://plus.google.com/u/0/106374064320328901397/" target="_blank" style="color:rgba(255,255,255,0.7)"><i class="fab fa-google-plus"></i></a></li><li><a rel="nofollow" class="social-tooltip" title="Follow us on Rss" aria-label="Follow us on Rss" href="https://www.linuxtechi.com/feed" target="_blank" style="color:rgba(255,255,255,0.7)"><i class="fas fa-rss"></i></a></li></ul> </div>
+<div id="text-3" class="widget widget_text"> <div class="textwidget"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" type="2cdf0800fd2f63a0dc630a53-"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:600px" data-ad-client="ca-pub-2130177517648108" data-ad-slot="7532375294"></ins>
+<script type="2cdf0800fd2f63a0dc630a53-">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+</div> <div id="wp_subscribe-2" class="widget wp_subscribe">
+<div id="wp-subscribe" class="wp-subscribe-wrap wp-subscribe wp-subscribe-1" data-thanks_page="0" data-thanks_page_url="" data-thanks_page_new_window="0">
+<h4 class="title">Subscribe to Newsletter</h4>
+<p class="text"></p>
+<form action="https://feedburner.google.com/fb/a/mailverify?uri=linuxteci" method="post" class="wp-subscribe-form wp-subscribe-feedburner" id="wp-subscribe-form-1" target="popupwindow">
+<input class="regular-text email-field" type="text" name="email" placeholder="Enter your email here">
+<input type="hidden" name="uri" value="linuxteci">
+<input type="hidden" name="loc" value="en_US">
+<input type="hidden" name="form_type" value="widget">
+<input type="hidden" name="service" value="feedburner">
+<input type="hidden" name="widget" value="wp_subscribe-2">
+<div class="wps-consent-wrapper">
+<label for="consent-field">
+<input class="consent-field" id="consent-field" type="checkbox" name="consent" required />
+I consent to my submitted data being collected via this form* </label>
+</div>
+<input class="submit" type="submit" name="submit" value="Sign Up Now">
+</form>
+<div class="wp-subscribe-loader">
+<svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+<path fill="#ffffff" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
+<animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite" />
+</path>
+</svg>
+</div>
+<p class="thanks">Thank you for subscribing.</p>
+<p class="error">Something went wrong.</p>
+<div class="clear"></div>
+<p class="footer-text">we respect your privacy and take protecting it seriously</p>
+</div>
+</div>
+<div id="google-badge-box-2" class="widget mts_googleplus"><h3 class="widget-title">Follow Us On G+</h3> <script src="https://apis.google.com/js/platform.js" async defer type="2cdf0800fd2f63a0dc630a53-"></script>
+<div class="g-person" data-width="300" data-href="https://plus.google.com/u/0/106374064320328901397/" data-layout="landscape" data-theme="light" data-rel="publisher" data-showtagline="true" data-showcoverphoto="true"></div>
+</div><div id="alxtabs-2" class="widget widget_hu_tabs">
+<h3 class="widget-title">Most Popular Post</h3><ul class="alx-tabs-nav group tab-count-2"><li class="alx-tab tab-recent"><a href="#tab-recent-2" title="Recent Posts"><i class="far fa-clock"></i><span>Recent Posts</span></a></li><li class="alx-tab tab-comments"><a href="#tab-comments-2" title="Recent Comments"><i class="far fa-comments"></i><span>Recent Comments</span></a></li></ul>
+<div class="alx-tabs-container">
+<ul id="tab-recent-2" class="alx-tab group thumbs-enabled">
+<li>
+<div class="tab-item-thumbnail">
+<a href="https://www.linuxtechi.com/install-php-7-centos-7-rhel-7-server/" title="How to Install PHP 7.0, 7.1, 7.2 on CentOS 7 and RHEL 7 Server">
+<img src="https://www.linuxtechi.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="https://www.linuxtechi.com/wp-content/uploads/2018/07/Install-PHP-7-CentOS7-RHEL7-160x160.jpg" width="160" height="160" class="attachment-thumb-small size-thumb-small wp-post-image" alt="Install-PHP-7-CentOS7-RHEL7" srcset="https://www.linuxtechi.com/wp-content/uploads/2018/07/Install-PHP-7-CentOS7-RHEL7-160x160.jpg 160w, https://www.linuxtechi.com/wp-content/uploads/2018/07/Install-PHP-7-CentOS7-RHEL7-150x150.jpg 150w, https://www.linuxtechi.com/wp-content/uploads/2018/07/Install-PHP-7-CentOS7-RHEL7-320x320.jpg 320w" sizes="(max-width: 160px) 100vw, 160px"><noscript><img width="160" height="160" src="https://www.linuxtechi.com/wp-content/uploads/2018/07/Install-PHP-7-CentOS7-RHEL7-160x160.jpg" class="attachment-thumb-small size-thumb-small wp-post-image" alt="Install-PHP-7-CentOS7-RHEL7" srcset="https://www.linuxtechi.com/wp-content/uploads/2018/07/Install-PHP-7-CentOS7-RHEL7-160x160.jpg 160w, https://www.linuxtechi.com/wp-content/uploads/2018/07/Install-PHP-7-CentOS7-RHEL7-150x150.jpg 150w, https://www.linuxtechi.com/wp-content/uploads/2018/07/Install-PHP-7-CentOS7-RHEL7-320x320.jpg 320w" sizes="(max-width: 160px) 100vw, 160px" /></noscript> </a>
+</div>
+<div class="tab-item-inner group">
+<p class="tab-item-title"><a href="https://www.linuxtechi.com/install-php-7-centos-7-rhel-7-server/" rel="bookmark" title="How to Install PHP 7.0, 7.1, 7.2 on CentOS 7 and RHEL 7 Server">How to Install PHP 7.0, 7.1, 7.2 on CentOS 7 and RHEL 7 Server</a></p>
+</div>
+</li>
+<li>
+<div class="tab-item-thumbnail">
+<a href="https://www.linuxtechi.com/create-delete-virtual-machine-command-line-openstack/" title="How to Create and Delete Virtual Machine from Command line in OpenStack">
+<img src="https://www.linuxtechi.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="https://www.linuxtechi.com/wp-content/uploads/2018/07/Create-Delete-VMs-Command-Line-Openstack-160x160.jpg" width="160" height="160" class="attachment-thumb-small size-thumb-small wp-post-image" alt="Create-Delete-VMs-Command-Line-Openstack" srcset="https://www.linuxtechi.com/wp-content/uploads/2018/07/Create-Delete-VMs-Command-Line-Openstack-160x160.jpg 160w, https://www.linuxtechi.com/wp-content/uploads/2018/07/Create-Delete-VMs-Command-Line-Openstack-150x150.jpg 150w, https://www.linuxtechi.com/wp-content/uploads/2018/07/Create-Delete-VMs-Command-Line-Openstack-320x320.jpg 320w" sizes="(max-width: 160px) 100vw, 160px"><noscript><img width="160" height="160" src="https://www.linuxtechi.com/wp-content/uploads/2018/07/Create-Delete-VMs-Command-Line-Openstack-160x160.jpg" class="attachment-thumb-small size-thumb-small wp-post-image" alt="Create-Delete-VMs-Command-Line-Openstack" srcset="https://www.linuxtechi.com/wp-content/uploads/2018/07/Create-Delete-VMs-Command-Line-Openstack-160x160.jpg 160w, https://www.linuxtechi.com/wp-content/uploads/2018/07/Create-Delete-VMs-Command-Line-Openstack-150x150.jpg 150w, https://www.linuxtechi.com/wp-content/uploads/2018/07/Create-Delete-VMs-Command-Line-Openstack-320x320.jpg 320w" sizes="(max-width: 160px) 100vw, 160px" /></noscript> </a>
+</div>
+<div class="tab-item-inner group">
+<p class="tab-item-title"><a href="https://www.linuxtechi.com/create-delete-virtual-machine-command-line-openstack/" rel="bookmark" title="How to Create and Delete Virtual Machine from Command line in OpenStack">How to Create and Delete Virtual Machine from Command line in OpenStack</a></p>
+</div>
+</li>
+<li>
+<div class="tab-item-thumbnail">
+<a href="https://www.linuxtechi.com/ubuntu-18-04-server-installation-guide/" title="Ubuntu 18.04 LTS Server (Bionic Beaver) Installation Guide with Screenshots">
+<img src="https://www.linuxtechi.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="https://www.linuxtechi.com/wp-content/uploads/2018/06/Choose-Install-Ubuntu-18-04-Server-160x160.jpg" width="160" height="160" class="attachment-thumb-small size-thumb-small wp-post-image" alt="Choose-Install-Ubuntu-18-04-Server" srcset="https://www.linuxtechi.com/wp-content/uploads/2018/06/Choose-Install-Ubuntu-18-04-Server-160x160.jpg 160w, https://www.linuxtechi.com/wp-content/uploads/2018/06/Choose-Install-Ubuntu-18-04-Server-150x150.jpg 150w, https://www.linuxtechi.com/wp-content/uploads/2018/06/Choose-Install-Ubuntu-18-04-Server-320x320.jpg 320w" sizes="(max-width: 160px) 100vw, 160px"><noscript><img width="160" height="160" src="https://www.linuxtechi.com/wp-content/uploads/2018/06/Choose-Install-Ubuntu-18-04-Server-160x160.jpg" class="attachment-thumb-small size-thumb-small wp-post-image" alt="Choose-Install-Ubuntu-18-04-Server" srcset="https://www.linuxtechi.com/wp-content/uploads/2018/06/Choose-Install-Ubuntu-18-04-Server-160x160.jpg 160w, https://www.linuxtechi.com/wp-content/uploads/2018/06/Choose-Install-Ubuntu-18-04-Server-150x150.jpg 150w, https://www.linuxtechi.com/wp-content/uploads/2018/06/Choose-Install-Ubuntu-18-04-Server-320x320.jpg 320w" sizes="(max-width: 160px) 100vw, 160px" /></noscript> </a>
+</div>
+<div class="tab-item-inner group">
+<p class="tab-item-title"><a href="https://www.linuxtechi.com/ubuntu-18-04-server-installation-guide/" rel="bookmark" title="Ubuntu 18.04 LTS Server (Bionic Beaver) Installation Guide with Screenshots">Ubuntu 18.04 LTS Server (Bionic Beaver) Installation Guide with Screenshots</a></p>
+</div>
+</li>
+<li>
+<div class="tab-item-thumbnail">
+<a href="https://www.linuxtechi.com/install-configure-gitlab-ce-ubuntu-18-04-16-04/" title="How to Install and Configure GitLab CE on Ubuntu 18.04 / 16.04 Sever">
+<img src="https://www.linuxtechi.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="https://www.linuxtechi.com/wp-content/uploads/2018/06/Install-GitLab-CE-Ubuntu-18-04-160x160.jpg" width="160" height="160" class="attachment-thumb-small size-thumb-small wp-post-image" alt="Install-GitLab-CE-Ubuntu-18-04" srcset="https://www.linuxtechi.com/wp-content/uploads/2018/06/Install-GitLab-CE-Ubuntu-18-04-160x160.jpg 160w, https://www.linuxtechi.com/wp-content/uploads/2018/06/Install-GitLab-CE-Ubuntu-18-04-150x150.jpg 150w, https://www.linuxtechi.com/wp-content/uploads/2018/06/Install-GitLab-CE-Ubuntu-18-04-300x300.jpg 300w, https://www.linuxtechi.com/wp-content/uploads/2018/06/Install-GitLab-CE-Ubuntu-18-04-320x320.jpg 320w, https://www.linuxtechi.com/wp-content/uploads/2018/06/Install-GitLab-CE-Ubuntu-18-04.jpg 351w" sizes="(max-width: 160px) 100vw, 160px"><noscript><img width="160" height="160" src="https://www.linuxtechi.com/wp-content/uploads/2018/06/Install-GitLab-CE-Ubuntu-18-04-160x160.jpg" class="attachment-thumb-small size-thumb-small wp-post-image" alt="Install-GitLab-CE-Ubuntu-18-04" srcset="https://www.linuxtechi.com/wp-content/uploads/2018/06/Install-GitLab-CE-Ubuntu-18-04-160x160.jpg 160w, https://www.linuxtechi.com/wp-content/uploads/2018/06/Install-GitLab-CE-Ubuntu-18-04-150x150.jpg 150w, https://www.linuxtechi.com/wp-content/uploads/2018/06/Install-GitLab-CE-Ubuntu-18-04-300x300.jpg 300w, https://www.linuxtechi.com/wp-content/uploads/2018/06/Install-GitLab-CE-Ubuntu-18-04-320x320.jpg 320w, https://www.linuxtechi.com/wp-content/uploads/2018/06/Install-GitLab-CE-Ubuntu-18-04.jpg 351w" sizes="(max-width: 160px) 100vw, 160px" /></noscript> </a>
+</div>
+<div class="tab-item-inner group">
+<p class="tab-item-title"><a href="https://www.linuxtechi.com/install-configure-gitlab-ce-ubuntu-18-04-16-04/" rel="bookmark" title="How to Install and Configure GitLab CE on Ubuntu 18.04 / 16.04 Sever">How to Install and Configure GitLab CE on Ubuntu 18.04 / 16.04 Sever</a></p>
+</div>
+</li>
+<li>
+<div class="tab-item-thumbnail">
+<a href="https://www.linuxtechi.com/lynis-security-auditing-tool-linux-servers/" title="Lynis &#8211; Automated Security Auditing tool for Linux Servers">
+<img src="https://www.linuxtechi.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="https://www.linuxtechi.com/wp-content/uploads/2018/06/Lynis-Security-Auditing-Tool-160x160.jpg" width="160" height="160" class="attachment-thumb-small size-thumb-small wp-post-image" alt="Lynis-Security-Auditing-Tool" srcset="https://www.linuxtechi.com/wp-content/uploads/2018/06/Lynis-Security-Auditing-Tool-160x160.jpg 160w, https://www.linuxtechi.com/wp-content/uploads/2018/06/Lynis-Security-Auditing-Tool-150x150.jpg 150w, https://www.linuxtechi.com/wp-content/uploads/2018/06/Lynis-Security-Auditing-Tool-320x320.jpg 320w" sizes="(max-width: 160px) 100vw, 160px"><noscript><img width="160" height="160" src="https://www.linuxtechi.com/wp-content/uploads/2018/06/Lynis-Security-Auditing-Tool-160x160.jpg" class="attachment-thumb-small size-thumb-small wp-post-image" alt="Lynis-Security-Auditing-Tool" srcset="https://www.linuxtechi.com/wp-content/uploads/2018/06/Lynis-Security-Auditing-Tool-160x160.jpg 160w, https://www.linuxtechi.com/wp-content/uploads/2018/06/Lynis-Security-Auditing-Tool-150x150.jpg 150w, https://www.linuxtechi.com/wp-content/uploads/2018/06/Lynis-Security-Auditing-Tool-320x320.jpg 320w" sizes="(max-width: 160px) 100vw, 160px" /></noscript> </a>
+</div>
+<div class="tab-item-inner group">
+<p class="tab-item-title"><a href="https://www.linuxtechi.com/lynis-security-auditing-tool-linux-servers/" rel="bookmark" title="Lynis &#8211; Automated Security Auditing tool for Linux Servers">Lynis &#8211; Automated Security Auditing tool for Linux Servers</a></p>
+</div>
+</li>
+<li>
+<div class="tab-item-thumbnail">
+<a href="https://www.linuxtechi.com/manage-virtualbox-virtual-machines-command-line/" title="How to Manage Oracle VirtualBox Virtual Machines from Command Line">
+<img src="https://www.linuxtechi.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="https://www.linuxtechi.com/wp-content/uploads/2018/05/Manage-VirtualBox-VMs-Command-Line-Linux-160x160.jpg" width="160" height="160" class="attachment-thumb-small size-thumb-small wp-post-image" alt="Manage-VirtualBox-VMs-Command-Line-Linux" srcset="https://www.linuxtechi.com/wp-content/uploads/2018/05/Manage-VirtualBox-VMs-Command-Line-Linux-160x160.jpg 160w, https://www.linuxtechi.com/wp-content/uploads/2018/05/Manage-VirtualBox-VMs-Command-Line-Linux-150x150.jpg 150w, https://www.linuxtechi.com/wp-content/uploads/2018/05/Manage-VirtualBox-VMs-Command-Line-Linux-320x320.jpg 320w" sizes="(max-width: 160px) 100vw, 160px"><noscript><img width="160" height="160" src="https://www.linuxtechi.com/wp-content/uploads/2018/05/Manage-VirtualBox-VMs-Command-Line-Linux-160x160.jpg" class="attachment-thumb-small size-thumb-small wp-post-image" alt="Manage-VirtualBox-VMs-Command-Line-Linux" srcset="https://www.linuxtechi.com/wp-content/uploads/2018/05/Manage-VirtualBox-VMs-Command-Line-Linux-160x160.jpg 160w, https://www.linuxtechi.com/wp-content/uploads/2018/05/Manage-VirtualBox-VMs-Command-Line-Linux-150x150.jpg 150w, https://www.linuxtechi.com/wp-content/uploads/2018/05/Manage-VirtualBox-VMs-Command-Line-Linux-320x320.jpg 320w" sizes="(max-width: 160px) 100vw, 160px" /></noscript> </a>
+</div>
+<div class="tab-item-inner group">
+<p class="tab-item-title"><a href="https://www.linuxtechi.com/manage-virtualbox-virtual-machines-command-line/" rel="bookmark" title="How to Manage Oracle VirtualBox Virtual Machines from Command Line">How to Manage Oracle VirtualBox Virtual Machines from Command Line</a></p>
+</div>
+</li>
+<li>
+<div class="tab-item-thumbnail">
+<a href="https://www.linuxtechi.com/install-configure-kvm-ubuntu-18-04-server/" title="How to Install and Configure KVM on Ubuntu 18.04 LTS Server">
+<img src="https://www.linuxtechi.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="https://www.linuxtechi.com/wp-content/uploads/2018/05/Install-KVM-Ubuntu-18-04-Server-160x160.jpg" width="160" height="160" class="attachment-thumb-small size-thumb-small wp-post-image" alt srcset="https://www.linuxtechi.com/wp-content/uploads/2018/05/Install-KVM-Ubuntu-18-04-Server-160x160.jpg 160w, https://www.linuxtechi.com/wp-content/uploads/2018/05/Install-KVM-Ubuntu-18-04-Server-150x150.jpg 150w, https://www.linuxtechi.com/wp-content/uploads/2018/05/Install-KVM-Ubuntu-18-04-Server-320x320.jpg 320w" sizes="(max-width: 160px) 100vw, 160px"><noscript><img width="160" height="160" src="https://www.linuxtechi.com/wp-content/uploads/2018/05/Install-KVM-Ubuntu-18-04-Server-160x160.jpg" class="attachment-thumb-small size-thumb-small wp-post-image" alt="" srcset="https://www.linuxtechi.com/wp-content/uploads/2018/05/Install-KVM-Ubuntu-18-04-Server-160x160.jpg 160w, https://www.linuxtechi.com/wp-content/uploads/2018/05/Install-KVM-Ubuntu-18-04-Server-150x150.jpg 150w, https://www.linuxtechi.com/wp-content/uploads/2018/05/Install-KVM-Ubuntu-18-04-Server-320x320.jpg 320w" sizes="(max-width: 160px) 100vw, 160px" /></noscript> </a>
+</div>
+<div class="tab-item-inner group">
+<p class="tab-item-title"><a href="https://www.linuxtechi.com/install-configure-kvm-ubuntu-18-04-server/" rel="bookmark" title="How to Install and Configure KVM on Ubuntu 18.04 LTS Server">How to Install and Configure KVM on Ubuntu 18.04 LTS Server</a></p>
+</div>
+</li>
+<li>
+<div class="tab-item-thumbnail">
+<a href="https://www.linuxtechi.com/10-tips-dmesg-command-linux-geeks/" title="10 tips about ‘dmesg’ command for Linux Geeks">
+<img src="https://www.linuxtechi.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="https://www.linuxtechi.com/wp-content/uploads/2018/05/dmesg-tips-linux-160x160.jpg" width="160" height="160" class="attachment-thumb-small size-thumb-small wp-post-image" alt="dmesg-tips-linux" srcset="https://www.linuxtechi.com/wp-content/uploads/2018/05/dmesg-tips-linux-160x160.jpg 160w, https://www.linuxtechi.com/wp-content/uploads/2018/05/dmesg-tips-linux-150x150.jpg 150w, https://www.linuxtechi.com/wp-content/uploads/2018/05/dmesg-tips-linux-320x320.jpg 320w" sizes="(max-width: 160px) 100vw, 160px"><noscript><img width="160" height="160" src="https://www.linuxtechi.com/wp-content/uploads/2018/05/dmesg-tips-linux-160x160.jpg" class="attachment-thumb-small size-thumb-small wp-post-image" alt="dmesg-tips-linux" srcset="https://www.linuxtechi.com/wp-content/uploads/2018/05/dmesg-tips-linux-160x160.jpg 160w, https://www.linuxtechi.com/wp-content/uploads/2018/05/dmesg-tips-linux-150x150.jpg 150w, https://www.linuxtechi.com/wp-content/uploads/2018/05/dmesg-tips-linux-320x320.jpg 320w" sizes="(max-width: 160px) 100vw, 160px" /></noscript> </a>
+</div>
+<div class="tab-item-inner group">
+<p class="tab-item-title"><a href="https://www.linuxtechi.com/10-tips-dmesg-command-linux-geeks/" rel="bookmark" title="10 tips about ‘dmesg’ command for Linux Geeks">10 tips about ‘dmesg’ command for Linux Geeks</a></p>
+</div>
+</li>
+</ul>
+<ul id="tab-comments-2" class="alx-tab group ">
+<li>
+<div class="tab-item-inner group">
+<div class="tab-item-name">Pete Kowalsky says:</div>
+<div class="tab-item-comment"><a href="https://www.linuxtechi.com/install-configure-vnc-server-centos-7-rhel-7/#comment-5262">Great little guide - works like a champ. I like that...</a></div>
+</div>
+</li>
+<li>
+<div class="tab-item-inner group">
+<div class="tab-item-name">Mandrake says:</div>
+<div class="tab-item-comment"><a href="https://www.linuxtechi.com/generate-cpu-memory-io-report-sar-command/#comment-5255">Great Info. Thanks a lot.</a></div>
+</div>
+</li>
+<li>
+<div class="tab-item-inner group">
+<div class="tab-item-name">Smallpk says:</div>
+<div class="tab-item-comment"><a href="https://www.linuxtechi.com/connect-windows-machine-with-rdp-from-centos7-rhel7-console/#comment-5247">Case not run because of XDISPLAY execute this action: ...</a></div>
+</div>
+</li>
+<li>
+<div class="tab-item-inner group">
+<div class="tab-item-name">Pradeep Kumar says:</div>
+<div class="tab-item-comment"><a href="https://www.linuxtechi.com/how-to-install-drupal-8-on-centos-7/#comment-5209">To Install PHP 7 on CentOS 7 / RHEL 7, refer...</a></div>
+</div>
+</li>
+<li>
+<div class="tab-item-inner group">
+<div class="tab-item-name">David Mathena says:</div>
+<div class="tab-item-comment"><a href="https://www.linuxtechi.com/everything-you-wanted-to-know-about-zorin-os-12/#comment-5208">I am having the same problem. I can&#039;t get wifi to...</a></div>
+</div>
+</li>
+<li>
+<div class="tab-item-inner group">
+<div class="tab-item-name">Jehosha says:</div>
+<div class="tab-item-comment"><a href="https://www.linuxtechi.com/dnf-command-examples-rpm-management-fedora-linux/#comment-5203">Every parameter I run with dnf command gives me the following...</a></div>
+</div>
+</li>
+<li>
+<div class="tab-item-inner group">
+<div class="tab-item-name">Gannet says:</div>
+<div class="tab-item-comment"><a href="https://www.linuxtechi.com/install-configure-kvm-ubuntu-18-04-server/#comment-5202">I think it is better to remove netplan and use networkd...</a></div>
+</div>
+</li>
+<li>
+<div class="tab-item-inner group">
+<div class="tab-item-name">Nitiratna says:</div>
+<div class="tab-item-comment"><a href="https://www.linuxtechi.com/integrate-rhel7-centos7-windows-active-directory/#comment-5193">First of all, Big thank you. ...</a></div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="ws_fb_like_box-2" class="widget widget_ws_fb_like_box"><h3 class="widget-title">Find LinuxTechi on Facebook</h3><div class="fb-page ws-fb-like-box" data-href="https://www.facebook.com/linuxtechi" data-tabs="" data-width="300" data-height="500" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true">
+<div class="fb-xfbml-parse-ignore">
+<blockquote cite="https://www.facebook.com/linuxtechi">
+<a href="https://www.facebook.com/linuxtechi">Facebook</a>
+</blockquote>
+</div>
+</div> <div id="fb-root"></div>
+<script type="2cdf0800fd2f63a0dc630a53-">(function(d, s, id) {
+					  var js, fjs = d.getElementsByTagName(s)[0];
+					  if (d.getElementById(id)) return;
+					  js = d.createElement(s); js.id = id;
+					  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+					  fjs.parentNode.insertBefore(js, fjs);
+					}(document, 'script', 'facebook-jssdk'));</script></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer id="footer">
+<section class="container" id="footer-widgets">
+<div class="container-inner">
+<div class="pad group">
+<div class="footer-widget-1 grid one-third ">
+<div id="alxposts-5" class="widget widget_hu_posts">
+<h3 class="widget-title">Linux Desktop</h3>
+<ul class="alx-posts group ">
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="https://www.linuxtechi.com/top10-things-after-installing-ubuntu-18-04/" rel="bookmark" title="Top 10 Things to do After Installing Ubuntu 18.04 LTS Desktop">Top 10 Things to do After Installing Ubuntu 18.04 LTS Desktop</a></p>
+</div>
+</li>
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="https://www.linuxtechi.com/ubuntu-18-04-lts-desktop-installation-guide-screenshots/" rel="bookmark" title="Ubuntu 18.04 LTS Desktop Installation Guide with Screenshots">Ubuntu 18.04 LTS Desktop Installation Guide with Screenshots</a></p>
+</div>
+</li>
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="https://www.linuxtechi.com/top-12-open-source-backup-tools-linux-systems/" rel="bookmark" title="Top 12 Open Source Backup Tools for Linux Systems">Top 12 Open Source Backup Tools for Linux Systems</a></p>
+</div>
+</li>
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="https://www.linuxtechi.com/install-vlc-3-debian-9-ubuntu-16-04-17-10/" rel="bookmark" title="How to Install VLC 3 (Media Player) on Debian 9 / Ubuntu 16.04 / 17.10">How to Install VLC 3 (Media Player) on Debian 9 / Ubuntu 16.04 / 17.10</a></p>
+</div>
+</li>
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="https://www.linuxtechi.com/install-supertux-2-game-kids-ubuntu-16-04-debian-9-linux-mint-18-03/" rel="bookmark" title="Install &#8216;SuperTux 2&#8217; Game for Kids on Ubuntu 16.04 / Debian 9 / Linux Mint 18.03">Install &#8216;SuperTux 2&#8217; Game for Kids on Ubuntu 16.04 / Debian 9 / Linux Mint 18.03</a></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="footer-widget-2 grid one-third ">
+<div id="alxposts-3" class="widget widget_hu_posts">
+<h3 class="widget-title">Linux Commands</h3>
+<ul class="alx-posts group ">
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="https://www.linuxtechi.com/10-tips-dmesg-command-linux-geeks/" rel="bookmark" title="10 tips about ‘dmesg’ command for Linux Geeks">10 tips about ‘dmesg’ command for Linux Geeks</a></p>
+</div>
+</li>
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="https://www.linuxtechi.com/9-useful-touch-command-examples-linux/" rel="bookmark" title="9 Useful touch command examples in Linux">9 Useful touch command examples in Linux</a></p>
+</div>
+</li>
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="https://www.linuxtechi.com/quick-tips-sudo-command-linux-systems/" rel="bookmark" title="10 Quick Tips About sudo command for Linux systems">10 Quick Tips About sudo command for Linux systems</a></p>
+</div>
+</li>
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="https://www.linuxtechi.com/monitor-linux-systems-performance-iostat-command/" rel="bookmark" title="How to Monitor Linux Systems Performance with iostat command">How to Monitor Linux Systems Performance with iostat command</a></p>
+</div>
+</li>
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="https://www.linuxtechi.com/nc-ncat-command-examples-linux-systems/" rel="bookmark" title="10 useful ncat (nc) Command Examples for Linux Systems">10 useful ncat (nc) Command Examples for Linux Systems</a></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="footer-widget-3 grid one-third last">
+<div id="alxposts-4" class="widget widget_hu_posts">
+<h3 class="widget-title">Linux How To&#8217;s</h3>
+<ul class="alx-posts group ">
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="https://www.linuxtechi.com/install-php-7-centos-7-rhel-7-server/" rel="bookmark" title="How to Install PHP 7.0, 7.1, 7.2 on CentOS 7 and RHEL 7 Server">How to Install PHP 7.0, 7.1, 7.2 on CentOS 7 and RHEL 7 Server</a></p>
+</div>
+</li>
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="https://www.linuxtechi.com/create-delete-virtual-machine-command-line-openstack/" rel="bookmark" title="How to Create and Delete Virtual Machine from Command line in OpenStack">How to Create and Delete Virtual Machine from Command line in OpenStack</a></p>
+</div>
+</li>
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="https://www.linuxtechi.com/ubuntu-18-04-server-installation-guide/" rel="bookmark" title="Ubuntu 18.04 LTS Server (Bionic Beaver) Installation Guide with Screenshots">Ubuntu 18.04 LTS Server (Bionic Beaver) Installation Guide with Screenshots</a></p>
+</div>
+</li>
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="https://www.linuxtechi.com/install-configure-gitlab-ce-ubuntu-18-04-16-04/" rel="bookmark" title="How to Install and Configure GitLab CE on Ubuntu 18.04 / 16.04 Sever">How to Install and Configure GitLab CE on Ubuntu 18.04 / 16.04 Sever</a></p>
+</div>
+</li>
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="https://www.linuxtechi.com/lynis-security-auditing-tool-linux-servers/" rel="bookmark" title="Lynis &#8211; Automated Security Auditing tool for Linux Servers">Lynis &#8211; Automated Security Auditing tool for Linux Servers</a></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="container" id="footer-bottom">
+<div class="container-inner">
+<a id="back-to-top" href="#"><i class="fas fa-angle-up"></i></a>
+<div class="pad group">
+<div class="grid one-half">
+<div id="copyright">
+<p><p></p><ul style="color:#7f777f"><li>Linuxtechi: Linux Tutorials &amp; Guides © 2018. All Rights Reserved.</li> <li><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://www.linuxtechi.com/wp-content/uploads/2016/02/common-creative-license-linuxtechi.png" /></a> This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</li> <li>Content of this site cannot be republished either online or offline without our permissions.</li></ul><p></p></p>
+</div>
+</div>
+<div class="grid one-half last">
+<ul class="social-links"><li><a rel="nofollow" class="social-tooltip" title="Follow us on Facebook" aria-label="Follow us on Facebook" href="http://www.facebook.com/linuxtechi" target="_blank" style="color:rgba(255,255,255,0.7)"><i class="fab fa-facebook"></i></a></li><li><a rel="nofollow" class="social-tooltip" title="Follow us on Twitter" aria-label="Follow us on Twitter" href="http://www.twitter.com/linuxtechi" target="_blank" style="color:rgba(255,255,255,0.7)"><i class="fab fa-twitter"></i></a></li><li><a rel="nofollow" class="social-tooltip" title="Follow us on Google-plus" aria-label="Follow us on Google-plus" href="https://plus.google.com/u/0/106374064320328901397/" target="_blank" style="color:rgba(255,255,255,0.7)"><i class="fab fa-google-plus"></i></a></li><li><a rel="nofollow" class="social-tooltip" title="Follow us on Rss" aria-label="Follow us on Rss" href="https://www.linuxtechi.com/feed" target="_blank" style="color:rgba(255,255,255,0.7)"><i class="fas fa-rss"></i></a></li></ul> </div>
+</div>
+</div>
+</section>
+</footer>
+</div>
+<link rel='stylesheet' id='wp-subscribe-css' href='https://www.linuxtechi.com/wp-content/plugins/wp-subscribe/assets/css/wp-subscribe-form.css?ver=4.9.7' type='text/css' media='all' />
+<script type="2cdf0800fd2f63a0dc630a53-text/javascript" src='https://www.linuxtechi.com/wp-content/plugins/hueman-addons/addons/assets/front/js/jQuerySharrre.min.js?ver=4.9.7'></script>
+<script type="2cdf0800fd2f63a0dc630a53-text/javascript" src='https://www.linuxtechi.com/wp-includes/js/underscore.min.js?ver=1.8.3'></script>
+<script type="2cdf0800fd2f63a0dc630a53-text/javascript">
+/* <![CDATA[ */
+var HUParams = {"_disabled":[],"SmoothScroll":{"Enabled":true,"Options":{"touchpadSupport":false}},"centerAllImg":"1","timerOnScrollAllBrowsers":"1","extLinksStyle":"","extLinksTargetExt":"","extLinksSkipSelectors":{"classes":["btn","button"],"ids":[]},"imgSmartLoadEnabled":"","imgSmartLoadOpts":{"parentSelectors":[".container .content",".container .sidebar","#footer","#header-widgets"],"opts":{"excludeImg":[".tc-holder-img"],"fadeIn_options":100}},"goldenRatio":"1.618","gridGoldenRatioLimit":"350","sbStickyUserSettings":{"desktop":true,"mobile":false},"isWPMobile":"","menuStickyUserSettings":{"desktop":"stick_up","mobile":"stick_up"},"isDevMode":"","ajaxUrl":"https:\/\/www.linuxtechi.com\/?huajax=1","frontNonce":{"id":"HuFrontNonce","handle":"6bd6a00866"},"userStarted":{"with":"with|3.3.7","on":{"date":"2017-05-20 12:23:49.000000","timezone_type":3,"timezone":"UTC"}},"isWelcomeNoteOn":"","welcomeContent":""};
+/* ]]> */
+</script>
+<script type="2cdf0800fd2f63a0dc630a53-text/javascript" src='https://www.linuxtechi.com/wp-content/themes/hueman/assets/front/js/scripts.min.js?ver=3.4.0'></script>
+<script type="2cdf0800fd2f63a0dc630a53-text/javascript" src='https://www.linuxtechi.com/wp-includes/js/comment-reply.min.js?ver=4.9.7'></script>
+<script type="2cdf0800fd2f63a0dc630a53-text/javascript" src='https://www.linuxtechi.com/wp-content/plugins/lazy-load/js/jquery.sonar.min.js?ver=0.6.1'></script>
+<script type="2cdf0800fd2f63a0dc630a53-text/javascript" src='https://www.linuxtechi.com/wp-content/plugins/lazy-load/js/lazy-load.js?ver=0.6.1'></script>
+<script type="2cdf0800fd2f63a0dc630a53-text/javascript" src='https://www.linuxtechi.com/wp-includes/js/wp-embed.min.js?ver=4.9.7'></script>
+<script type="2cdf0800fd2f63a0dc630a53-text/javascript">
+/* <![CDATA[ */
+var wp_subscribe = {"ajaxurl":"https:\/\/www.linuxtechi.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="2cdf0800fd2f63a0dc630a53-text/javascript" src='https://www.linuxtechi.com/wp-content/plugins/wp-subscribe/assets/js/wp-subscribe-form.js?ver=4.9.7'></script>
+<script type="2cdf0800fd2f63a0dc630a53-text/javascript">
+/* <![CDATA[ */
+var cptch_vars = {"nonce":"65fe7ad491","ajaxurl":"https:\/\/www.linuxtechi.com\/wp-admin\/admin-ajax.php","enlarge":""};
+/* ]]> */
+</script>
+<script type="2cdf0800fd2f63a0dc630a53-text/javascript" src='https://www.linuxtechi.com/wp-content/plugins/captcha/js/front_end_script.js?ver=4.9.7'></script>
+<!--[if lt IE 9]>
+<script src="https://www.linuxtechi.com/wp-content/themes/hueman/assets/front/js/ie/respond.js"></script>
+<![endif]-->
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/4f936b58/cloudflare-static/rocket-loader.min.js" data-cf-nonce="2cdf0800fd2f63a0dc630a53-" defer=""></script></body>
+</html>
+
+

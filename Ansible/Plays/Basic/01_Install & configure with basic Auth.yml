@@ -1,0 +1,30 @@
+---
+- name: Install and configure webserver with basic authentications
+ hosts: webserver
+ vars:
+    firewall_pkg: firewalld
+    firewall_svc: firewalld
+    web_pkg: httpd
+    web_svc: httpd
+    ssl_pkg: mod_ssl
+    httpdconf_src: files/httpd.conf
+    httpdconf_dest: /etc/httpd/conf/httpd.conf
+    htaccess_src: files/.htaccess_src
+    secrets_dir: /etc/httpd/secrets_dir
+    secrets_src:
+    secrets_dest:
+    web_root: /var/ww/html
+ 
+ tasks:
+    - name: latest version of nes
+      yum:
+        name:
+            - "{{}firewall_pkg}"
+            - "{{web_pkg}}"
+            - "{{ss_pkg}}"
+        state: present
+      
+    - name: confi web server
+      copy:
+  
+    

@@ -1,0 +1,17 @@
+*** Uses a wildcard for the principal (can specify individual principals) then has a condition limiting access only to principals from the accounts in the organization
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::my-secured-bucket/*",
+            "Condition": {"StringEquals": 
+                             {"aws:PrincipalOrgID": [ "o-yyyyyyyyyy" ]}
+                         }
+        }
+    ]
+}

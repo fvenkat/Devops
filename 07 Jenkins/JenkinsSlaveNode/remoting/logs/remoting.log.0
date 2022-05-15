@@ -1,0 +1,23 @@
+Oct 05, 2021 11:47:32 AM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Locating server among [http://localhost:8080/]
+Oct 05, 2021 11:47:32 AM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+INFO: Remoting server accepts the following protocols: [JNLP4-connect, Ping]
+Oct 05, 2021 11:47:32 AM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Agent discovery successful
+  Agent address: localhost
+  Agent port:    52199
+  Identity:      4a:5c:c4:73:e7:9a:e6:6d:73:4d:2a:ae:6e:e8:e2:2b
+Oct 05, 2021 11:47:32 AM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Handshaking
+Oct 05, 2021 11:47:32 AM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Connecting to localhost:52199
+Oct 05, 2021 11:47:32 AM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Trying protocol: JNLP4-connect
+Oct 05, 2021 11:47:32 AM org.jenkinsci.remoting.protocol.impl.BIONetworkLayer$Reader run
+INFO: Waiting for ProtocolStack to start.
+Oct 05, 2021 11:47:32 AM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Remote identity confirmed: 4a:5c:c4:73:e7:9a:e6:6d:73:4d:2a:ae:6e:e8:e2:2b
+Oct 05, 2021 11:47:33 AM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Connected
+Oct 05, 2021 11:51:24 AM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Terminated

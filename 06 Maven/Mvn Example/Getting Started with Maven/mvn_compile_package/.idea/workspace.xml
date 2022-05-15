@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5e5b3392-2e74-4ac1-97c7-159151345e44" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../.idea/Devops.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../InteliJ/src/main/java/HelloWorld.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld-Add stringutils/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld-Add stringutils/.idea/HelloWorld-Add stringutils.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld-Add stringutils/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld-Add stringutils/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld-Add stringutils/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld-Add stringutils/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld-Add stringutils/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld-Add stringutils/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld-Add stringutils/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Mvn Testing/Junit4/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Mvn Testing/Junit4/.idea/Junit4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Mvn Testing/Junit4/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Mvn Testing/Junit4/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Mvn Testing/Junit4/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Mvn Testing/Junit4/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Mvn Testing/Junit4/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/01_Git Basics.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/02_Git Branching.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/3_Git on own server.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/4_Git Distributed.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/Git Hub.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/Git Troubleshoot.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/Git cheat sheet.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/gitimage/IMG_20200704_115720.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/gitimage/IMG_20200704_115730.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/gitimage/IMG_20200704_115737.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/gitimage/IMG_20200704_115741.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/gitimage/IMG_20200704_115746.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/gitimage/IMG_20200704_115751.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/gitimage/IMG_20200704_115816.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/gitimage/IMG_20200704_115821.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/gitimage/IMG_20200704_115826.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/gitimage/IMG_20200704_115829.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/gitimage/IMG_20200704_115833.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/gitimage/IMG_20200704_115835.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/gitimage/IMG_20200704_115839.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/gitimage/New folder/IMG_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/gitimage/New folder/IMG_10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/gitimage/New folder/IMG_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/gitimage/New folder/IMG_3jpg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/gitimage/New folder/IMG_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/gitimage/New folder/IMG_5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/gitimage/New folder/IMG_6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/gitimage/New folder/IMG_7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/gitimage/New folder/IMG_8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/gitimage/New folder/IMG_9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/progit.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/~$Git Distributed.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/~$Git.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/~$_Git Branching.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/~$it Hub.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/~$t Basics.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/~$t Branching.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/~$t Troubleshoot.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/~$t cheat sheet.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/~WRL0566.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../02 Git/~WRL3864.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../03 Maven/maven_install.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../04 Jenkins/1_Jenkins Fundamental.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../04 Jenkins/2_Jenkins Installation.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../04 Jenkins/3_Jenkins Manage.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../04 Jenkins/4_Github Maven.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../04 Jenkins/5_Plugins.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../04 Jenkins/6_Build Notifications.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../04 Jenkins/7_Master_Slave.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../04 Jenkins/Books/Jenkins Continuous Integration Cookbook, 2 - Desconocido.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../04 Jenkins/Books/Jenkins fundamental certificate.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../04 Jenkins/Books/Jenkins-Cheat-Sheet.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../04 Jenkins/Books/LearningContinuousIntegrationWithJenkins.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../04 Jenkins/Books/jenkins-the-definitive-guide.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../04 Jenkins/Books/user-handbook.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../04 Jenkins/Jenkins Trubleshoot.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../04 Jenkins/jenkins_installation.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../04 Jenkins/~$Jenkins Installation.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../04 Jenkins/~$Jenkins Manage.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../04 Jenkins/~$STERING IN JENKINS.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../04 Jenkins/~$nkins Admin.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../04 Jenkins/~WRL0694.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../04 Jenkins/~WRL1703.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../04 Jenkins/~WRL2594.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../04 Jenkins/~WRL2660.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../04 Jenkins/~WRL3179.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/Ansible_Theory/1_ANSIBLE OVERVIEW-INSTALLATION.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/Ansible_Theory/2_ANSIBLE INVENTORY.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/Ansible_Theory/3_ANSIBLE CONFIGURATION.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/Ansible_Theory/4_Ansible AD_HOC.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/Ansible_Theory/5_ANSIBLE_PLAYBOOK.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/Ansible_Theory/6_ANSIBLE VARAIBLES.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/Ansible_Theory/7_MANAGING SECRETS.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/Ansible_Theory/8_MANAGING FACTS.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/Ansible_Theory/9_MAGIC VARIABLE.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/Ansible_Theory/~$MAGIC VARIABLE.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/Ansible_Theory/~$MANAGING SECRETS.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/Ansible_Theory/~WRL3737.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/Config_file/ansible.cfg.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/Inventory/inventory.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/Plays/Basic/Apache_firewalld_indexdeploy_uri.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/Plays/Basic/EPEL-software Packages.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/Plays/Basic/apache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/Plays/Basic/lab-setup.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/Plays/Basic/reactjs_deployment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/Plays/Basic/software_installation.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/Plays/Basic/user_creation.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/Plays/Basic/user_delete.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/Plays/Basic/user_ssh.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/Plays/Basic/user_sudo.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/Plays/Basic/user_sudo_ssh.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/Plays/MANAGING FACTS/facts.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/Plays/MANAGING FACTS/facts.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/Plays/MANAGING VARAIBLE/register.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/Plays/MANAGING VARAIBLE/variable_external.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/Plays/MANAGING VARAIBLE/variable_insideplaybook.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/Plays/MANAGING VARAIBLE/vars.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/Plays/MANAGING VARAIBLE/vars_1.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/Plays/ansile_tutorial.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/Plays/facts.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/~$NSIBLE.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/~$SIBLE VARAIBLES.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/~WRL0003.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/~WRL0004.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/~WRL0477.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/~WRL0682.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/~WRL2612.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/~WRL3062.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/~WRL3365.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/~WRL3427.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../05 Ansible/~WRL3877.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../08 AWS/AWS CERTIFIED DEVELOPER/Bash" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../08 AWS/AWS CERTIFIED DEVELOPER/Bash" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Devops.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Devops.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Github/API/API.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Github/API/API.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Github/API/GraphQL!-converted.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Github/API/GraphQL!.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Github/API/index.js.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Github/API/~$aphQL!.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Github/GitHub.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Github/Readme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Linux/Managing files.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Linux/RHCSA.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Linux/~$RHCSA.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Linux/~WRL3458.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Shell-Script/01 Starting off with Sha.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Shell-Script/0135-linux-shell-scripting-tutorial.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Shell-Script/02 Special Characters.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Shell-Script/03 Variables.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Shell-Script/60761_linux.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Shell-Script/Advance-Bash-Guide.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Shell-Script/Mastering_Unix_Shell_Scripting.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Shell-Script/SHELL SCRIPTING.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Shell-Script/~$ELL SCRIPTING.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Shell-Script/~WRL1368.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Shell-Script/~WRL3405.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Shell-Script/~WRL3909.tmp" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="255jIgAjHXJxT6DIP0Dm42wk8VN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5e5b3392-2e74-4ac1-97c7-159151345e44" name="Changes" comment="" />
+      <created>1644823766420</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1644823766420</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

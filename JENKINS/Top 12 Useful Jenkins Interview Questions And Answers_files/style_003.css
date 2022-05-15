@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+/*
+Theme Name: Academy Child
+Theme URI: http://themextemplates.com/demo/academy
+License: GNU General Public License and Themeforest License
+License URI: http://themeforest.net/licenses/regular_extended
+Description: Learning Management WordPress Theme.
+Author: Themex
+Author URI: http://www.themeforest.net/user/themex/
+Version: 2.8
+Tags: learning, teaching, education, studying, tutoring
+Template: academy
+*/
+
+@import url( '../academy/stylee.css' );

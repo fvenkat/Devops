@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]> <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]> <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html style="" class=" js no-touch csstransforms3d csstransitions" lang="en"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Maven Interview Questions</title>
+<meta name="description" content="Maven Interview Questions - Learn Maven in simple and easy steps starting from basic to advanced concepts with examples including Overview, Environment Setup, POM, Build Life Cycle, Build profiles, Repositories, Plug-ins, Creating Project, Build &amp; Test Project, External Dependencies, Project Documents, Project Templates, Snapshot, Build Automation, Dependency Management, Deployment Automation, Web Application, Eclipse IDE, Netbeans IDE, IntelliJ IDEA.">
+<meta name="keywords" content="Apache, Maven tutorial, Beginners, Overview, Environment Setup, POM, Build Life Cycle, Build profiles, Repositories, Plug-ins, Creating Project, Build &amp; Test Project, External Dependencies, Project Documents, Project Templates, Snapshot, Build Automation, Dependency Management, Deployment Automation, Web Application, Eclipse IDE, Netbeans IDE, IntelliJ IDEA.">
+<!-- base href="https://www.tutorialspoint.com/" -->
+<link rel="shortcut icon" href="https://www.tutorialspoint.com/favicon.ico" type="image/x-icon">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="fb:app_id" content="471319149685276">
+<meta property="og:site_name" content="www.tutorialspoint.com">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="author" content="tutorialspoint.com">
+<script src="Maven%20Interview%20Questions_files/cbgapi.loaded_2" async=""></script><script src="Maven%20Interview%20Questions_files/cbgapi.loaded_1" async=""></script><script src="Maven%20Interview%20Questions_files/cbgapi.loaded_0" async=""></script><script type="text/javascript" src="Maven%20Interview%20Questions_files/script-min-v4.js"></script>
+<link rel="stylesheet" href="Maven%20Interview%20Questions_files/style-min.css">
+<script async="async" src="Maven%20Interview%20Questions_files/gpt.js"></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+<script>
+googletag.cmd.push(function() {
+    googletag.defineSlot('/60931893/tutorial_right_bottom', [[300, 250], [300, 600]], 'div-gpt-ad-1510138782906-0').addService(googletag.pubads());
+    googletag.defineSlot('/60931893/tutorial_right_middle', [[300, 250], [300, 600]], 'div-gpt-ad-1510138782906-1').addService(googletag.pubads());
+    googletag.defineSlot('/60931893/tutorial_right_top', [300, 250], 'div-gpt-ad-1510138782906-2').addService(googletag.pubads());
+    googletag.defineSlot('/60931893/tutorial_bottom_leader_board', [[600, 400], [300, 250], [480, 320], [468, 60], [336, 280], [600, 200], [580, 400]], 'div-gpt-ad-1510138782906-3').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+});
+function openNav() {	
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("right_obs").style.display = "block";
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("right_obs").style.display = "none";
+}
+function close_obs_sidenav(){
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("right_obs").style.display = "none";
+}
+</script>
+<!-- Head Libs -->
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="/theme/css/ie8.css">
+<![endif]-->
+<style>
+select{ border:0 !important; outline: 1px inset black !important; outline-offset: -1px !important; }
+.btnsbmt{ background: #fda803 !important;}
+ul.nav-list.primary>li a.videolink{    background: none; margin: 0px; padding: 0px; border: 1px solid #d6d6d6;}
+div.feature-box div.feature-box-icon, .col-md-3 .course-box, li.heading, div.footer-copyright { background: #fda803 url(/images/pattern.png) repeat center center !important;}
+.sub-main-menu .sub-menuu div:hover, .sub-main-menu .viewall, header nav ul.nav-main li a:hover, button.btn-responsive-nav, header div.search button.btn-default { background: #fda803 !important;}
+.submenu-item{ border-bottom: 2px solid #fda803 !important; border-top: 2px solid #fda803 !important }
+.ace_scroller{overflow: auto!important;}
+a.demo{font-family: "Open Sans",Arial,sans-serif; background:#fda803; color:#fff; font-size:13px; padding:3px 10px; border:1px solid #d6d6d6; position:absolute; right:5px; margin:-6px 17px 0px 0px;}
+a.demo:hover{opacity:.8}
+</style>
+<script>
+$(document).ready(function() {
+  $('input[name="q"]').keydown(function(event){
+    if(event.keyCode == 13) {
+      event.preventDefault();
+      return false;
+    }
+  });
+});
+</script>
+<style>.gc-bubbleDefault{background-color:transparent !important;text-align:left;padding:0 !important;margin:0 !important;border:0 !important;table-layout:auto !important}.gc-reset{background-color:transparent !important;border:0 !important;padding:0 !important;margin:0 !important;text-align:left}.pls-bubbleTop{border-bottom:1px solid #ccc !important}.pls-topTail,.pls-vertShimLeft,.pls-contentLeft{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/border_3.gif) !important}.pls-topTail{background-repeat:repeat-x !important;background-position:bottom !important}.pls-vertShim{background-color:#fff !important;text-align:right}.tbl-grey .pls-vertShim{background-color:#f5f5f5 !important}.pls-vertShimLeft{background-repeat:repeat-y !important;background-position:right !important;height:4px}.pls-vertShimRight{height:4px}.pls-confirm-container .pls-vertShim{background-color:#fff3c2 !important}.pls-contentWrap{background-color:#fff !important;position:relative !important;vertical-align:top}.pls-contentLeft{background-repeat:repeat-y;background-position:right;vertical-align:top}.pls-dropRight{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleDropR_3.png) !important;background-repeat:repeat-y !important;vertical-align:top}.pls-vert,.pls-tailleft,.pls-dropTR .pls-dropBR,.pls-dropBL,.pls-vert img{vertical-align:top}.pls-dropBottom{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleDropB_3.png) !important;background-repeat:repeat-x !important;width:100%;vertical-align:top}.pls-topLeft{background:inherit !important;text-align:right;vertical-align:bottom}.pls-topRight{background:inherit !important;text-align:left;vertical-align:bottom}.pls-bottomLeft{background:inherit !important;text-align:right}.pls-bottomRight{background:inherit !important;text-align:left;vertical-align:top}.pls-tailtop,.pls-tailright,.pls-tailbottom,.pls-tailleft{display:none;position:relative}.pls-tailbottom,.pls-tailtop,.pls-tailright,.pls-tailleft,.pls-dropTR,.pls-dropBR,.pls-dropBL{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleSprite_3.png) !important;background-repeat:no-repeat}.tbl-grey .pls-tailbottom,.tbl-grey .pls-tailtop,.tbl-grey .pls-tailright,.tbl-grey .pls-tailleft,.tbl-grey .pls-dropTR,.tbl-grey .pls-dropBR,.tbl-grey .pls-dropBL{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleSprite-grey.png) !important}.pls-tailbottom{background-position:-23px 0}.pls-confirm-container .pls-tailbottom{background-position:-23px -10px}.pls-tailtop{background-position:-19px -20px}.pls-tailright{background-position:0 0}.pls-tailleft{background-position:-10px 0}.pls-tailtop{vertical-align:top}.gc-bubbleDefault td{line-height:0;font-size:0}.pls-topLeft img,.pls-topRight img,.pls-tailbottom{vertical-align:bottom}.pls-bottomLeft img,.bubbleDropTR,.pls-dropBottomL img,.pls-dropBottom img,.pls-dropBottomR img,.pls-bottomLeft{vertical-align:top}.pls-dropTR{background-position:0 -22px}.pls-dropBR{background-position:0 -27px}.pls-dropBL{background-position:0 -16px}.pls-spacertop,.pls-spacerright,.pls-spacerbottom,.pls-spacerleft{position:static !important}.pls-spinner{bottom:0;position:absolute;left:0;margin:auto;right:0;top:0} </style></head>
+<body onload="prettyPrint()">
+<div class="wrapLoader">
+   <div class="imgLoader">
+      <img src="Maven%20Interview%20Questions_files/loading-cg.gif" alt="" width="70" height="70">
+   </div>
+</div>
+<div id="right_obs" class="display-none" onclick="close_obs_sidenav()"></div>
+<header>
+   <div class="container">			
+      <h1 class="logo">
+      <a href="https://www.tutorialspoint.com/index.htm" title="tutorialspoint">
+      <img alt="tutorialspoint" src="Maven%20Interview%20Questions_files/logo.png">
+      </a>
+      </h1>			
+      <ul class="tp-inline-block pull-right" id="tp-head-icons">
+        <li>
+           <div class="tp-second-nav tp-display-none tp-pointer" onclick="openNav()">
+              <i class="fa fa-th-large fa-lg"></i>
+           </div>
+        </li>
+     </ul>
+     <button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse" id="pull" style="top: 560px!important"> <i class="icon icon-bars"></i> </button>
+      <nav>
+         <ul class="nav nav-pills nav-top">
+            <li><a href="https://www.tutorialspoint.com/about/about_careers.htm" style="background: #fffb09; font-weight: bold;"><i class="icon icon-suitcase"></i> Jobs</a></li>
+            <li> <a target="_blank" href="https://www.tutorialspoint.com/programming_examples/"><i class="fa fa-cubes"></i> &nbsp;Examples</a> </li>
+            <li> <a href="https://www.tutorialspoint.com/whiteboard.htm"><img src="Maven%20Interview%20Questions_files/image-editor.png" alt="Whiteboard" title="Whiteboard"> &nbsp;Whiteboard</a> </li>
+            <li> <a href="https://www.tutorialspoint.com/netmeeting.php"><i class="fa-camera"></i> &nbsp;Net Meeting</a> </li>
+            <li> <a href="https://www.tutorialspoint.com/online_dev_tools.htm"> <i class="dev-tools-menu" style="opacity:.5"></i> Tools </a> </li>
+            <li> <a href="https://www.tutorialspoint.com/articles/index.php"><i class="icon icon-file-text-o"></i> &nbsp;Articles</a> </li>            
+            <li class="top-icons">
+              <ul class="social-icons">
+              <li class="facebook"><a href="https://www.facebook.com/tutorialspointindia" target="_blank" data-placement="bottom" title="tutorialspoint @ Facebook">Facebook</a></li>
+              <li class="googleplus"><a href="https://plus.google.com/u/0/116678774017490391259/posts" target="_blank" data-placement="bottom" title="tutorialspoint @ Google+">Google+</a></li>
+              <li class="twitter"><a href="https://www.twitter.com/tutorialspoint" target="_blank" data-placement="bottom" title="tutorialspoint @ Twitter">Twitter</a></li>
+              <li class="linkedin"><a href="https://www.linkedin.com/company/tutorialspoint" target="_blank" data-placement="bottom" title="tutorialspoint @ Linkedin">Linkedin</a></li>
+              <li class="youtube"><a href="https://www.youtube.com/channel/UCVLbzhxVTiTLiVKeGV7WEBg" target="_blank" data-placement="bottom" title="tutorialspoint YouTube">YouTube</a></li>
+              </ul>
+           </li>
+         </ul>
+      </nav>
+    </div>
+     <div class="sidenav" id="mySidenav">
+     <div class="navbar nav-main">
+      <div class="container">
+         <nav class="nav-main mega-menu">
+            <ul class="nav nav-pills nav-main" id="mainMenu">
+               <li class="dropdown no-sub-menu"> <a class="dropdown" href="https://www.tutorialspoint.com/index.htm"><i class="icon icon-home"></i> Home</a> </li>   
+               <li class="dropdown no-sub-menu"><a class="dropdown" href="https://www.tutorialspoint.com/questions/index.php"><i class="fa fa-send"></i> Q/A </a> </li>
+               <li class="dropdown"><a class="dropdown" href="https://www.tutorialspoint.com/tutorialslibrary.htm"><span class="tut-lib"> Library </span></a></li>
+               <li class="dropdown no-sub-menu"><a class="dropdown" href="https://www.tutorialspoint.com/videotutorials/index.htm"><i class="fa-toggle-right"></i> Videos </a></li>
+               <li class="dropdown no-sub-menu"><a class="dropdown" href="https://www.tutorialspoint.com/tutor_connect/index.php"><i class="fa-user"> </i> Tutors</a></li>
+               <li class="dropdown no-sub-menu"><a class="dropdown" href="https://www.tutorialspoint.com/codingground.htm"><i class="fa-code"></i> Coding Ground </a> </li>
+               <li class="dropdown no-sub-menu"><a class="dropdown" href="https://store.tutorialspoint.com/"><i class="fa-usd"></i> Store </a> </li>
+               <li class="dropdown no-sub-menu">
+                  <div class="searchform-popup">
+                     <input class="header-search-box" id="search-string" name="q" placeholder="Search your favorite tutorials..." onfocus="if (this.value == 'Search your favorite tutorials...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search your favorite tutorials...';}" autocomplete="off" type="text">
+                     <div class="magnifying-glass"><i class="icon-search"></i> Search </div>
+                 </div>
+               </li>
+            </ul>
+         </nav>
+        </div>
+      </div>	
+     </div>	
+   	
+</header>
+<div style="clear:both;"></div>
+<div role="main" class="main">
+<div class="container">
+<div class="row">
+<div class="col-md-2">
+<aside class="sidebar">
+<div class="mini-logo">
+<img src="Maven%20Interview%20Questions_files/maven-mini-logo.jpg" alt="Maven Tutorial">
+</div>
+<ul class="nav nav-list primary left-menu">
+<li class="heading">Maven Tutorial</li>
+<li><a href="https://www.tutorialspoint.com/maven/index.htm">Maven - Home</a></li>
+<li><a href="https://www.tutorialspoint.com/maven/maven_overview.htm">Maven - Overview</a></li>
+<li><a href="https://www.tutorialspoint.com/maven/maven_environment_setup.htm">Maven - Environment Setup</a></li>
+<li><a href="https://www.tutorialspoint.com/maven/maven_pom.htm">Maven - POM</a></li>
+<li><a href="https://www.tutorialspoint.com/maven/maven_build_life_cycle.htm">Maven - Build Life Cycle</a></li>
+<li><a href="https://www.tutorialspoint.com/maven/maven_build_profiles.htm">Maven - Build Profiles</a></li>
+<li><a href="https://www.tutorialspoint.com/maven/maven_repositories.htm">Maven - Repositories</a></li>
+<li><a href="https://www.tutorialspoint.com/maven/maven_plugins.htm">Maven - Plug-ins</a></li>
+<li><a href="https://www.tutorialspoint.com/maven/maven_creating_project.htm">Maven - Creating Project</a></li>
+<li><a href="https://www.tutorialspoint.com/maven/maven_build_test_project.htm">Maven - Build &amp; Test Project</a></li>
+<li><a href="https://www.tutorialspoint.com/maven/maven_external_dependencies.htm">Maven - External Dependencies</a></li>
+<li><a href="https://www.tutorialspoint.com/maven/maven_project_documents.htm">Maven - Project Documents</a></li>
+<li><a href="https://www.tutorialspoint.com/maven/maven_project_templates.htm">Maven - Project Templates</a></li>
+<li><a href="https://www.tutorialspoint.com/maven/maven_snapshots.htm">Maven - Snapshots</a></li>
+<li><a href="https://www.tutorialspoint.com/maven/maven_build_automation.htm">Maven - Build Automation</a></li>
+<li><a href="https://www.tutorialspoint.com/maven/maven_manage_dependencies.htm">Maven - Manage Dependencies</a></li>
+<li><a href="https://www.tutorialspoint.com/maven/maven_deployment_automation.htm">Maven - Deployment Automation</a></li>
+<li><a href="https://www.tutorialspoint.com/maven/maven_web_application.htm">Maven - Web Application</a></li>
+<li><a href="https://www.tutorialspoint.com/maven/maven_eclispe_ide.htm">Maven - Eclipse IDE</a></li>
+<li><a href="https://www.tutorialspoint.com/maven/maven_netbeans.htm">Maven - NetBeans</a></li>
+<li><a href="https://www.tutorialspoint.com/maven/maven_intellij_idea.htm">Maven - IntelliJ IDEA</a></li>
+<li class="heading">Maven Useful Resources</li>
+<li><a href="https://www.tutorialspoint.com/maven/maven_questions_answers.htm" style="background-color: rgb(214, 214, 214);">Maven - Questions and Answers</a></li>
+<li><a href="https://www.tutorialspoint.com/maven/maven_quick_guide.htm">Maven - Quick Guide</a></li>
+<li><a href="https://www.tutorialspoint.com/maven/maven_useful_resources.htm">Maven - Useful Resources</a></li>
+<li><a href="https://www.tutorialspoint.com/maven/maven_discussion.htm">Maven - Discussion</a></li>
+</ul>
+<ul class="nav nav-list primary push-bottom left-menu special">
+<li class="sreading">Selected Reading</li>
+<li><a target="_top" href="https://www.tutorialspoint.com/upsc_ias_exams.htm">UPSC IAS Exams Notes</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/developers_best_practices/index.htm">Developer's Best Practices</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/questions_and_answers.htm">Questions and Answers</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/effective_resume_writing.htm">Effective Resume Writing</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/hr_interview_questions/index.htm">HR Interview Questions</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/computer_glossary.htm">Computer Glossary</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/computer_whoiswho.htm">Who is Who</a></li>
+</ul>
+</aside>
+</div>
+<!-- PRINTING STARTS HERE -->
+<div class="row">
+<div class="content">
+<div class="col-md-7 middle-col">
+<h1>Maven Interview Questions</h1>
+<div class="topgooglead">
+<hr>
+<div style="padding-bottom:5px;padding-left:10px;">Advertisements</div>
+<script type="text/javascript"><!--
+google_ad_client = "pub-7133395778201029";
+google_ad_width = 468;
+google_ad_height = 60;
+google_ad_format = "468x60_as";
+google_ad_type = "image";
+google_ad_channel = "";
+//--></script>
+<script type="text/javascript" src="Maven%20Interview%20Questions_files/show_ads.js"> 
+</script>
+</div>
+<hr>
+<div class="pre-btn">
+<a href="https://www.tutorialspoint.com/maven/maven_questions_answers.htm" style=""><i class="icon icon-arrow-circle-o-left big-font"></i> Previous Page</a>
+</div>
+<div class="nxt-btn">
+<a href="https://www.tutorialspoint.com/maven/maven_questions_answers.htm" style="">Next Page <i class="icon icon-arrow-circle-o-right big-font"></i>&nbsp;</a>
+</div>
+<div class="clearer"></div>
+<hr>
+<p>Dear readers, these <b>Maven Interview Questions</b> have been 
+designed specially to get you acquainted with the nature of questions 
+you may encounter during your interview for the subject of <b>Maven</b>.
+ As per my experience good interviewers hardly plan to ask any 
+particular question during your interview, normally questions start with
+ some basic concept of the subject and later they continue based on 
+further discussion and what you answer:</p>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What are the steps involved in project deployment?</label>
+<div class="toggle-content">
+<p>Normally a deployment process consists of following steps −</p>
+<ul class="list">
+<li><p>Check-in the code from all projects in progress into the SVN or source code repository and tag it.</p></li>
+<li><p>Download the complete source code from SVN.</p></li>
+<li><p>Build the application.</p></li>
+<li><p>Store the build output either WAR or EAR file to a common network location.</p></li>
+<li><p>Get the file from network and deploy the file to the production site.</p></li>
+<li><p>Updated the documentation with date and updated version number of the application.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What is Maven?</label>
+<div class="toggle-content">
+<p>Maven is a project management and comprehension tool. Maven provides 
+developers a complete build lifecycle framework. Development team can 
+automate the project's build infrastructure in almost no time as Maven 
+uses a standard directory layout and a default build lifecycle.</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What does it mean when you say Maven uses Convention over Configuration?</label>
+<div class="toggle-content">
+<p>Maven uses Convention over Configuration which means developers are 
+not required to create build process themselves. Developers do not have 
+to mention each and every configuration details.</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What are the aspects Maven manages?</label>
+<div class="toggle-content">
+<p>Maven provides developers ways to manage following −</p>
+<ul class="list">
+<li>Builds</li>
+<li>Documentation</li>
+<li>Reporting<p></p></li>
+<li>Dependencies<p></p></li>
+<li>SCMs<p></p></li>
+<li>Releases<p></p></li>
+<li>Distribution<p></p></li>
+<li>mailing list<p></p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>How do you know the version of mvn you are using?</label>
+<div class="toggle-content">
+<p>Type the following command −</p>
+<pre class="prettyprint notranslate prettyprinted" style=""><span class="pln">mvn </span><span class="pun">--</span><span class="pln">version</span></pre>
+</div>
+</section>
+<section class="toggle active">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What is POM?</label>
+<div class="toggle-content" style="display: block;">
+<p>POM stands for Project Object Model. It is fundamental Unit of Work 
+in Maven. It is an XML file. It always resides in the base directory of 
+the project as pom.xml. It contains information about the project and 
+various configuration details used by Maven to build the project(s).</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What information does POM contain?</label>
+<div class="toggle-content">
+<p>POM contains the some of the following configuration information −</p>
+<ul class="list">
+<li>project dependencies</li>
+<li>plugins</li>
+<li>goals</li>
+<li>build profiles</li>
+<li>project version</li>
+<li>developers</li>
+<li>mailing list</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What is Maven artifact?</label>
+<div class="toggle-content" style="display: none;">
+<p>An artifact is a file, usually a JAR that gets deployed to a Maven 
+repository. A Maven build produces one or more artifacts, such as a 
+compiled JAR and a "sources" JAR.</p>
+<p>Each artifact has a group ID (usually a reversed domain name, like 
+com.example.foo), an artifact ID (just a name), and a version string. 
+The three together uniquely identify the artifact. A project's 
+dependencies are specified as artifacts.</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What is Maven Build Lifecycle?</label>
+<div class="toggle-content">
+<p>A Build Lifecycle is a well defined sequence of phases which define 
+the order in which the goals are to be executed. Here phase represents a
+ stage in life cycle.</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>Name the 3 build lifecycle of Maven.</label>
+<div class="toggle-content">
+<p>The three build lifecycles are −</p>
+<ul class="list">
+<li><p><b>clean:</b>cleans up artifacts created by prior builds.</p></li>
+<li><p><b>default (or build):</b>This is used to build the application. </p></li>
+<li><p><b>site:</b> generates site documentation for the project.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What is the command to quickly build your Maven site?</label>
+<div class="toggle-content">
+<p>Type the command −</p>
+<pre class="prettyprint notranslate prettyprinted" style=""><span class="pln">mvn site</span></pre>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What would the command <i>mvn clean</i> do ?</label>
+<div class="toggle-content">
+<p>This command removes the target directory with all the build data before starting the build process.</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What are the phases of a Maven Build Lifecycle?</label>
+<div class="toggle-content">
+<p>Following are the phases −</p>
+<ul class="list">
+<li><p><b>validate −</b> validate the project is correct and all necessary information is available.</p></li>
+<li><p><b>compile −</b> compile the source code of the project.</p></li>
+<li><p><b>test −</b> test the compiled source code using a suitable unit
+ testing framework. These tests should not require the code be packaged 
+or deployed</p></li>
+<li><p><b>package −</b> take the compiled code and package it in its distributable format, such as a JAR.</p></li>
+<li><p><b>integration-test −</b> process and deploy the package if necessary into an environment where integration tests can be run.</p></li>
+<li><p><b>verify −</b> run any checks to verify the package is valid and meets quality criteria.</p></li>
+<li><p><b>install −</b> install the package into the local repository, for use as a dependency in other projects locally.</p></li>
+<li><p><b>deploy −</b> done in an integration or release environment, 
+copies the final package to the remote repository for sharing with other
+ developers and projects.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What is a goal in Maven terminology?</label>
+<div class="toggle-content">
+<p>A goal represents a specific task which contributes to the building 
+and managing of a project. It may be bound to zero or more build phases.
+ A goal not bound to any build phase could be executed outside of the 
+build lifecycle by direct invocation.</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What would this command do <i>mvn clean dependency:copy-dependencies package</i>?</label>
+<div class="toggle-content">
+<p>This command will clean the project, copy the dependencies and package the project (executing all phases up to <i>package</i>).</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What phases does a Clean Lifecycle consist?</label>
+<div class="toggle-content">
+<p>The clean lifecycle consists of the following phases −</p>
+<ul class="list">
+<li>pre-clean</li>
+<li>clean</li>
+<li>post-clean</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What phases does a Site  Lifecycle consist?</label>
+<div class="toggle-content">
+<p>The phases in Site  Lifecycle are −</p>
+<ul class="list">
+<li>pre-site</li>
+<li>site</li>
+<li>post-site</li>
+<li>site-deploy</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What is Build Profile?</label>
+<div class="toggle-content">
+<p>A Build profile is a set of configuration values which can be used to
+ set or override default values of Maven build. Using a build profile, 
+you can customize build for different environments such as Production 
+v/s Development environments.</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What are different types of Build Profiles?</label>
+<div class="toggle-content">
+<p>Build profiles are of three types − </p>
+<ul class="list">
+<li><p><b>Per Project −</b> Defined in the project POM file, pom.xml.</p></li>
+<li><p><b>Per User −</b> Defined in Maven settings xml file (%USER_HOME%/.m2/settings.xml).</p></li>
+<li><p><b>Global −</b> Defined in Maven global settings xml file (%M2_HOME%/conf/settings.xml)</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>How can you activate profiles?</label>
+<div class="toggle-content">
+<p>A Maven Build Profile can be activated in various ways −</p>
+<ul class="list">
+<li><p>Explicitly using command console input.</p></li>
+<li><p>Through maven settings.</p></li>
+<li><p>Based on environment variables (User/System variables).</p></li>
+<li><p>OS Settings (for example, Windows family).</p></li>
+<li><p>Present/missing files.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What is a Maven Repository?</label>
+<div class="toggle-content">
+<p>A repository is a place i.e. directory where all the project jars, 
+library jar, plugins or any other project specific artifacts are stored 
+and can be used by Maven easily.</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What types of Maven repository?</label>
+<div class="toggle-content">
+<p>Maven repository are of three types: local, central, remote</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What is local repository?</label>
+<div class="toggle-content">
+<p>Maven local repository is a folder location on your machine. It gets 
+created when you run any maven command for the first time. Maven local 
+repository keeps your project's all dependencies (library jars, plugin 
+jars etc).</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What is the default location for your local repository?</label>
+<div class="toggle-content">
+<p>~/m2./repository.</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What is the command to install JAR file in local repository?</label>
+<div class="toggle-content">
+<p>mvn install</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What is Central Repository?</label>
+<div class="toggle-content">
+<p>It is repository provided by Maven community. It contains a large 
+number of commonly used libraries. When Maven does not find any 
+dependency in local repository, it starts searching in central 
+repository using following URL: http://repo1.maven.org/maven2/.</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What is Remote Repository?</label>
+<div class="toggle-content">
+<p>Sometimes, Maven does not find a mentioned dependency in central 
+repository as well then it stops the build process and output error 
+message to console. To prevent such situation, Maven provides concept of
+ Remote Repository which is developer's own custom repository containing
+ required libraries or other project jars.</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What is the sequence in which Maven searches for dependency libraries?</label>
+<div class="toggle-content">
+<p>Following is the search pattern −</p>
+<ul class="list">
+<li><p>Step 1 − Search dependency in local repository, if not found, move to step 2 else if found then do the further processing.</p></li>
+<li><p>Step 2 − Search dependency in central repository, if not found 
+and remote repository/repositories is/are mentioned then move to step 4 
+else if found, then it is downloaded to local repository for future 
+reference.</p></li>
+<li><p>Step 3 − If a remote repository has not been mentioned, Maven 
+simply stops the processing and throws error (Unable to find 
+dependency).</p></li>
+<li><p>Step 4 − Search dependency in remote repository or repositories, 
+if found then it is downloaded to local repository for future reference 
+otherwise Maven as expected stop processing and throws error (Unable to 
+find dependency).</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>Why are Maven Plugins used?</label>
+<div class="toggle-content">
+<p>Maven Plugins are used to −</p>
+<ul class="list">
+<li>create jar file.</li>
+<li>create war file.</li>
+<li>compile code files.</li>
+<li>unit testing of code.</li>
+<li>create project documentation.</li>
+<li>create project reports.</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What are the types of Maven Plugins?</label>
+<div class="toggle-content">
+<p>Maven provides following two types of Plugins −</p>
+<ul class="list">
+<li><p><b>Build plugins −</b> They execute during the build and should be configured in the &lt;build/&gt; element of pom.xml</p></li>
+<li><p><b>Reporting plugins −</b> They execute during the site generation and they should be configured in the &lt;reporting/&gt; element of the pom.xml</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>When does Maven use External Dependency concept?</label>
+<div class="toggle-content">
+<p>Maven dependency management using concept of Maven Repositories 
+(Local, Central, Remote). Suppose dependency is not available in any of 
+remote repositories and central repository; in such scenarios Maven uses
+ concept of External Dependency.</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What are the things you need to define for each external dependency?</label>
+<div class="toggle-content">
+<p>External dependencies (library jar location) can be configured in pom.xml in same way as other dependencies.</p>
+<ul class="list">
+<li>Specify groupId same as name of the library.</li>
+<li>Specify artifactId same as name of the library.</li>
+<li>Specify scope as system.</li>
+<li>Specify system path relative to project location.</li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What is Archetype?</label>
+<div class="toggle-content">
+<p>Archetype is a Maven plugin whose task is to create a project structure as per its template.</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What is the command to create a new project based on an archtype?</label>
+<div class="toggle-content">
+<p>Type the following command −</p>
+<pre class="prettyprint notranslate prettyprinted" style=""><span class="pln">mvn archetype</span><span class="pun">:</span><span class="pln">generate</span></pre>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What is SNAPSHOT in Maven?</label>
+<div class="toggle-content">
+<p>SNAPSHOT is a special version that indicates a current development 
+copy. Unlike regular versions, Maven checks for a new SNAPSHOT version 
+in a remote repository for every build.</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What is difference between Snapshot and Version?</label>
+<div class="toggle-content">
+<p>In case of Version, if Maven once downloaded the mentioned version 
+say data-service:1.0, it will never try to download a newer 1.0 
+available in repository. To download the updated code, data-service 
+version is be upgraded to 1.1.</p>
+<p>In case of SNAPSHOT, Maven will automatically fetch the latest 
+SNAPSHOT (data-service:1.0-SNAPSHOT) everytime app-ui team build their 
+project.</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What is transitive dependency in Maven?</label>
+<div class="toggle-content">
+<p>Transitive dependency means to avoid needing to discover and specify 
+the libraries that your own dependencies require, and including them 
+automatically.</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What does dependency management mean in the context of transitive dependency?</label>
+<div class="toggle-content">
+<p>It means to directly specify the versions of artifacts to be used 
+when they are encountered in transitive dependencies. For an example 
+project C can include B as a dependency in its dependencyManagement 
+section and directly control which version of B is to be used when it is
+ ever referenced.</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>How Maven handles and determines what version of dependency will be used when multiple version of an artifact are encountered?</label>
+<div class="toggle-content">
+<p>Maven determines what version of a dependency is to be used when 
+multiple versions of an artifact are encountered. If two dependency 
+versions are at the same depth in the dependency tree, the first 
+declared dependency will be used. This is called  dependency mediation.</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What is dependency scope? Name all the dependency scope.</label>
+<div class="toggle-content">
+<p>Dependency scope includes dependencies as per the current stage of the build. Various Dependency Scopes are −</p>
+<ul class="list">
+<li><p><b>compile −</b> This scope indicates that dependency is available in classpath of project. It is default scope.</p></li>
+<li><p><b>provided −</b> This scope indicates that dependency is to be provided by JDK or web-Server/Container at runtime.</p></li>
+<li><p><b>runtime −</b> This scope indicates that dependency is not required for compilation, but is required during execution.</p></li>
+<li><p><b>test −</b> This scope indicates that the dependency is only available for the test compilation and execution phases.</p></li>
+<li><p><b>system −</b> This scope indicates that you have to provide the system path.</p></li>
+<li><p><b>import −</b> This scope is only used when dependency is of 
+type pom. This scope indicates that the specified POM should be replaced
+ with the dependencies in that POM's &lt;dependencyManagement&gt; 
+section.</p></li>
+</ul>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What is the minimal set of information for matching a dependency references against a dependencyManagement section ?</label>
+<div class="toggle-content">
+<p>{groupId,artifactId,type,classifier}.</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>How do you reference a property defined in your pom.xml file?</label>
+<div class="toggle-content">
+<p>To reference a property defined in your pom.xml, the property name 
+uses the names of the XML elements that define the value, with "pom" 
+being allowed as an alias for the project (root) element. </p>
+<p>So ${pom.name} refers to the name of the project, ${pom.version} 
+refers to the version of the project, ${pom.build.finalName} refers to 
+the final name of the file created when the built project is packaged, 
+etc.</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What are the default values for packaging element? If there is no packaging element defined? What is the default value for that?</label>
+<div class="toggle-content">
+<p>Some of the valid packaging values are jar, war, ear and pom. If no packaging value has been specified, it will default to jar.</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What is the value for packaging element in pom for a project that is purely meta-data?</label>
+<div class="toggle-content">
+<p>pom</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What is the use of execution element in pom file?</label>
+<div class="toggle-content">
+<p>The &lt;execution&gt; element contains information's required for the execution of a plugin. </p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What is a project's fully qualified artifact name?</label>
+<div class="toggle-content">
+<p>&lt;groupId&gt;:&lt;artifactId&gt;:&lt;version&gt;</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>If you do not define any information, where does your pom inherits that information from?</label>
+<div class="toggle-content">
+<p>All POMs inherit from a parent (despite explicitly defined or not). 
+This base POM is known as the Super POM, and contains values inherited 
+by default. </p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>How profiles are specified in Maven?</label>
+<div class="toggle-content">
+<p>Profiles are specified using a subset of the elements available in the POM itself.</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What are the elements in POM that a profile can modify when specified in the POM?</label>
+<div class="toggle-content">
+<p>&lt;repositories&gt;, 
+&lt;pluginRepositories&gt;,&lt;dependencies&gt;, &lt;plugins&gt; 
+,&lt;properties&gt;, 
+&lt;modules&gt;&lt;reporting&gt;,&lt;dependencyManagement&gt;,&lt;distributionManagement&gt;</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>Why profile is used in Maven?</label>
+<div class="toggle-content">
+<p>To give portability to projects ( e.g. windows, linux etc).</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What are the benefit of storing JARS/external dependencies in local repository instead of remote one?</label>
+<div class="toggle-content">
+<p>It uses less storage, it makes checking out project quicker, non need for versioning JAR files.</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>How can you build your project offline?</label>
+<div class="toggle-content">
+<p>Use the command −</p>
+<pre class="prettyprint notranslate prettyprinted" style=""><span class="pln">mvn o </span><span class="kwd">package</span><span class="pun">.</span></pre>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>How do you exclude dependency?</label>
+<div class="toggle-content">
+<p>Using the <i>exclusion</i> element.</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What is a system dependency?</label>
+<div class="toggle-content">
+<p>Dependency with scope system are always available and are not looked 
+up in repository, they are usually used to tell Maven about dependencies
+ which are provided by the JDK or the VM. Thus, system dependencies are 
+especially useful for resolving dependencies on artifacts which are now 
+provided by the JDK.</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What is the use of optional dependency?</label>
+<div class="toggle-content">
+<p>Any transitive dependency can be marked as optional using "optional" 
+element. As example, A depends upon B and B depends upon C. Now B marked
+ C as optional. Then A will not use C.</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What is dependency exclusion ?</label>
+<div class="toggle-content">
+<p>Any transitive dependency can be exclude using "exclusion" element. 
+As example, A depends upon B and B depends upon C then A can mark C as 
+excluded.</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>How can you run the clean plugin automatically during the build?</label>
+<div class="toggle-content">
+<p>You can put the clean plugin inside the execution tag in pom.xml file.</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>How to stop the propagation of plugins to child POMs?</label>
+<div class="toggle-content">
+<p>set &lt;inherited&gt; to false.</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What does the "You cannot have two plugin executions with the same (or missing) elements" message mean?</label>
+<div class="toggle-content">
+<p>It means that you have executed a plugin multiple times with the same
+ &lt;id&gt;. Provide each &lt;execution&gt; with a unique &lt;id&gt; 
+then it would be ok.</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What is a Mojo?</label>
+<div class="toggle-content">
+<p>A mojo is a Maven plain Old Java Object. Each mojo is an executable 
+goal in Maven, and a plugin is a distribution of one or more related 
+mojos.</p>
+</div>
+</section>
+<section class="toggle">
+<label><i class="icon icon-minus"></i><i class="icon icon-plus"></i>What is difference between Apache Ant and Maven?</label>
+<div class="toggle-content">
+<p>Ant is simply a toolbox whereas Maven is about the application of 
+patterns in order to achieve an infrastructure which displays the 
+characteristics of visibility, reusability, maintainability, and 
+comprehensibility. It is wrong to consider Maven as a build tool and 
+just a replacement for Ant.</p>
+</div>
+</section>
+<h2>What is Next ?</h2>
+<p>Further you can go through your past assignments you have done with 
+the subject and make sure you are able to speak confidently on them. If 
+you are fresher then interviewer does not expect you will answer very 
+complex questions, rather you have to make your basics concepts very 
+strong.</p>
+<p>Second it really doesn't matter much if you could not answer few 
+questions but it matters that whatever you answered, you must have 
+answered with confidence. So just feel confident during your interview. 
+We at tutorialspoint wish you best luck to have a good interviewer and 
+all the very best for your future endeavor. Cheers :-)</p>
+<hr>
+<div class="pre-btn">
+<a href="https://www.tutorialspoint.com/maven/maven_questions_answers.htm" style=""><i class="icon icon-arrow-circle-o-left big-font"></i> Previous Page</a>
+</div>
+<div class="print-btn center">
+<a href="https://www.tutorialspoint.com/cgi-bin/printpage.cgi" target="_blank"><i class="icon icon-print big-font"></i> Print</a>
+</div>
+<div class="nxt-btn">
+<a href="https://www.tutorialspoint.com/maven/maven_questions_answers.htm" style="">Next Page <i class="icon icon-arrow-circle-o-right big-font"></i>&nbsp;</a>
+</div>
+<div class="parent-file">maven_questions_answers.htm</div>
+<hr>
+<!-- PRINTING ENDS HERE -->
+<script async="" src="Maven%20Interview%20Questions_files/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-format="autorelaxed" data-ad-client="ca-pub-7133395778201029" data-ad-slot="2151401379"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<hr>
+<div class="bottomgooglead">
+<div class="bottomadtag">Advertisements</div>
+<!-- /60931893/tutorial_bottom_leader_board -->
+<div id="div-gpt-ad-1510138782906-3">
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1510138782906-3'); });
+</script>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3" id="rightbar">
+<div class="ysubscribe">
+  <script async="" src="Maven%20Interview%20Questions_files/platform.js" gapi_processed="true"></script>
+  <div style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent none repeat scroll 0% 0%; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 220px; height: 48px;" id="___ytsubscribe_0"><iframe ng-non-bindable="" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 220px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 48px;" tabindex="0" vspace="0" id="I0_1528090371454" name="I0_1528090371454" src="Maven%20Interview%20Questions_files/subscribe_embed.htm" data-gapiattached="true" width="100%" frameborder="0"></iframe></div>
+</div>
+<div class="ysubscribe">
+<a href="https://store.tutorialspoint.com/" target="_blank"><img alt="E-Books Store" src="Maven%20Interview%20Questions_files/buy_ebooks_online.jpg"></a>
+</div>
+<div class="rightgooglead">
+<!-- /60931893/tutorial_right_top -->
+<div id="div-gpt-ad-1510138782906-2" style="height:250px; width:300px;">
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1510138782906-2'); });
+</script>
+</div>
+</div>
+<div class="rightgooglead">
+<!-- /60931893/tutorial_right_middle -->
+<div id="div-gpt-ad-1510138782906-1">
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1510138782906-1'); });
+</script>
+</div>
+</div>
+<div class="rightgooglead">
+<!-- /60931893/tutorial_right_bottom -->
+<div id="div-gpt-ad-1510138782906-0">
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1510138782906-0'); });
+</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-copyright">
+<div class="container">
+<div class="row">
+<div class="col-md-1">
+<a href="https://www.tutorialspoint.com/index.htm" class="logo"> <img alt="Tutorials Point" class="img-responsive" src="Maven%20Interview%20Questions_files/logo-footer.png"> </a>
+</div>
+<div class="col-md-4 col-sm-12 col-xs-12">
+   <nav id="sub-menu">
+      <ul>
+         <li><a href="https://www.tutorialspoint.com/about/faq.htm">FAQ's</a></li>
+         <li><a href="https://www.tutorialspoint.com/about/about_privacy.htm#cookies">Cookies Policy</a></li>
+         <li><a href="https://www.tutorialspoint.com/about/contact_us.htm">Contact</a></li>
+      </ul>
+   </nav>
+</div>
+<div class="col-md-3 col-sm-12 col-xs-12">
+<p>© Copyright 2018. All Rights Reserved.</p>
+</div>
+<div class="col-md-4 col-sm-12 col-xs-12">
+   <div class="news-group">
+      <input class="form-control-foot search" name="textemail" id="textemail" autocomplete="off" placeholder="Enter email for newsletter" onfocus="if (this.value == 'Enter email for newsletter...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Enter email for newsletter...';}" type="text">
+      <span class="input-group-btn"> <button class="btn btn-default btn-footer" id="btnemail" type="submit" onclick="javascript:void(0);">go</button> </span>
+      <div id="newsresponse"></div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Libs -->
+<script type="text/javascript" src="Maven%20Interview%20Questions_files/custom-min.js"></script><a class="scroll-to-top visible" href="#" id="scrollToTop"><i class="icon icon-chevron-up icon-white"></i></a>
+<script src="Maven%20Interview%20Questions_files/urchin.js">
+</script><iframe name="oauth2relay741885261" id="oauth2relay741885261" src="Maven%20Interview%20Questions_files/postmessageRelay.htm" style="width: 1px; height: 1px; position: absolute; top: -100px;" tabindex="-1" aria-hidden="true"></iframe>
+<script type="text/javascript">
+_uacct = "UA-232293-6";
+urchinTracker();
+$('.pg-icon').click(function(){
+   $('.wrapLoader').show();
+});
+</script>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Maven Interview Questions",
+    "name": "Maven Interview Questions",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.tutorialspoint.com/maven/maven_interview_questions.htm"
+    },
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.tutorialspoint.com/maven/images/maven-mini-logo.jpg",
+        "width": 255,
+        "height": 194
+    },
+    "author": {
+        "@type": "Organization",
+        "name": "Tutorials Point",
+        "url": "https://www.tutorialspoint.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.tutorialspoint.com/images/logo60.png",
+            "width": 210,
+            "height": 60
+        }
+    },
+    "datePublished": "January 08 2018 06:21:51.",
+    "dateModified": "January 08 2018 06:21:51.",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Tutorials Point",
+        "url": "https://www.tutorialspoint.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.tutorialspoint.com/images/logo60.png",
+            "width": 210,
+            "height": 60
+        }
+    },
+    "description": "Dear readers, these Maven Interview Questions have been designed specially to get you acquainted with the nature of questions you may encounter during your interview for the subject of Maven. As per my experience good interviewers hardly plan to ask any p..."
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+                "name": "www.tutorialspoint.com",
+                "@id": "https://www.tutorialspoint.com"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+                "name": "Maven",
+                "@id": "https://www.tutorialspoint.com/maven"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+                "name": null
+            }
+        }
+    ]
+}
+</script>
+
+
+
+<div class="autocomplete-suggestions "></div><div style="display: block; visibility: hidden; position: absolute; width: 106px; left: -10000px; top: -10000px;"><table dir="ltr" style="width:106px;" frame="void" rules="none" class=" gc-bubbleDefault pls-container" cellspacing="0" cellpadding="0"><tbody><tr class="gc-reset"><td class="pls-topLeft gc-reset"><img class="gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="Maven%20Interview%20Questions_files/border_3.gif"></td><td class="pls-topTail gc-reset"><img class="pls-tailbottom gc-reset" style="width:15px !important; height:9px !important; max-width: 15px !important; max-height: 9px !important;" src="Maven%20Interview%20Questions_files/spacer.gif"><img class="pls-spacerbottom gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="Maven%20Interview%20Questions_files/spacer.gif"></td><td class="pls-topRight gc-reset"><img class="gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="Maven%20Interview%20Questions_files/border_3.gif"></td></tr><tr class="gc-reset"><td class="pls-vertShimLeft gc-reset"><img class="gc-reset" style="width:1px !important; height:4px !important; max-width: 1px !important; max-height: 4px !important;" src="Maven%20Interview%20Questions_files/spacer.gif"></td><td class="pls-vertShim gc-reset"><img class="gc-reset" style="width:1px !important; height:4px !important; max-width: 1px !important; max-height: 4px !important;" src="Maven%20Interview%20Questions_files/spacer.gif"></td><td class="pls-vertShimRight gc-reset"><img class="pls-dropTR gc-reset" style="width:5px !important; height:4px !important; max-width: 5px !important; max-height: 4px !important;" src="Maven%20Interview%20Questions_files/spacer.gif"></td></tr><tr class="gc-reset"><td class="pls-contentLeft gc-reset"><img class="pls-tailright gc-reset" style="width:9px !important; height:15px !important; max-width: 9px !important; max-height: 15px !important;" src="Maven%20Interview%20Questions_files/spacer.gif"><img class="pls-spacerright gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="Maven%20Interview%20Questions_files/spacer.gif"></td><td class="pls-contentWrap gc-reset"><div class="goog-bubble-content gc-reset"><iframe ng-non-bindable="" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="margin:0px;position:absolute;z-index:1;border-style:none;outline:none;width:100px;" tabindex="0" vspace="0" id="I0_1528090378795" name="I0_1528090378795" src="Maven%20Interview%20Questions_files/subscribe_embed_002.htm" width="100%" frameborder="0"></iframe></div></td><td class="pls-dropRight gc-reset"><img class="pls-tailleft gc-reset" style="width:12px !important; height:19px !important; max-width: 12px !important; max-height: 19px !important;" src="Maven%20Interview%20Questions_files/spacer.gif"><img class="pls-spacerleft gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="Maven%20Interview%20Questions_files/spacer.gif"></td></tr><tr class="gc-reset"><td class="pls-bottomLeft gc-reset"><img class="gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="Maven%20Interview%20Questions_files/border_3.gif"></td><td class="gc-reset"><table style="width:100%" class="gc-reset" cellspacing="0" cellpadding="0"><tbody><tr class="gc-reset"><td class="pls-vert gc-reset"><img class="pls-dropBL gc-reset" style="width:4px !important; height:5px !important; max-width: 4px !important; max-height: 5px !important;" src="Maven%20Interview%20Questions_files/spacer.gif"></td><td class="pls-dropBottom gc-reset"><img class="pls-tailtop gc-reset" style="width:19px !important; height:13px !important; max-width: 19px !important; max-height: 13px !important;" src="Maven%20Interview%20Questions_files/spacer.gif"><img class="pls-spacertop gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="Maven%20Interview%20Questions_files/spacer.gif"></td></tr></tbody></table></td><td class="pls-vert gc-reset"><img class="pls-dropBR gc-reset" style="width:5px !important; height:5px !important; max-width: 5px !important; max-height: 5px !important;" src="Maven%20Interview%20Questions_files/spacer.gif"></td></tr></tbody></table></div></body></html>

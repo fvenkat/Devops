@@ -1,0 +1,42 @@
+Linux File system
+
+$man hier
+groups
+getent
+date
+file
+head tail
+les more
+wc
+history ............!string	!number
+
+
+
+
+Linux Process Management
+https://devconnected.com/understanding-processes-on-linux/
+https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/3_Processes.html
+https://www.win.tue.nl/~aeb/linux/lk/lk-10.html
+
+https://www.linuxtopia.org/online_books/introduction_to_linux/linux_Process_creation.html
+https://www.youtube.com/watch?v=TWXdAaRsrMs
+https://www.youtube.com/watch?v=x1tg2YUCs-c
+https://www.youtube.com/watch?v=pSW9d3Oaie8&t=454s
+
+1) Identify the zombie processes
+
+$ top -b1 -n1 | grep Z
+
+Find the parent id of our defunct process:
+$ ps -A -ostat,pid,ppid | grep -e '[zZ]'
+
+Send signal to read the entry
+kill -s SIGCHLD 103
+
+kill -9 103
+
+
+
+
+
+

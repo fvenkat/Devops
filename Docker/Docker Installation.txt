@@ -1,0 +1,35 @@
+
+UNINSTALL PODMAN & BUIDAH
+
+sudo yum remove podman
+sudo yum remove buidah
+
+
+UNINSTALL DOCKER
+
+$ sudo yum remove docker-ce docker-ce-cli containerd.io
+
+$ sudo rm -rf /var/lib/docker
+$ sudo rm -rf /var/lib/containerd
+
+YUM UPDATE
+
+$ yum update all
+
+DOCKER INSTALLTION USING REPOSITORY
+
+Set up the Repo
+
+$ sudo yum install -y yum-utils
+$ sudo yum-config-manager \
+    --add-repo \
+    https://download.docker.com/linux/centos/docker-ce.repo
+
+Verification
+
+$ docker --verison
+
+Start and enable the damen
+$ sudo systemctl enable docker
+$ sudo systemctl start docker
+$ sudo systemctl status docker

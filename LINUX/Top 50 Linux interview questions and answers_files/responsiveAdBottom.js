@@ -1,0 +1,1 @@
+document.write('<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- responsiveTopAd --><ins class="adsbygoogle"     style="display:block"     data-ad-client="ca-pub-5586234653901989"     data-ad-slot="7566300354"     data-ad-format="auto"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script><br>');

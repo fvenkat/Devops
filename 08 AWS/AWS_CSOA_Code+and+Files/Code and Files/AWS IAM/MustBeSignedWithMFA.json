@@ -1,0 +1,44 @@
+{
+
+    "Version": "2012-10-17",
+    "Statement": [ 
+        {
+            "Sid": "MustBeSignedInWithMFA",
+            "Effect": "Deny",
+            "NotAction": [
+                "iam:CreateVirtualMFADevice",
+                "iam:DeleteVirtualMFADevice",
+                "iam:ListVirtualMFADevices",
+                "iam:EnableMFADevice",
+                "iam:ResyncMFADevice",
+                "iam:ListAccountAliases",
+                "iam:ListUsers",
+                "iam:ListSSHPublicKeys",
+                "iam:ListAccessKeys",
+                "iam:ListServiceSpecificCredentials",
+                "iam:ListMFADevices",
+                "iam:GetAccountSummary",
+                "sts:GetSessionToken"
+            ],
+            "Resource": "*",
+            "Condition": {
+                "BoolIfExists": {
+                    "aws:MultiFactorAuthPresent": "false"
+                }
+            }
+        }   
+    ]
+}
+
+
+
+*** aws sts get-session-token --serial-number arn-of-the-mfa-device --token-code code-from-token
+
+*** 
+
+[mfa]
+aws_access_key_id = ASIAXP4J2EKUXQKVBE2C
+aws_secret_access_key = 2PZ8wi0QCxvltlBg7VG2eCUAIalZmSqrfQNnPrgn
+aws_session_token = IQoJb3JpZ2luX2VjELj//////////wEaCXVzLWVhc3QtMSJHMEUCIQDhB5MRzfS1C3Z3NgHm6WrWJGBlobm6zB7ZMWhoUSoAhwIgeikrEamMUnCdX1pMNgRw2WUC1wIE2Ulup1SQf3OFHwYq+AEIwf//////////ARACGgw1MTUxNDgyMjcyNDEiDC8H57TkFqbTXiJMkSrMAf6s1s0EqwABU/MOLMWasu0NNgYN5J70NV+di6E6Z5QadOU1L8KmPfFsEp1nQfIueoIKvnySOOx1SDU+Y5R4fyeNvUgU+cRghVU0c50ckGerxScgeYT9Mr+v3ubdmqC1eMViYNCVOnCvlyyecHUsidWMIMhouBhS1LSuO1DVFP94Gvf4DLQ0j7EOfTuxxN4xsYTnvCQeyvcfMNAZfy8QzGASwTePn61/EBzU8DwcCwCnN/vOIliR3aYYlZ68PLhLkrcQnEBr82+tvFWAgjD74pWIBjqYAaTTHzp2G3liRB4DlSB+US/K4a4xxIVY3CHGamPjz6yHAcot41HV3oIxKC+AIHN8Ttmq2xzFlT6GOfkXva/Lkp4BZspEqBA0TfhF8K/GSfA/3xmiBUgAobSGNkfZtgNKTZ4jFxIMnx/2vk+GjMCgJxpuzEhdmAGgRybOdMV6Gxw2WC/7fmvFCM32dowOmYVMXKv6XnyStzRu
+
+***

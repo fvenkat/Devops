@@ -1,0 +1,55 @@
+Git Installation
+================
+$ sudo dnf install git-all
+$ git --version
+
+Git First Time Configuration
+=============================
+$ git config --list
+$ git config --global user.name "Venkatesh Sekar"
+$ git config --global user.email "fvenkat007@gmail.com"
+
+Git Initialization
+==================
+$ git init
+$ git status
+
+Git Staging | Tracking
+=======================
+$ git add .     or  $ git add -A        #All the files
+$ git add FileName1 FileName2
+$ git add -u                            # Only Updated Files get stages
+
+Commiting Your Changes
+=======================
+$ git commit -m "commit msg" FileName
+$ git commit -am "commit msg"           #All the Modified/tracked files will get commited [Skips Stage if required]
+
+Checking the Git Status of the File
+====================================
+$ git status
+$ git status -s
+	M README
+	MM Rakefile
+	A lib/git.rb		[New /untracked file are staged]
+	M lib/simplegit.rb	[Modified /Tracked commited files]
+	?? LICENSE.txt	[New files/ untracked]
+
+There are two columns to the output — the lefthand column indicates the status of the staging area and the right-hand
+column indicates the status of the working tree.
+
+Git Diff
+=========
+$ git diff                          # Working Dir vs Staging
+$ git diff --staged/cached          # Staging vs Local Repo
+
+Git Log
+========
+
+
+
+
+
+
+
+
